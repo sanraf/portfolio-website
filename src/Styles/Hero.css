@@ -1,0 +1,301 @@
+
+
+.hero{
+    width: 100%;
+    height: 400px;
+    
+}
+
+.up-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 10px;
+    height: fit-content;
+    position: fixed;
+    top: 87%;
+    z-index: 100;
+    background-color: transparent;
+}
+
+
+.up{
+    height: 46px;
+    width: 40px;
+    z-index: 1000;
+    
+    
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    border-radius: 6px;
+    padding: 0px;
+    cursor: pointer;
+    border: none;
+    transition: all 200ms ease;
+    background-color: rgba(240, 248, 255, 0);
+    box-shadow: 0px 0px 2px 1px var(--PrimaryColor);
+
+}
+
+.up img{
+    height: 45px;
+    width: 36px;
+
+}
+
+
+.up:hover{
+    box-shadow: 0px 0px 2px 2px var(--PrimaryColor);
+  /* transform: scale(1.0125); */
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    background: linear-gradient(270deg,var(--MainColor) ,var(--MainTrans-2)),url('../Assets/980.jpg');
+    background-repeat: no-repeat;
+    margin-left: auto;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+} 
+
+
+.heading{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    background:var(--HeadingBackground);
+    flex-wrap: wrap;
+    text-align: start;
+    letter-spacing: 2px;
+    z-index: 2;
+    opacity: 0;
+
+
+    animation-delay: 2000ms;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: heading-slide; 
+    transform: scale(0);
+   
+
+}
+ 
+@keyframes heading-slide{
+   
+    0%{
+
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+} 
+
+.heading h5{
+
+    color: var(--PrimaryColor);
+    font-size: 1.2em;
+    opacity: 0;
+    font-weight: 400;
+
+    animation-delay: 2500ms;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: heading-slide; 
+}
+.heading h3{
+
+    color: var(--PrimaryColor);
+    font-size: 2.4em;
+    font-family: monospace;
+    opacity: 0;
+
+    animation-delay: 2500ms;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: heading-slide; 
+}
+
+.typing-effect h3{
+    
+    color: var(--TypingColor);
+    font-family: monospace;
+    text-transform: capitalize;
+    font-size: 2.2em; 
+
+}
+
+.heading p{
+
+    color: var(--TypingColor);
+    font-size: 1em;
+    letter-spacing: 0px;
+    margin-top: 12px;
+    opacity: 0;
+    text-transform: capitalize;
+
+    animation-delay: 4000ms;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: heading-slide; 
+
+}
+
+.heading__button{
+
+    display: flex;
+    width: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 12px 0;
+    opacity: 0;
+
+    animation-direction: normal ;
+    animation-delay: 5800ms;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: heading-slide; 
+   
+}
+
+.heading__button a{
+   
+   width: auto;
+   padding: 10px 10px;
+   letter-spacing: 1px;
+   font-family: 'Times New Roman', Times, serif;
+   border: 1px solid var(--PrimaryColor);
+   color:  var(--PrimaryColor);
+   background-color: transparent;
+   font-size: 1.1em;
+   font-weight: 600;
+   font-family: monospace;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: none;
+   border-radius: 4px;
+   transition: transform 300ms ease-in-out;
+
+}
+
+
+
+
+.heading__button a:hover{
+    transform: scale(1.02);
+    color:var(--PrimaryColor);
+   
+}
+
+
+
+.typing-effect{
+
+    display: flex;
+    height: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    flex-wrap: wrap;
+    border-right: 3px solid;
+    border-color: transparent;
+    animation-duration: 8550ms;
+    animation-delay: 8000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-timing-function: linear;
+    animation-name: typing;
+    
+}
+
+@keyframes typing{ 0%{ width: 0px; opacity: 1;}100%{width: 100%;opacity: 1;}}
+
+
+.sky{
+
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    margin-top: 8px;
+}
+
+[class*='stars-'] img{
+    display: flex;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background: transparent;
+    
+}
+
+
+.stars-1{margin-top: 30px;}
+
+.stars-2{margin-top: 70px;}
+
+.stars-3{margin-top: 40px;}
+
+.stars-4{margin-top: 70px;}
+
+
+[class*='stars-']{
+
+    height: auto;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    animation-duration: 4500ms;
+    animation-delay: 5000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: moving-stars;
+    opacity: 0;
+    z-index: 100;
+}
+
+
+@keyframes moving-stars{
+    0%{  transform:scale(1); opacity: 0;}
+    50%{transform: scale(1.5); opacity: 1;}
+    100%{ transform: scale(1);opacity: 0;}
+}
+
+
+
+
+
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+@media screen and (min-width:800px){
+
+    .hero__wrapper{padding: 0 60px;} 
+
+    [class*='stars-']{
+       
+        animation-duration: 25000ms;
+       
+    }
+    
+}
+

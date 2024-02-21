@@ -1,0 +1,146 @@
+
+.skills-section{
+
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    padding: 60px 60px 120px 60px;
+    background:var(--MainTrans);
+  
+  }
+  
+  .skills-container{
+  
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 60px;
+    border-radius: 12px;
+    background-image: var(--SkillImage);
+    background-color: var(--MainColor);
+    
+  }
+
+
+
+  [class*='skill-wrapper-']{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    padding: 3px 0;
+    
+  }
+  
+  .skills-title{
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 12px;
+      margin-bottom: 22px;
+  }
+
+  .main-skill_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  
+ 
+  
+  .progress-container{
+  
+    height: fit-content;
+    border-radius: 38px;
+    display: flex;
+    flex-direction: row;
+    
+    /* background: var(--ProgressBackground); */
+  
+  }
+  
+  [class*='progress-wrapper']{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius: 38px;
+    text-transform: capitalize;
+    border: 1px solid var(--PrimaryColor);
+    background: var(--MainColor);
+    overflow: hidden;
+    transition: all 1000ms;
+  
+  }
+
+  [class*='progress-wrapper'] h3{
+   font-size: 0.8em;
+   font-weight: 400;
+  
+  }
+
+  [class*='progress-wrapper']:hover{
+    transform: translateX(50px);
+    background: #ffffff1f
+  
+  }
+  
+  .subject{
+    display: flex;
+    margin: auto;
+    flex-shrink: 0;
+    font-size: 0.6em;
+    font-weight: 600;
+    text-align: center;
+    flex-wrap: nowrap;
+    color: var(--PrimaryColor);
+    opacity: 1;
+    transition: opacity 2000ms;
+  
+  }
+  
+  
+  
+  .skill-icon{
+    display: flex;
+    height: 38px;
+    width: 38px;
+    padding: 4px;
+    border-radius: 23px;
+  
+  
+  }
+  
+  
+
+  @media screen and (min-width:800px){
+
+    .main-skill_wrapper{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      column-gap: 60px;
+
+    }
+
+
+    [class*='progress-wrapper1']:hover{
+      transform: translateX(50px);
+      background: #ffffff1f
+    
+    }
+
+    [class*='progress-wrapper2']:hover{
+      transform: translateX(-50px);
+      background: #ffffff1f
+    
+    }
+
+ 
+    
+}
