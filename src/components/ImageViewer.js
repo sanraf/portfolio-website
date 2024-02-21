@@ -60,13 +60,15 @@ const ImageViewer = ({name,setProject}) => {
   const [deltaX,setDeltaX] = useState(0);
   const [desc,setDesc] = useState('')
   const [repo,setRepo] = useState('')
+ 
 
+  
 
   const aboutProject1 = 'The note-taking app enables users to effortlessly manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
 
-  const aboutProject2 = 'app enables users to effortlessly manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
+  const aboutProject2 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.'
 
-  const aboutProject4 = 'manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
+  const aboutProject4 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.'
 
   const repoLinks1 = 'https://github.com/sanraf/Smart-Note-App.git';
   const repoLinks2 = 'https://github.com/sanraf/Smart-Book.git';
