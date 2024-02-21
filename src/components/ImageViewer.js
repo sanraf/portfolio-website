@@ -57,8 +57,20 @@ const ImageViewer = ({name,setProject}) => {
   const scrollRef = useRef(null);
   const [mobileImg,setMobileImg] = useState(true)
   const [width, setWidth] = useState(0);
-  const [deltaX,setDeltaX] = useState();
+  const [deltaX,setDeltaX] = useState(0);
+  const [desc,setDesc] = useState('')
+  const [repo,setRepo] = useState('')
 
+
+  const aboutProject1 = 'The note-taking app enables users to effortlessly manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
+
+  const aboutProject2 = 'app enables users to effortlessly manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
+
+  const aboutProject4 = 'manage their notes with editing, deleting, and theme customization features. It also offers note locking for privacy, backup storage for security, and the ability to create shopping lists with automatic sum calculation, streamlining organization and productivity on all fronts.'
+
+  const repoLinks1 = 'https://github.com/sanraf/Smart-Note-App.git';
+  const repoLinks2 = 'https://github.com/sanraf/Smart-Book.git';
+  const repoLinks4 = 'https://github.com/sanraf/EziVote.git';
 
   const project1Images = [
     {id: 1,url: note1Icon },{ id: 2,url: note2Icon },{ id: 3,url: note3Icon},
@@ -107,16 +119,9 @@ const ImageViewer = ({name,setProject}) => {
 
     const getProjectComponet = () =>{
 
-      if(name.includes('note')){
-          setMobileImg(true)
-          setDeltaX(300)
-      }else if(name.includes('books')){
-        setMobileImg(true)
-        setDeltaX(300)
-      }else if(name.includes('EziVote')){
-        setMobileImg(false)
-        setDeltaX(750)
-      }
+      if(name.includes('note')){setMobileImg(true); setDeltaX(300);setDesc(aboutProject1);setRepo(repoLinks1)
+      }else if(name.includes('books')){setMobileImg(true);setDeltaX(300); setDesc(aboutProject2);setRepo(repoLinks2)
+      }else if(name.includes('EziVote')){setMobileImg(false);setDeltaX(750); setDesc(aboutProject4);setRepo(repoLinks4)}
     }
     getProjectComponet();
   },[name])
@@ -133,10 +138,9 @@ const ImageViewer = ({name,setProject}) => {
 
     setWidth(containerRef.current.clientWidth);
 
-    // Event listener for resize
+
     window.addEventListener('resize', handleResize);
 
-    // Cleanup
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -147,15 +151,13 @@ const ImageViewer = ({name,setProject}) => {
 
 
   const handleWheel = (e) => {
-    e.preventDefault(); // Prevent default scrolling behavior
+    e.preventDefault(); 
 
     const container = containerRef.current;
 
-    // Calculate the scroll amount based on the mouse wheel delta
     const delta = e.deltaY || e.detail || e.wheelDelta;
-    const scrollAmount = delta > 0 ? 330 : -330; // Adjust as needed
+    const scrollAmount = delta > 0 ? 330 : -330; 
 
-    // Adjust the scrollLeft property of the container element
     container.scrollLeft += scrollAmount;
   };
 
@@ -177,13 +179,13 @@ const ImageViewer = ({name,setProject}) => {
           <div className='description-wrapper'>
 
           <   div className='project-description'>
-                <h4>description+++ {name}</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</p>
+                <h4>{name} description</h4>
+                <p>{desc}</p>
               </div>
 
             <div className='action-btn_wrapper'>
                   <span className='action-btn-back'onClick={(e)=>setProject(true)}  >back</span>
-                  <Link className='action-btn-project-repo' to={'https://github.com/sanraf/Smart-Note-App.git'}>view Repository</Link>
+                  <Link className='action-btn-project-repo' target="_blank" rel="noopener noreferrer" to={repo}>view Repository</Link>
             </div>
 
           </div>
@@ -193,9 +195,6 @@ const ImageViewer = ({name,setProject}) => {
           <div className='image-slider'>
 
           <img className = 'image-btn'src={prevIcon}  onClick={scrollLeft}/>
-
-
-
 
 
           <div className="image-holder" ref={containerRef} onWheel={handleWheel}>
