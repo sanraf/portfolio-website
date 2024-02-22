@@ -54,14 +54,13 @@
   }
 
   .copyIcon{
-    display: none;
     cursor: pointer;
     transition: all 275ms ease-in-out;  
   }
 
   
 
-  [class*='icon-Wrapper-']:hover .copyIcon{ display: flex;}
+ 
 
   [class*='icon-Wrapper-']:hover{
     transform:scale(1.04);
@@ -98,7 +97,15 @@
     flex-direction: row;
     column-gap: 10px;
   }
+  .copyIcon{
+    display: none;
+    cursor: pointer;
+    transition: all 275ms ease-in-out;  
+  }
 
+  
+
+  [class*='icon-Wrapper-']:hover .copyIcon{ display: flex;}
   [class*='icon-Wrapper-']{
 
     width: 100%;

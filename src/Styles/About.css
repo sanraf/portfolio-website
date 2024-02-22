@@ -182,7 +182,7 @@
 
 @media screen and (min-width:800px){
 
-  .about-me{padding: 60px;}
+  .about-me{padding: 60px;inset: unset;}
 
 
   [class*='circle-image-']{

@@ -60,9 +60,7 @@
   .card-1:hover {
     
     background-image: radial-gradient(#03111f,#023047); 
-    background-color: #0e5fb2;
     box-shadow: 0px 0px 10px var(--PrimaryColor);
-    border-radius: 255px 15px 225px 15px/15px 225px 15px;
   }
 
   .card-1 h4{
@@ -212,6 +210,13 @@
   @media screen and (min-width:800px){
 
     .projects{padding: 60px; }
+    .card-1:hover {
+    
+      background-image: radial-gradient(#03111f,#023047); 
+      background-color: #0e5fb2;
+      box-shadow: 0px 0px 10px var(--PrimaryColor);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px;
+    }
 
     .project-wrapper{flex-direction: row;justify-content: center; column-gap: 60px;flex-wrap: wrap;}
   }
