@@ -4,7 +4,7 @@
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    padding: 60px 60px 120px 60px;
+    padding: 60px 40px 120px 40px;
     background:var(--MainTrans);
   
   }
@@ -119,6 +119,7 @@
   
 
   @media screen and (min-width:800px){
+    .skills-section{padding: 60px 60px 120px 60px; }
 
     .main-skill_wrapper{
       width: 100%;

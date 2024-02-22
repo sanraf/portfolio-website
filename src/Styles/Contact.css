@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     background:var(--MainTrans);
-    padding: 60px 60px 120px 60px;
+    padding: 60px 40px 120px 40px;
     gap: 30px;
     flex-wrap: wrap;
     transition:transform 5200ms ease-in-out;
@@ -90,6 +90,8 @@
  
 
 @media screen and (min-width:800px){
+
+  .contact {padding: 60px 60px 120px 60px; }
 
   .mycontact{
 

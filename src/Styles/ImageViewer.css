@@ -7,7 +7,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px 60px;
+    padding: 40px;
     background-color: var(--MainColor);
 }
 
@@ -244,6 +244,7 @@
 
 @media screen and (min-width:864px){
 
+    .project-display_wrapper{padding: 40px 60px;}
 
 
 
