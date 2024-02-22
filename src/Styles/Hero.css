@@ -138,14 +138,14 @@
     color: var(--TypingColor);
     font-family: monospace;
     text-transform: capitalize;
-    font-size: 1.8em; 
+    font-size: 1.6em; 
 
 }
 
 .heading p{
 
-    color: var(--TypingColor);
-    font-size: 1em;
+    color: var(--PrimaryColor);
+    font-size: 0.9em;
     letter-spacing: 0px;
     margin-top: 12px;
     opacity: 0;
@@ -298,7 +298,6 @@ img{
     
     .up img{width: 36px; }
 
-    .typing-effect h3{ font-size: 2.2em; }
     .typing-effect h3{font-size: 2em;  }
 
     .hero__wrapper{padding: 0 60px;} 
