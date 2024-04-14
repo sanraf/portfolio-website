@@ -2,7 +2,7 @@
 
 .hero{
     width: 100%;
-    height: 400px;
+    height: 650px;
     
 }
 
@@ -237,10 +237,15 @@
     margin-top: 8px;
 }
 
+
+
+
+
+
 [class*='stars-'] img{
     display: flex;
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 8px;
     position: absolute;
     background: transparent;
     
@@ -249,22 +254,46 @@
 
 
 
-.stars-1{margin-top: 30px;}
+.stars-1{margin-top: 30px; left: 10%;}
 
-.stars-2{margin-top: 70px;}
+.stars-2{margin-top: 70px;left: 35%;}
 
-.stars-3{margin-top: 40px;}
+.stars-3{margin-top: 40px;left: 65%;}
 
-.stars-4{margin-top: 70px;}
+.stars-4{margin-top: 70px;left: 90%;}
+
+.stars-2-5{margin-top: 70px;left: 20%;}
+
+.stars-2-6{margin-top: 40px;left: 45%;}
+
+.stars-2-7{margin-top: 70px;left: 75%;}
+
+.stars-2-8{margin-top: 30px;left: 95%;}
 
 
 [class*='stars-']{
 
     height: auto;
+    position: absolute;
     animation-iteration-count: infinite;
     animation-direction: normal ;
     animation-duration: 4500ms;
     animation-delay: 5000ms;
+    animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
+    animation-fill-mode: forwards;
+    animation-name: moving-stars;
+    opacity: 0;
+    z-index: 100;
+}
+
+[class*='stars-2-']{
+
+    height: auto;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    animation-duration: 4500ms;
+    animation-delay: 6500ms;
     animation-timing-function: cubic-bezier(0.54,-0.34, 0.45, 1.28);
     animation-fill-mode: forwards;
     animation-name: moving-stars;
@@ -280,13 +309,6 @@
 }
 
 
-
-
-
-img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
 
 
 @media screen and (min-width:800px){

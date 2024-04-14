@@ -35,7 +35,7 @@ function Contact() {
 
         <div className="contact-title">
             <h1>contact</h1>
-            <hr className="hr-line"/>
+            {/* <hr className="hr-line"/> */}
         </div>
 
         <div className='mycontact'>

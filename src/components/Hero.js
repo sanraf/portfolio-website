@@ -24,6 +24,9 @@ function Hero() {
                        
 
                        <div className="sky">
+                       <i className="cloud-1"></i>
+                       <i className="cloud-2"></i>
+                       <i className="cloud-3"></i>​
                            
                            <div className="stars-1">
                                <img  src={starIcon} alt="stars"/>
@@ -41,6 +44,21 @@ function Hero() {
                                <img  src={starIcon} alt="stars"/>
                            </div>
 
+                           <div className="stars-2-5">
+                               <img  src={starIcon} alt="stars"/>
+                           </div>
+   
+                           <div className="stars-2-6">
+                               <img  src={starIcon} alt="stars"/>
+                           </div>
+   
+                           <div className="stars-2-7">
+                               <img  src={starIcon} alt="stars"/>
+                           </div>
+   
+                           <div className="stars-2-8">
+                               <img  src={starIcon} alt="stars"/>
+                           </div>
                         </div>
 
                        <h5>Hello, my name is</h5>

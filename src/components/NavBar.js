@@ -17,7 +17,9 @@ function NavBar() {
 
                 <nav className='nav'>
                     <div className="list-icon-wrapper">
-                        
+
+                          <a href='#myabout'>Home</a>
+                          
                           <a href='#myabout'>About</a>
                           <a href='#myskills'>Skills</a>
                           <a href='#myproject'>Projects</a>

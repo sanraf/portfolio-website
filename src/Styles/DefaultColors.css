@@ -24,18 +24,21 @@
   }
 
 
-  h1{
+  [class*="-title"] h1{
     color: #1589ff;
     text-transform: uppercase;
-    font-family: m;
-    font-size: large;
-      
-  }
-  
+    font-weight: 800;
+    position: relative;
+    font-size: 14vw;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+  } 
+
+ 
   
  hr{
     height: 3px;
-    width: 100px;
+    width: 100%;
     background: #1589ff;  
     border: none;
     margin: 1rem 0;

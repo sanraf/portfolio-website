@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: center;
     background:var(--MainTrans);
-    padding: 60px 40px 120px 40px;
+    padding-top: 3.5rem;
+    padding-bottom: 7rem;
     gap: 30px;
     flex-wrap: wrap;
     transition:transform 5200ms ease-in-out;
@@ -79,15 +80,7 @@
     
   } */
   
-  .contact-title h1{
-    color: var(--PrimaryColor);
-    text-shadow: 2px 2px 10px var(--PrimaryColor);
-    text-transform: uppercase;
-      
-  }
-  
  
-
 @media screen and (min-width:800px){
 
   .contact {padding: 60px 60px 120px 60px; }
