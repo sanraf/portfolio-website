@@ -772,6 +772,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .projects {
+    
+    padding: 3.8rem;
+  }
   .project-holder {
     height: 100vh;
     padding: 2.5rem;
