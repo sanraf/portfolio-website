@@ -1,0 +1,64 @@
+    
+        /* Define your CSS styles here */
+   
+        .container {
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #ef0505;
+            padding: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+
+        .content{
+            width: 100%;
+            background: #776565;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 40px; /* Adjust according to your logo dimensions */
+            height: 40px;
+        }
+        .login {
+            width: 50%; /* Adjust according to your logo dimensions */
+            height: 40%;
+        }
+        .username {
+            width: 40%;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            text-align: start;
+        }
+        .project-name {
+            width: 40%;
+            font-size: 16px;
+            font-weight: lighter;
+            margin-bottom: 10px;
+            text-align: start;
+        }
+        .project-homepage {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .project-image {
+            max-width: 100%;
+            height: auto;
+        }
+        a{
+            /* border: #353535 solid 2px; */
+        }
+        .l{
+            background-color: aliceblue;
+        }
+
+        .p{
+            background-color: aquamarine;
+        }

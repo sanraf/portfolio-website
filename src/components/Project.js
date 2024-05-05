@@ -63,9 +63,9 @@ function Project() {
             <div className="top-mobile-card-note">
               <img src={noteLogo} />
               <h2 note="NoteApp">Smart Note</h2>
-              <h4>Mobile/Tablet Version</h4>
+              <h4>Mobile/Tablet</h4>
             </div>
-
+            {/* src={`data:image/jpeg;base64,${candidateData.photo}`} */}
             <div className="bottom-card">
               <div className="info-box">
                 <h3 data-change="Technologies">Smart Note</h3>
@@ -99,7 +99,7 @@ function Project() {
             <div className="top-mobile-card-scan">
               <img src={scanLogo} />
               <h2 note="UtilityApp">Smart Scan</h2>
-              <h4>Mobile/Tablet Version</h4>
+              <h4>Mobile/Tablet</h4>
             </div>
 
             <div className="bottom-card">

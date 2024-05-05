@@ -4,8 +4,7 @@
     /* position: relative; */
     display: flex;
     flex-direction: column;
-    padding-top: 3.5rem;
-    padding-bottom: 7rem;
+    padding: 3.5rem 0.5rem 7rem 0.5rem;
     background:var(--MainTrans);
   
   }
@@ -14,9 +13,9 @@
   
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
-    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
     border-radius: 12px;
     background-image: var(--SkillImage);
     background-color: var(--MainColor);
@@ -29,10 +28,20 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    align-items: center;
+    gap: 1.5rem;
     padding: 3px 0;
     
   }
+
+  .skill-1{
+    display: flex;
+    column-gap: 0.5rem;
+  }
+
+  /* .skill-wrapper-1{ background-color: aqua;}
+
+  .skill-wrapper-2{ background-color: bisque;} */
   
   .skills-title{
   
@@ -46,7 +55,7 @@
   .main-skill_wrapper{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     
   }
 
@@ -55,42 +64,77 @@
  
   
   .progress-container{
-  
+    width: fit-content;
     height: fit-content;
-    border-radius: 38px;
     display: flex;
-    flex-direction: row;
-    
-    /* background: var(--ProgressBackground); */
-  
+    flex-direction: column;
+    background-color: rgba(229, 17, 17, 0);
   }
   
   [class*='progress-wrapper']{
-    width: 100%;
-    height: fit-content;
+    width: 162px;
+    height: 180px;
     display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    border-radius: 38px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
     text-transform: capitalize;
-    border: 1px solid var(--PrimaryColor);
-    background: var(--MainColor);
+    background: #041b33a2;
     overflow: hidden;
-    transition: all 1000ms;
+    transition: all 100ms;
   
+  }
+  [class*='progress-wrapper']:hover h3::before {
+    content: attr(java) 
+    attr(csshtml) attr(python)
+    attr(sql)attr(matlab)
+    attr(react) attr(android)
+    attr(github);
+    position: absolute;
+    display: flex;
+    align-items:center;
+    font-weight: 200;
+    word-spacing: 0px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    background: #041b33;
+    top: 0;
+    left: 0;
+    width: 0%;
+    color: var(--PrimaryColor);
+    overflow: hidden;
+    animation: animate 700ms linear forwards;
+  }
+
+
+  @keyframes animate {
+    0% {
+      width: 0%;
+      height: 0%;
+    }
+    50% {
+      width: 50%;
+      height: 50%;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  [class*='progress-wrapper']:hover{
+    transform: translateX(0px);
+    text-transform: capitalize;
   }
 
   [class*='progress-wrapper'] h3{
-   font-size: 0.8em;
-   font-weight: 400;
+   font-size: 1em;
+   margin: 10px;
   
   }
 
-  [class*='progress-wrapper']:hover{
-    transform: translateX(50px);
-    background: #ffffff1f
-  
-  }
   
   .subject{
     display: flex;
@@ -110,12 +154,9 @@
   
   .skill-icon{
     display: flex;
-    height: 38px;
-    width: 38px;
-    padding: 4px;
-    border-radius: 23px;
-  
-  
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
   }
   
   
@@ -126,26 +167,29 @@
     .main-skill_wrapper{
       width: 100%;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       column-gap: 60px;
 
     }
 
     .skills-container{ padding: 60px; }
 
-
-    [class*='progress-wrapper1']:hover{
-      transform: translateX(50px);
-      background: #ffffff1f
-    
-    }
-
-    [class*='progress-wrapper2']:hover{
-      transform: translateX(-50px);
-      background: #ffffff1f
-    
+    [class*='skill-wrapper-']{
+      flex-direction: row;
     }
 
  
+
+ 
     
+}
+
+
+
+@media screen and (max-width:320px){
+
+[class*='progress-wrapper']{
+  width: 130px;
+  height: 180px;
+}
 }

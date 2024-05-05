@@ -8,7 +8,7 @@ import Skills from '../components/Skills';
 import Project from '../components/Project';
 import Contact from '../components/Contact';
 import AppFooter from '../components/Footer';
-import Card from '../components/Card';
+import Email from '../components/email';
 import NewCard from '../components/NewCard';
 import ProjectDemo from '../components/ProjectDemo';
 import kkk from '../components/k';
@@ -21,6 +21,7 @@ function Home() {
       <Hero/>
       <About/>
       <Skills/>
+      {/* <Email/> */}
       <Project/>
       {/* <kkk/> */}
       {/* <Card/> */}
