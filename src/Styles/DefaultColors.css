@@ -25,7 +25,7 @@
 
 
   [class*="-title"] h1{
-    color: #1589ff;
+    color: var(--TypingColor);
     text-transform: uppercase;
     font-weight: 800;
     position: relative;

@@ -5,44 +5,60 @@
     justify-content: space-between;
     align-items: center;
     padding: 3.5rem;
-    height: 100vh ; /* Adjusted height to account for navbar */
+    height: 100vh ;
     box-sizing: border-box;
-    background-color: red;
+    background-color: var(--MainColor);
   }
   
   .hero-content {
     /* height: 40%; */
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 0.2rem;
-    background-color: rgb(2, 14, 10);
+    padding: 0.3rem;
   }
   
   /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
-  .explore-work{
+
+
+.explore-work {
     width: fit-content;
-    height: fit-content;
-    background-color: var(--MainColor);
-    color:var(--PrimaryColor) ;
-    font-weight: 400;
-    font-size: 1.2em;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    cursor: pointer;
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
     border: none;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 300ms, transform 300ms;
   }
+  
+  .explore-work:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .explore-work:active {
+    background-color: #00408d;
+  }
+  
   
   
   .hero-image {
     flex: 1;
-    background: linear-gradient(270deg,var(--MainColor) ,var(--MainTrans-2)),url('../Assets/971.png');
+    background: linear-gradient(270deg,#02304784,#02304731),url('../Assets/hero_1.png');
     /* background-image: url('https://via.placeholder.com/800');  */
     background-size: cover;
     background-position: center;
+    background-size: 120% 80%;
     height: 100%;
+    background-color: #000000;
+    background-repeat: no-repeat;
   }
   
   .typing-effect h1{
@@ -57,15 +73,15 @@
 }
 
 .typing-effect{
-    background-color: aqua;
     display: flex;
     height: fit-content;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     padding: 0.5rem 0;
     white-space: nowrap;
     overflow: hidden;
     flex-wrap: wrap;
+    text-align: left;
     border-color: transparent;
     animation-duration: 8550ms;
     /* animation-delay: 8000ms; */
@@ -75,7 +91,39 @@
     animation-name: typing;
     
 }
+.hero-content h6{
+    width: 40%;
+    padding: 2rem 0 ;
+    text-align: left;
+    font-size: 1em;
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal */
 
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.skill-desc{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 1rem 0;
+    column-gap: 3rem;
+    /* background-color: blueviolet; */
+    align-items: self-start;
+}
+
+.skill-desc p{
+width: 40%;
+text-align: left;
+font-family: 'Roboto', sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
+color: var(--TypingColor);
+}
 
   @media screen and (max-width: 1023px) {
     .hero-container {
@@ -105,17 +153,29 @@
       align-items: center;
       text-align: center;
       padding: 0rem;
-      height: calc(100vh - 60px); /* Adjusted height to account for navbar */
+      height: 100vh; /* Adjusted height to account for navbar */
     }
     .hero-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        opacity: 0.7;
-      }
+    
+            flex: 1;
+            background: linear-gradient(270deg,#02304742,#02304747),url('../Assets/hero_1.png');
+            /* background-image: url('https://via.placeholder.com/800');  */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 120% 60%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            opacity: 0.7;
+            background-color: #000000;
+          }
+
+      
     .hero-content {
       position: absolute;
       z-index: 2;

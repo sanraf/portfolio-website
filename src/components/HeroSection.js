@@ -10,7 +10,7 @@ import NavBar from "./NavBar";
 
 const HeroSection = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -34,13 +34,25 @@ const HeroSection = () => {
         <div className="typing-effect">
             <h1>software developer</h1>
         </div>
-          <h3>Santos Rafaelo</h3>
+            <h6>
+                I design responsive and scalable frontend and backend products with
+                great user experience.
+          </h6>
+        <div className="skill-desc"> 
+            <p>
+                Explanation and Visualization
+                CSS Transition: The transition property is added to the .navbar-links class to smoothly transition the max-height property.
+                
+            </p>
+            <p>
+                Explanation and Visualization
+                CSS Transition: The transition property is added to the .navbar-links class to smoothly transition the max-height property.
+                
+            </p>
+        </div>
 
 
-          <p>
-            I design responsive and scalable frontend and backend products with
-            great user experience.
-          </p>
+
 
           <a href="#myproject" className="explore-work"> Expore</a>
         </div>
