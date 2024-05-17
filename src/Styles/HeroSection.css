@@ -5,8 +5,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 3.5rem;
-    height: calc(100vh - 60px); /* Adjusted height to account for navbar */
+    height: 100vh ; /* Adjusted height to account for navbar */
     box-sizing: border-box;
+    background-color: red;
   }
   
   .hero-content {
