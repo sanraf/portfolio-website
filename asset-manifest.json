@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.7f360ee6.css",
-    "main.js": "/portfolio-website/static/js/main.716e4e12.js",
+    "main.js": "/portfolio-website/static/js/main.f6901299.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
@@ -63,11 +63,11 @@
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
     "main.7f360ee6.css.map": "/portfolio-website/static/css/main.7f360ee6.css.map",
-    "main.716e4e12.js.map": "/portfolio-website/static/js/main.716e4e12.js.map",
+    "main.f6901299.js.map": "/portfolio-website/static/js/main.f6901299.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f360ee6.css",
-    "static/js/main.716e4e12.js"
+    "static/js/main.f6901299.js"
   ]
 }
