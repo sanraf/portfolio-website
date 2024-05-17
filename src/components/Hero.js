@@ -22,7 +22,7 @@ function Hero() {
              
                    <div className="heading">
                        
-
+{/* 
                        <div className="sky">
                        <i className="cloud-1"></i>
                        <i className="cloud-2"></i>
@@ -59,19 +59,27 @@ function Hero() {
                            <div className="stars-2-8">
                                <img  src={starIcon} alt="stars"/>
                            </div>
+                        </div> */}
+
+                        <div className='content'>
+                                 <h5>Hello, my name is</h5>
+                                <h3>Santos Rafaelo</h3>
+                                
+                                <div className="typing-effect">
+                                    <h3>i am a software developer</h3>
+                                </div>
+                                <p>I design responsive and scalable frontend and backend products with great user experience.</p>
+                                
+                                <div className="heading__button">
+                                    <a href='#myproject' className="explore">Expore my work</a>
+                                </div>
                         </div>
 
-                       <h5>Hello, my name is</h5>
-                       <h3>Santos Rafaelo</h3>
-                    
-                       <div className="typing-effect">
-                           <h3>i am a software developer</h3>
-                       </div>
-                       <p>I design responsive and scalable frontend and backend products with great user experience.</p>
-                       
-                       <div className="heading__button">
-                        <a href='#myproject' className="explore">Expore my work</a>
-                       </div>
+                        <div className='hero-icon'>
+
+                        </div>
+
+
 
 
                        

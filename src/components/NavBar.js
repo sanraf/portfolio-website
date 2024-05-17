@@ -1,62 +1,45 @@
-import React from 'react'
-import '../Styles/NavBar.css'
-import '../Styles/DefaultColors.css'
-import { Link } from 'react-router-dom'
-import menu from '../Assets/icons8-menu.svg'
-import facebookIcon from '../Assets/facebook.svg'
-import linkedinIcon from '../Assets/linkedin.svg'
-import githubIcon from '../Assets/icons8-github.svg'
+// src/components/NavBar.js
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import "../Styles/NavBar.css";
 
-function NavBar() {
+const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className='Navbar-wrapper'>
+    <nav className="navbar">
+      <div className="logo-hamburger">
 
-        <header id="myheader"> 
-                
-                <input type="checkbox" id='nav-toggle' className='nav-toggle' style={{display:'none'}}/>
+          <div className="navbar-logo">Santos.R</div>
+          <div className="hamburger" onClick={toggleMenu}>
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+          </div>
 
-                <nav className='nav'>
-                    <div className="list-icon-wrapper">
+      </div>
 
-                          <a href='#myabout'>Home</a>
-                          
-                          <a href='#myabout'>About</a>
-                          <a href='#myskills'>Skills</a>
-                          <a href='#myproject'>Projects</a>
-                          <a href='#mycontact'>Contact</a>
-                          
-                    </div>
-                    
-                    <div className='media-wrapper'>
+      <div className={`navbar-links ${isOpen ? "open" : ""}`}>
+        <ul>
+          <li>
+            <a href="#myhome">Home</a>
+          </li>
+          <li>
+            <a href="#myabout">About</a>
+          </li>
+          <li>
+            <a href="#myproject">Projects</a>
+          </li>
+          <li>
+            <a href="#mycontact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
-                        
-                        <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
-                             <img src={facebookIcon} alt="facebook"/>
-                        </Link>
-
-                        <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={'https://github.com/sanraf?tab=repositories'}>
-                        <img src={githubIcon} alt="github"/>
-                        </Link>
-
-                        <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
-                        <img src={linkedinIcon} alt="linkedin"/>
-                        </Link>
-                           
-                   
-                        
-                    </div>
-                  
-                </nav>
-                
-
-                <label htmlFor="nav-toggle" className='nav-toggle-label'>
-                    <img src={menu}/>
-                </label>
-               
-
-        </header>
-    </div>
-  )
-}
-
-export default NavBar
+export default NavBar;

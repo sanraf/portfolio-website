@@ -12,13 +12,15 @@ import Email from '../components/email';
 import NewCard from '../components/NewCard';
 import ProjectDemo from '../components/ProjectDemo';
 import kkk from '../components/k';
+import HeroSection from '../components/HeroSection';
 function Home() {
  
   return (
     <div>
       
-      <NavBar/>
-      <Hero/>
+      {/* <NavBar/> */}
+      {/* <Hero/> */}
+      <HeroSection/>
       <About/>
       <Skills/>
       {/* <Email/> */}
