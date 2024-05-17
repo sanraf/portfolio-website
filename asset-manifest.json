@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.3745e117.css",
-    "main.js": "/portfolio-website/static/js/main.ebee4f3f.js",
-    "static/js/592.a290a448.chunk.js": "/portfolio-website/static/js/592.a290a448.chunk.js",
+    "main.css": "/portfolio-website/static/css/main.4a6d90ef.css",
+    "main.js": "/portfolio-website/static/js/main.6d453c1d.js",
+    "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
     "static/media/980.jpg": "/portfolio-website/static/media/980.ed9fd0be9269904cb4ab.jpg",
@@ -60,15 +60,14 @@
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "index.html": "/portfolio-website/index.html",
-    "static/media/icons8-menu.svg": "/portfolio-website/static/media/icons8-menu.72e9ced51f3c9c045be9283c5e82c49e.svg",
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.3745e117.css.map": "/portfolio-website/static/css/main.3745e117.css.map",
-    "main.ebee4f3f.js.map": "/portfolio-website/static/js/main.ebee4f3f.js.map",
-    "592.a290a448.chunk.js.map": "/portfolio-website/static/js/592.a290a448.chunk.js.map"
+    "main.4a6d90ef.css.map": "/portfolio-website/static/css/main.4a6d90ef.css.map",
+    "main.6d453c1d.js.map": "/portfolio-website/static/js/main.6d453c1d.js.map",
+    "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3745e117.css",
-    "static/js/main.ebee4f3f.js"
+    "static/css/main.4a6d90ef.css",
+    "static/js/main.6d453c1d.js"
   ]
 }
