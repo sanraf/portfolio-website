@@ -41,12 +41,11 @@ const HeroSection = () => {
         <div className="skill-desc"> 
             <p>
                 Explanation and Visualization
-                CSS Transition: The transition property is added to the .navbar-links class to smoothly transition the max-height property.
-                
+                CSS Transition: The transition property is added to the 
             </p>
             <p>
                 Explanation and Visualization
-                CSS Transition: The transition property is added to the .navbar-links class to smoothly transition the max-height property.
+                CSS Transition: The transition property is added to the 
                 
             </p>
         </div>
