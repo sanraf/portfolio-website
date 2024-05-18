@@ -41,10 +41,8 @@ const HeroSection = () => {
             </p>
         </div>
 
-
-
-
           <a href="#myproject" className="explore-work"> Expore</a>
+
         </div>
         <div className="hero-image"></div>
       </div>
