@@ -1,28 +1,34 @@
 
 .hero-wrapper{
-    height: 100vh ;
+    min-height: 100vh ;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
+    background-color: #ff0000;
+    /* padding-bottom: 2rem; */
 
 }
 .hero-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3.5rem;
+    /* padding: 3.5rem; */
     height: 100%;
     box-sizing: border-box;
-    background-color: var(--MainColor);
+    /* background-color: var(--MainColor); */
   }
   
   .hero-content {
+    height: fit-content;
+    width: 93%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    padding: 1.2rem;
-    margin-top: 2.5rem;
+    border-radius: 1rem;
+    /* padding: 0 1.2rem; */
+    z-index: 10000;
+    /* background-color: green; */
+    /* margin-top: 2.5rem; */
 
 
   }
@@ -102,17 +108,18 @@
     padding: 1.5rem 0 ;
     text-align: left;
     font-size: 1em;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+    line-height: 16px;
     color: white;
 
 }
 .skill-desc{
     display: flex;
     justify-content: space-between;
-    padding: 4rem 0 1rem 0;
+    padding: 2rem 0 1rem 0;
 }
 
 .skill-desc p{
@@ -164,26 +171,30 @@ color: var(--HeadingText);;
       align-items: center;
       text-align: center;
       height: 100vh; 
+      padding: 5rem;
     }
     .hero-image {
-    
+            display: flex;
+            justify-self: center;
             flex: 1;
-            background: linear-gradient(270deg,#02304700,#02304747),url('../Assets/hero_1.png');
+            background: linear-gradient(270deg,#0230479d,#023047b4),url('../Assets/hero_1.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 120% 60%;
+            background-size: 100% 60%;
             height: 100%;
+            width: 93%;
+            border-radius: 0;
             position: absolute;
-            top: 0;
-            left: 0;
+            top: -0;
+            left: 0%;
             right: 0;
             bottom: 0;
             z-index: 1;
             opacity: 0.7;
           }
           .skill-desc p{
-            width: 40%;
+            width: 45%;
             text-align: left;
 
             font-family: "Mukta", sans-serif;
@@ -198,9 +209,10 @@ color: var(--HeadingText);;
       
     .hero-content {
       position: absolute;
-      z-index: 2;
+      z-index: 200;
       color: white;
       background-color: #003f8d3d;
+      box-shadow: 0px 0px 10px var(--CardBackground);
       padding: 0 1.2rem;
     }
 
