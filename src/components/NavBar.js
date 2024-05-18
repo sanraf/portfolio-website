@@ -17,7 +17,7 @@ const NavBar = () => {
 
           <div className="navbar-logo">Santos.R</div>
           <div className="hamburger" onClick={toggleMenu}>
-            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+            <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="icon" />
           </div>
 
       </div>

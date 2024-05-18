@@ -205,19 +205,19 @@ nav{
 
 /* Rest of your CSS */
 .navbar {
+  width: 100%;
+  height: 3rem;
   display: flex;
-  /* flex-direction: row-reverse; */
   justify-content: space-between;
   align-items: center;
   background-color: var(--MainColor);
-  padding: 10px 20px;
+  padding:  1rem;
   color: white;
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
-  /* background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/971.png"); */
+
 }
 
 .logo-hamburger{
@@ -226,8 +226,9 @@ nav{
 }
 .navbar-logo {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: var(--HeadingText);
   animation: logoAnimation 2000ms ease-in-out infinite;
 }
 
@@ -258,9 +259,10 @@ nav{
 }
 
 .navbar-links a {
-  color: white;
+  color: var(--HeadingText);
   text-decoration: none;
 }
+
 
 .hamburger {
   display: none;
@@ -302,5 +304,13 @@ nav{
 
   .hamburger {
     display: flex;
+  }
+  .icon {
+    color: #1589ff;
+    font-size: 1.5rem;
+  }
+
+  .nav-links a:hover {
+    color: #1589ff;
   }
 }

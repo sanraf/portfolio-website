@@ -4,22 +4,15 @@ import "../Styles/HeroSection.css"; // Create this CSS file
 // import heroimage from './heroimage.png'
 
 import upIcon from "../Assets/upbutton.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "./NavBar";
 
 const HeroSection = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div>
+    <div className="hero-wrapper">
       <div className="up-wrapper">
         <button className="up">
           <a onClick={() => scrollTop()} href="#my-home">
@@ -40,12 +33,10 @@ const HeroSection = () => {
           </h6>
         <div className="skill-desc"> 
             <p>
-                Explanation and Visualization
-                CSS Transition: The transition property is added to the 
+                Explanation and visualization css transition: the transition property is added to the
             </p>
             <p>
-                Explanation and Visualization
-                CSS Transition: The transition property is added to the 
+                Explanation and visualization css transition: the transition property is added to the 
                 
             </p>
         </div>

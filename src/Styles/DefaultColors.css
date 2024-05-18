@@ -9,6 +9,7 @@
     --MainTrans-2:#023047d7;
     --AboutBackground:#023047f8;
     --HeadingBackground:#02293da6;
+    --HeadingText:#1589ff;
     --TypingColor:#458a9c;
     --ProgressBackground:#02131c69;
     /* --SkillImage:url("../icons/scattered-forcefield.svg"); */
@@ -25,7 +26,7 @@
 
 
   [class*="-title"] h1{
-    color: var(--TypingColor);
+    color: var(--HeadingText);
     text-transform: uppercase;
     font-weight: 800;
     position: relative;
