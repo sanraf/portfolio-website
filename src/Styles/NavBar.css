@@ -1,209 +1,6 @@
-/* 
-header{
-    height: fit-content;
-    backdrop-filter: blur(5px);
-    background: linear-gradient(0deg, #024730b0 0%, #00000028 100%);
-    text-align: center;
-    position: relative;
-    z-index: 999;
-    width: 100%;
-    padding: 30px 0;
-    position: fixed;  
-}
 
-header h2{
-    color: #11ffef00;
-}
-
-nav{
-    color: var(--FontColor);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-    text-align: left;
-    top: 100%;
-    left: 0;
-    background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/971.png");
-    width: 100%;
-    height: 650px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform:scale(0,0);
-    transform-origin:  top;
-    transition:transform 520ms ease-in-out;
-    padding:  1.15rem;
-    
-}
-
-
-.list-icon-wrapper{
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.6rem;
-    align-items: flex-start;
-}
-
-.list-icon-wrapper a{
-
-    color: var(--FontColor);
-    font-size: 1em;
-    font-weight: 700;
-    font-family: m;
-    text-transform: uppercase;
-    transition: transform 400ms ease-in-out;
-    color:  var(--PrimaryColor);
-    text-decoration: none;
-    padding: 6px;
-    
-}
-
-
-
-
-
-
-
-.list-icon-wrapper a:hover{ 
-
-    color: var(--PrimaryColor);
-    transform: scale(1.1);
-    font-weight: 600;
-    box-shadow: 0px 0px 2px var(--PrimaryColor);
-    border-radius: 3px;
-
-    
-    
-} 
-
-.nav-toggle:checked ~ nav {
-    transform: scale(1,1);
- }
-
-
-.nav-toggle-label{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-}
-
-.nav-toggle-label img{
-    width: 30px;
-    height: 30px;
-    
-    
-    position: relative;
-  
-    
-}
-
-
-
-
-
-
-@media screen and (min-width:768px){
-
-     header{
-        width: 70%;
-        height: 5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-        padding:  0;
-        border-radius: 3rem;
-        left: 15%;
-        top: 2rem;
-        box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.274);
-
-    }
-
-    .media-wrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border-radius: 12px;
-        box-shadow: 0px 0px 4px var(--PrimaryColor);
-        padding: 8px;
-        column-gap: 12px;
-        transition:all 300ms ease-out;
-        background: transparent;
-    }
-    
-    .media-wrapper:hover{
-        box-shadow: 0px 0px 6px  var(--PrimaryColor);
-        transform: scale(1.01)
-    }
-
-    .nav-toggle-label{display: none;}
-
-
-
-    nav{
-
-        all: unset;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 10px 60px ;
-    }
-
-    .list-icon-wrapper{
-        width: 40%;
-        flex-direction:row;
-        justify-content: space-between;
-        flex-shrink: 1;
-        padding:8px 0px 8px 0 ;
-    }
-
-   
-    .list-icon-wrapper a{ 
-
-       margin-bottom: 1.5rem;
-        
-    } 
-    .list-icon-wrapper a:hover{ 
-
-       
-        transform: scale(1);
-        box-shadow:none;
-        border-radius: 0px;
-        
-    } 
-
-
-    
-    .list-icon-wrapper a::before{
-        content: '';
-        display: block;
-        height: 2px;
-        background: var(--PrimaryColor);
-        margin: 10px 0;
-        transform: scale(0,1);
-        transition: transform ease-in-out 250ms;
-    } 
-
-
-    .list-icon-wrapper a:hover::before{
-        transform: scale(1,1);
-    } 
-} */
-/*=================================================================================================================*/
-
-
-
-/* src/components/NavBar.css */
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 
-/* Rest of your CSS */
 .navbar {
   width: 100%;
   height: 3rem;
@@ -212,9 +9,7 @@ nav{
   align-items: center;
   backdrop-filter: blur(5px);
   background: linear-gradient(0deg, #02304767 0%, #0230472f 100%);
-  /* background-color: var(--MainColor); */
-  padding:  1rem;
-  color: white;
+  padding:  1rem 1rem 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -241,20 +36,32 @@ nav{
     align-items: center;
 }
 .navbar-logo {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  padding: 0.5rem 6rem 0.5rem 4rem;
+  background: linear-gradient(45deg,  var(--MainColor),var(--PrimaryColor)); 
+  clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+
+  /* animation: logoAnimation 2000ms ease-in-out infinite; */
+}
+.navbar-logo p{
 
   font-family: 'Dancing Script', cursive;
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 600;
   color: var(--HeadingText);
-  animation: logoAnimation 2000ms ease-in-out infinite;
+  animation: logoAnimation 3000ms ease-in-out infinite;
 }
-
 @keyframes logoAnimation {
   0%, 100% {
+    color: #000000;
     transform: scale(1);
   }
   50% {
+    color: var(--HeadingText);
     transform: scale(1.1);
   }
 }
@@ -279,9 +86,10 @@ nav{
 .navbar-links a {
  
   color: var(--HeadingText);
-  text-transform: capitalize;
-  font-family: "Mukta", sans-serif;
-  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
   font-style: normal;
   text-decoration: none;
 }
@@ -294,15 +102,20 @@ nav{
 }
 
 @media screen and (max-width: 760px) {
+  .navbar {
+    background-color: var(--MainColor);
+    padding:  1rem 0 1rem 1rem;
+ 
+  
+  }
   .navbar-links {
     width: 100%;
     height: 400px; 
     display: flex;
     flex-direction: column;
     background-color: var(--MainColor);
-    
+    padding: 0%;
     text-align: center;
-    background-color: #660000;
     background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/971.png");
 
     background-position: center;
@@ -316,6 +129,15 @@ nav{
     transition:transform 520ms ease-in-out;
   }
 
+  .navbar-links a{
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    font-style: normal;
+  } 
+
+  
   .navbar-links a::before{
     all: unset;
   } 
@@ -330,23 +152,37 @@ nav{
     justify-content: space-between;
 }
 
+.navbar-logo{
+  padding: 0.5rem 2rem 0.5rem 4rem;
+  background: linear-gradient(45deg, var(--PrimaryColor), var(--MainColor)); 
+  clip-path: polygon(0% 0%, 20% 100%, 100% 100%, 100% 0%);
+}
+
   .navbar-links.open {
     transform: scale(1);
   }
 
   .navbar-links ul {
+    width: 100%;
+    padding: 0;
     flex-direction: column;
   }
 
   .navbar-links li {
-    margin: 10px 0;
+    width: 100%;
+    border-top: 1px #004365  solid;
+    margin: 0;
+    padding: 1.2rem 0;
+  }
+  .last-li{
+    border-bottom: 1px  #004365 solid;
   }
 
   .hamburger {
     display: flex;
   }
   .icon {
-    color: #1589ff;
+    color: var(--PrimaryColor); 
     font-size: 1.5rem;
   }
 
