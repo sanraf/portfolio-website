@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.6c473131.css",
-    "main.js": "/portfolio-website/static/js/main.259ef6c8.js",
+    "main.css": "/portfolio-website/static/css/main.2b3c86b5.css",
+    "main.js": "/portfolio-website/static/js/main.28db321d.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/navbar-bckg.jpg": "/portfolio-website/static/media/navbar-bckg.b850ec03400de404be02.jpg",
@@ -25,6 +25,7 @@
     "static/media/6802364_26958-removebg-preview.png": "/portfolio-website/static/media/6802364_26958-removebg-preview.d51e1ec82a031351ab5c.png",
     "static/media/story4.png": "/portfolio-website/static/media/story4.d8563178f196680b68ce.png",
     "static/media/note10.png": "/portfolio-website/static/media/note10.0b8e52e7ed7f6c1b8eb5.png",
+    "static/media/hero_1.png": "/portfolio-website/static/media/hero_1.e63974b4efa8c969a617.png",
     "static/media/note11.png": "/portfolio-website/static/media/note11.2c0851c9282071df4ca0.png",
     "static/media/comments.png": "/portfolio-website/static/media/comments.a41ea6fc9520a593cd48.png",
     "static/media/note9.png": "/portfolio-website/static/media/note9.6465950aee6d9db7df69.png",
@@ -62,12 +63,12 @@
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.6c473131.css.map": "/portfolio-website/static/css/main.6c473131.css.map",
-    "main.259ef6c8.js.map": "/portfolio-website/static/js/main.259ef6c8.js.map",
+    "main.2b3c86b5.css.map": "/portfolio-website/static/css/main.2b3c86b5.css.map",
+    "main.28db321d.js.map": "/portfolio-website/static/js/main.28db321d.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c473131.css",
-    "static/js/main.259ef6c8.js"
+    "static/css/main.2b3c86b5.css",
+    "static/js/main.28db321d.js"
   ]
 }
