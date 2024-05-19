@@ -210,7 +210,9 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--MainColor);
+  backdrop-filter: blur(5px);
+  background: linear-gradient(0deg, #02304767 0%, #0230472f 100%);
+  /* background-color: var(--MainColor); */
   padding:  1rem;
   color: white;
   position: fixed;
@@ -220,11 +222,27 @@ nav{
 
 }
 
+.navbar-links a::before{
+  content: '';
+  display: block;
+  height: 3px;
+  background: var(--PrimaryColor);
+  margin: 1px 0;
+  transform: scale(0,1);
+  transition: transform ease-in-out 250ms;
+} 
+
+.navbar-links a:hover::before{
+  transform: scale(1,1);
+} 
+
 .logo-hamburger{
     display: flex;
     align-items: center;
 }
 .navbar-logo {
+
+
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
   font-weight: 100;
@@ -243,7 +261,7 @@ nav{
 
 .navbar-links {
   display: flex;
-  transition: max-height 300ms ease-in-out;
+  transition:transform 520ms ease-in-out;
   overflow: hidden;
 }
 
@@ -259,7 +277,12 @@ nav{
 }
 
 .navbar-links a {
+ 
   color: var(--HeadingText);
+  text-transform: capitalize;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-decoration: none;
 }
 
@@ -272,18 +295,35 @@ nav{
 
 @media screen and (max-width: 760px) {
   .navbar-links {
+    width: 100%;
+    height: 400px; 
     display: flex;
     flex-direction: column;
     background-color: var(--MainColor);
-    width: 100%;
+    
     text-align: center;
-    /* background-color: #003366; */
+    background-color: #660000;
+    background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/971.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    top: 50px;
+    top: 3rem;
     left: 0;
-    max-height: 0;
-    transition: max-height 500ms ease-in-out;
+    transform:scale(0,0);
+    transform-origin:  top;
+    transition:transform 520ms ease-in-out;
   }
+
+  .navbar-links a::before{
+    all: unset;
+  } 
+  
+  .navbar-links a:hover::before{
+    all: unset;
+    transform: scale(1,1);
+  } 
   .logo-hamburger{
     width: 100%;
     flex-direction: row-reverse;
@@ -291,7 +331,7 @@ nav{
 }
 
   .navbar-links.open {
-    max-height: 200px;
+    transform: scale(1);
   }
 
   .navbar-links ul {

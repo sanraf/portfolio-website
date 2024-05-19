@@ -13,6 +13,7 @@ import NewCard from '../components/NewCard';
 import ProjectDemo from '../components/ProjectDemo';
 import kkk from '../components/k';
 import HeroSection from '../components/HeroSection';
+import CleanupHero from './CleanupHero';
 function Home() {
  
   return (
@@ -20,6 +21,7 @@ function Home() {
       
       {/* <NavBar/> */}
       {/* <Hero/> */}
+      {/* <CleanupHero/> */}
       <HeroSection/>
       <About/>
       <Skills/>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Styles/Skills.css";
 import javaIcon from "../Assets/icons8-java.svg";
 import pythonIcon from "../Assets/icons8-python.svg";
@@ -10,17 +10,24 @@ import matlabIcon from "../Assets/icons8-matlab.svg";
 import githubIcon from "../Assets/icons8-github.svg";
 import htmlIcon from "../Assets/icons8-html-5-48.png";
 
-
 function Skills() {
+  const java =
+    "proficient in java 8+,spring boot framework and spring security";
+  const python =
+    "Experience with popular Python libraries and frameworks such as NumPy, pandas,Django";
+  const csshtml =
+    "Proficient in CSS Flexbox,CSS Grid,HTML,and CSS3 for modern and responsive web design";
+  const sql =
+    "Proficient in data manipulation and retrieval,with a strong understanding of relational database concepts";
+  const matlab =
+    "Skilled in solving mathematical problems,differential equations,and optimization,numerical computing and matrix";
+  const reactjs =
+    "Skilled in state management (React hooks, Context API, Redux) and asynchronous data fetching (Axios,fetch)";
+  const github =
+    "Skilled in Git and GitHub,including repository management and GitHub Pages for hosting websites";
+  const androidJava =
+    "Skilled in Android Java development, including Jetpack components and RESTful API integration";
 
-  const java = "proficient in java 8+,spring boot framework and spring security";
-  const python = "Experience with popular Python libraries and frameworks such as NumPy, pandas,Django";
-  const csshtml = "Proficient in CSS Flexbox,CSS Grid,HTML,and CSS3 for modern and responsive web design";
-  const sql = "Proficient in data manipulation and retrieval,with a strong understanding of relational database concepts";
-  const matlab = "Skilled in solving mathematical problems,differential equations,and optimization,numerical computing and matrix";
-  const reactjs = "Skilled in state management (React hooks, Context API, Redux) and asynchronous data fetching (Axios,fetch)";
-  const github = "Skilled in Git and GitHub,including repository management and GitHub Pages for hosting websites";
-  const androidJava = "Skilled in Android Java development, including Jetpack components and RESTful API integration";
   return (
     <div className="skills-section" id="myskills">
       <div className="skills-title">
@@ -28,116 +35,138 @@ function Skills() {
       </div>
 
       <div className="skills-container">
-
         <div className="main-skill_wrapper">
-
           <div className="skill-wrapper-1">
-
             <div className="progress-container">
-              <div className="progress-wrapper1-1">
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={javaIcon} className="skill-icon" />
+                    <p className="subject">Java</p>
+                  </div>
 
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={javaIcon} alt="java" />
+                  <div className="flip-card-back">
+                    <p>{java}</p>
                   </div>
                 </div>
-
-                <h3 java ={java} className="subject">java </h3>
-                
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper1-2">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={pythonIcon} alt="python" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={pythonIcon} className="skill-icon" />
+                    <p className="subject">Python</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{python}</p>
                   </div>
                 </div>
-
-                <h3 python ={python}className="subject">python</h3>
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper1-3">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={matlabIcon} alt="matlab" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={matlabIcon} className="skill-icon" />
+                    <p className="subject">Matlab</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{matlab}</p>
                   </div>
                 </div>
-
-                <h3 matlab ={matlab} className="subject">matlab </h3>
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper1-3">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={android} alt="android" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={android} className="skill-icon" />
+                    <p className="subject">Java Android</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{androidJava}</p>
                   </div>
                 </div>
-
-                <h3 android ={androidJava}className="subject">Java Android</h3>
               </div>
             </div>
           </div>
 
           <div className="skill-wrapper-2">
             <div className="progress-container">
-              <div className="progress-wrapper2-4">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={cssIcon} alt="css & htlm" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <div className="skill-1">
+                      <div className="skill-icon">
+                        <img src={cssIcon} alt="css & htlm" />
+                      </div>
+
+                      <div className="skill-icon">
+                        <img src={htmlIcon} alt="css & htlm" />
+                      </div>
+                    </div>
+                    <p className="subject">CSS & HTML</p>
                   </div>
 
-                  <div className="skill-icon">
-                    <img src={htmlIcon} alt="css & htlm" />
+                  <div className="flip-card-back">
+                    <p>{csshtml} </p>
                   </div>
                 </div>
-
-                <h3 csshtml ={csshtml}className="subject">CSS & HTML </h3>
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper2-5">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={mysqlIcon} alt="sql" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={mysqlIcon} className="skill-icon" />
+                    <p className="subject">SQL/MYSQL</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{sql}</p>
                   </div>
                 </div>
-
-                <h3 sql ={sql}className="subject">SQL/MYSQL </h3>
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper2-6">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={reactIcon} alt="React js" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={reactIcon} className="skill-icon" />
+                    <p className="subject">React js</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{reactjs}</p>
                   </div>
                 </div>
-
-                <h3 react ={reactjs} className="subject">React js </h3>
               </div>
             </div>
 
             <div className="progress-container">
-              <div className="progress-wrapper1-3">
-                <div className="skill-1">
-                  <div className="skill-icon">
-                    <img src={githubIcon} alt="matlab" />
+              <div className="flip-card">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img src={githubIcon} className="skill-icon" />
+                    <p className="subject">GitHub</p>
+                  </div>
+
+                  <div className="flip-card-back">
+                    <p>{github}</p>
                   </div>
                 </div>
-
-                <h3 github ={github} className="subject">GitHub </h3>
               </div>
             </div>
           </div>
-       
         </div>
       </div>
     </div>

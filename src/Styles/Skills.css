@@ -1,3 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.flip-card {
+  background-color: transparent;
+  width: 155px;
+  height: 185px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 600ms;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-around;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  transition: all 100ms;
+}
+
+.flip-card-front {
+  background: #041b33a2; 
+  color: var(--PrimaryColor);
+}
+
+.flip-card-back {
+  background-color: var(--CardBackground);
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p{
+
+ 
+  color: var(--PrimaryColor);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  font-style: normal;
+
+
+}
+
+.skill-icon {
+  
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+
+.skill-1{
+  display: flex;
+  column-gap: 0.5rem;
+}
+.subject {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-shrink: 0;
+  font-weight: 400;
+  text-align: center;
+  flex-wrap: nowrap;
+  color: var(--PrimaryColor);
+}
+
+
 
 .skills-section{
 
@@ -33,10 +119,7 @@
     
   }
 
-  .skill-1{
-    display: flex;
-    column-gap: 0.5rem;
-  }
+
   
   .skills-title{
   
@@ -54,104 +137,12 @@
     
   }
 
-
-  
- 
   
   .progress-container{
     width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    background-color: rgba(229, 17, 17, 0);
-  }
-  
-  [class*='progress-wrapper']{
-    width: 155px;
-    height: 185px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 1rem;
-    padding: 1rem;
-    text-transform: capitalize;
-    background: #041b33a2;
-    overflow: hidden;
-    transition: all 100ms;
-  
-  }
-  [class*='progress-wrapper']:hover h3::before {
-    content: attr(java) 
-    attr(csshtml) attr(python)
-    attr(sql)attr(matlab)
-    attr(react) attr(android)
-    attr(github);
-    position: absolute;
-    display: flex;
-    align-items:center;
-    font-weight: 600;
-    word-spacing: 0px;
-    line-height: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    background: #041b33;
-    top: 0;
-    left: 0;
-    width: 0%;
-    color: var(--PrimaryColor);
-    overflow: hidden;
-    animation: animate 700ms linear forwards;
-  }
-
-
-  @keyframes animate {
-    0% {
-      width: 0%;
-      height: 0%;
-    }
-    50% {
-      width: 50%;
-      height: 50%;
-    }
-    100% {
-      width: 100%;
-      height: 100%;
-    }
-  }
-  [class*='progress-wrapper']:hover{
-    transform: translateX(0px);
-    text-transform: capitalize;
-  }
-
-  [class*='progress-wrapper'] h3{
-   font-size: 1em;
-   margin: 10px;
-  
-  }
-
-  
-  .subject{
-    display: flex;
-    margin: auto;
-    flex-shrink: 0;
-    font-size: 0.6em;
-    font-weight: 600;
-    text-align: center;
-    flex-wrap: nowrap;
-    color: var(--PrimaryColor);
-    opacity: 1;
-    transition: opacity 2000ms;
-  
-  }
-  
-  
-  
-  .skill-icon{
-    display: flex;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
   }
   
   
@@ -185,10 +176,10 @@
 
 @media screen and (max-width:320px){
 
-[class*='progress-wrapper']{
-  width: 130px;
-  height: 180px;
-}
+  .flip-card {
+    width: 130px;
+    height: 180px;
+  }
 }
 
 
@@ -200,30 +191,7 @@
 
     .skills-container{ padding: 2rem 0; }
 
-      [class*='progress-wrapper']{
-        width: 170px;
-        height: 200px;
-      }
 
     [class*='skill-wrapper-']{ column-gap: 2rem;}
-
-    [class*='progress-wrapper']:hover h3::before {animation: animatum 700ms linear forwards;}
-  
-  
-    @keyframes animatum {
-
-      0% {
-        width: 0%;
-        height: 0%;
-      }
-      50% {
-        width: 50%;
-        height: 50%;
-      }
-      100% {
-        width: 100%;
-        height: 100%;
-      }
-    }
 
   }
