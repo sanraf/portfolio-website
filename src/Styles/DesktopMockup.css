@@ -1,167 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  .desktop-mockup {
-    width: 60%;
-    margin: 50px auto;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #2d2d2d;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.1);
-  }
+.desktop-mockup {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: red;
+}
+
+.screen-container {
+  width: 600px;
   
-  .screen-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .screen {
-    background-color: #000;
-    width: 100%;
-    height: 500px;
-    border-radius: 5px;
-    position: relative;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(145deg, #333, #000);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  
-  .screen img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
-  }
-  
-  .power-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: yellow;
+}
+
+.screen {
+  background-color: #000;
+  width: 95%;
+  height: 370px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(145deg, #333, #000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.screen:after {
+  content: "";
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  position: absolute;
+  bottom: 1.8%;
+  left: 0.5%;
+  padding-top: 1%;
+  width: 99%;
+}
+
+/* .screen::before {
+    content: "";
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: 1.8%;
+    left: 0.5%;
+    padding-top: 1%;
+    width: 99%;
+  } */
+
+.screen img {
+  max-width: 92%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.power-button {
+  width: 5px;
+  height: 5px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  position: absolute;
+  top: 360px;
+  right: 20px;
+  /* box-shadow: 0 0 8px rgba(255, 0, 0, 0.8); */
+}
+
+.apple-logo {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.apple-logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stand {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.stand-neck {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000000, #242424);
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+  /* background-color: rebeccapurple; */
+}
+
+.stand-neck svg{
     width: 20px;
-    height: 20px;
-    background-color: #ff0000;
-    border-radius: 50%;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+    height: auto;
+    margin-top: 0.5rem;
+}
+.stand-base {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #353535, #2d2d2d);
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.stand-base p{
+    text-transform: capitalize;
+    font-family: 'Roboto', cursive;
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-style: italic;
+    color: black
   }
-  
-  .apple-logo {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.control-button {
+  background-color: #1589ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control-button:hover {
+  background-color: #0f5fb0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .desktop-mockup {
+    background-color: wheat;
+  }
+  .screen-container {
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(9, 150, 171);
+  }
+  .screen {
+    height: 400px;
+  }
+
+  .stand {
+    width: 30%;
+  }
+
+  .stand-neck {
+    height: 50px;
+  }
+
+  .stand-base {
+    height: 30px;
+  }
+
+  .controls {
+    width: 40%;
+  }
+
+  .control-button {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 625px) {
+    .desktop-mockup {
+        background-color: rgb(0, 0, 0);
+      }
+      .screen-container {
+        /* width: 95%; */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(26, 220, 0);
+      }
+      .screen {
+        height: 350px;
+      }
+
+      .stand {
+        width: 35%;
+      }
+    
+      .stand-neck {
+        height: 50px;
+      }
+}
+
+@media (max-width: 480px) {
+
+    .desktop-mockup {
+        background-color: rebeccapurple;
+      }
+      
+      .screen-container {
+        /* width: 370px; */
+        background-color: #000;
+
+      }
+
+  .screen {
+    height: 240px;
+  }
+
+  .stand {
+    width: 40%;
+  }
+
+  .stand-neck {
     height: 40px;
   }
-  
-  .apple-logo svg {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .stand {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -10px;
-  }
-  
-  .stand-neck {
-    width: 20%;
-    height: 60px;
-    background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
-    border-radius: 5px 5px 0 0;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
+
   .stand-base {
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
-    border-radius: 0 0 10px 10px;
-    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+    height: 25px;
   }
-  
+
   .controls {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    width: 20%;
+    width: 60%;
   }
-  
+
   .control-button {
-    background-color: #1589ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 6px 12px;
   }
-  
-  .control-button:hover {
-    background-color: #0f5fb0;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 410px) {
     .desktop-mockup {
-      width: 90%;
-    }
-  
-    .screen {
-      height: 300px;
-    }
-  
-    .stand {
-      width: 30%;
-    }
-  
-    .stand-neck {
-      height: 50px;
-    }
-  
-    .stand-base {
-      height: 15px;
-    }
-  
-    .controls {
-      width: 40%;
-    }
-  
-    .control-button {
-      padding: 8px 16px;
-    }
+        background-color: rgb(9, 147, 9);
+      }
+      
+      .screen-container {
+        width: 98%;
+        background-color: #000;
+
+      }
+
+  .screen {
+    height: 250px;
   }
-  
-  @media (max-width: 480px) {
-    .screen {
-      height: 200px;
-    }
-  
-    .stand {
-      width: 40%;
-    }
-  
-    .stand-neck {
-      height: 40px;
-    }
-  
-    .stand-base {
-      height: 10px;
-    }
-  
-    .controls {
-      width: 60%;
-    }
-  
-    .control-button {
-      padding: 6px 12px;
-    }
-  }
-  
+
+}

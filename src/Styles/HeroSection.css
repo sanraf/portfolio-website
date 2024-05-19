@@ -1,156 +1,230 @@
-/* src/DesktopMockup.css */
 
-body {
-  background-color: #f0f0f0;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.hero-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100vh;
-  margin: 0;
+  padding: 3.1rem 3.5rem;
+  background: linear-gradient(270deg, #023047, #023047ed),
+    url("../Assets/980.jpg");
+  background-repeat: no-repeat;
+  margin-left: auto;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+}
+.hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 1rem 0.5rem;
+  margin-top: 3rem;
+  box-sizing: border-box;
+ 
+
 }
 
-.desktop-mockup {
-  width: 60%;
-  margin: 50px auto;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #2d2d2d;
-  position: relative;
+.hero-content {
+  min-height: fit-content;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.1);
-}
-
-.screen {
-  background-color: #000;
-  width: 100%;
-  height: 500px;
-  border-radius: 5px;
-  position: relative;
-  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0, 0, 0, 0.4);
-  background: linear-gradient(145deg, #333, #000);
-  display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  flex: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 10000;
+  box-shadow: 0px 0px 10px var(--CardBackground);
 }
 
-.screen img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 5px;
-}
-
-.power-button {
-  width: 20px;
-  height: 20px;
-  background-color: #ff0000;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
-}
-
-.stand {
-  width: 20%;
+.typing-effect {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -10px;
+  height: fit-content;
+  padding: 0.5rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  flex-wrap: wrap;
+  text-align: left;
+  border-color: transparent;
+  animation-duration: 8550ms;
+  /* animation-delay: 8000ms; */
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-timing-function: linear;
+  animation-name: typing;
 }
 
-.stand-neck {
-  width: 20%;
-  height: 60px;
-  background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
-  border-radius: 5px 5px 0 0;
-  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+.typing-effect h1 {
+  color: var(--HeadingText);
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+  letter-spacing: -1px;
 }
 
-.stand-base {
-  width: 100%;
-  height: 20px;
-  background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
-  border-radius: 0 0 10px 10px;
-  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+.hero-content h6 {
+  width: 50%;
+  padding: 1rem 0;
+  text-align: left;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 15px;
+  color: white;
 }
-
-.controls {
-  margin-top: 20px;
+.skill-desc {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  padding: 2rem 0 1rem 0;
 }
 
-.control-button {
-  background-color: #1589ff;
+.skill-desc p {
+  width: 40%;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--HeadingText);
+}
+
+.explore-work {
+  width: fit-content;
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  font-size: 16px;
   color: white;
+  background-color: #007bff;
   border: none;
-  padding: 10px 20px;
+  margin: 0.5rem 0;
   border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 300ms, transform 300ms;
 }
 
-.control-button:hover {
-  background-color: #0f5fb0;
+.explore-work:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .desktop-mockup {
-    width: 90%;
-  }
+.explore-work:active {
+  background-color: #00408d;
+}
+.hero-image {
+  flex: 1;
+  background: linear-gradient(270deg, #02304709, #0230475b),
+    url("../Assets/hero_1.png");
+  background-size: cover;
+  background-position: center;
+  background-size: 120% 70%;
+  height: 105%;
+  width: 50%;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  /* box-shadow: 0px 0px 10px var(--CardBackground); */
+}
 
-  .screen {
-    height: 300px;
-  }
+/* Tablet View */
+@media screen and (max-width: 1023px) {
 
-  .stand {
-    width: 30%;
+  .typing-effect h1 {
+    font-size: 1.8em;
   }
-
-  .stand-neck {
-    height: 50px;
-  }
-
-  .stand-base {
-    height: 15px;
-  }
-
-  .controls {
-    width: 40%;
-  }
-
-  .control-button {
-    padding: 8px 16px;
+  .hero-image {
+    background-size: 100% 100%;
+    height: 100%;
+    background-repeat: no-repeat;
   }
 }
 
-@media (max-width: 480px) {
-  .screen {
-    height: 200px;
+/* Mobile view */
+@media screen and (max-width: 760px) {
+
+  .hero-wrapper {
+
+
+     padding: 0rem }
+
+ 
+  .hero-content {
+    /* min-height: 60%; */
+    width: 92%;
+
   }
 
-  .stand {
-    width: 40%;
+
+  .typing-effect h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
   }
 
-  .stand-neck {
-    height: 40px;
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 5rem;
+     /* background-color: var(--MainColor); */
   }
 
-  .stand-base {
-    height: 10px;
+  .skill-desc p {
+    width: 45%;
+    text-align: left;
+
+    font-family: "Mukta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 14px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
 
-  .controls {
-    width: 60%;
+  .hero-content {
+    position: absolute;
+    z-index: 200;
+    color: white;
+    background-color: #003f8d3d;
+    box-shadow: 0px 0px 10px var(--CardBackground);
   }
 
-  .control-button {
-    padding: 6px 12px;
+
+  .hero-image {
+
+    background-size: 120% 50%;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    position: absolute;
+    top: -0;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.5;
   }
+
+
+}
+@media (orientation: landscape) {
+ 
+.hero-wrapper {
+
+  height: 140vh;
+
+}
 }

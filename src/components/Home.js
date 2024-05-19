@@ -15,11 +15,13 @@ import kkk from '../components/k';
 import HeroSection from '../components/HeroSection';
 import DesktopMockup from '../components/DesktopMockup';
 import CleanupHero from './CleanupHero';
+import ImageViewer from './ImageViewer';
 function Home() {
  
   return (
     <div>
       <DesktopMockup/>
+      {/* <ImageViewer/> */}
       {/* <NavBar/> */}
       {/* <Hero/> */}
       {/* <CleanupHero/> */}
