@@ -244,7 +244,7 @@ nav{
 
 
   font-family: 'Dancing Script', cursive;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 100;
   color: var(--HeadingText);
   animation: logoAnimation 2000ms ease-in-out infinite;
