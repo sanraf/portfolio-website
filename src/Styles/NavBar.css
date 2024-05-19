@@ -101,6 +101,11 @@
   font-size: 1.5rem;
 }
 
+.comp-icon{
+  position: absolute;
+  opacity: 0;
+}
+
 @media screen and (max-width: 760px) {
   .navbar {
     background-color: var(--MainColor);
@@ -113,13 +118,14 @@
     height: 400px; 
     display: flex;
     flex-direction: column;
-    background-color: var(--MainColor);
+    align-items: center;
+    justify-content: space-between;
     padding: 0%;
     text-align: center;
-    background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/971.png");
-
+    background: var(--MainColor);
+    background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/navbar-bckg.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     top: 3rem;
@@ -188,5 +194,13 @@
 
   .nav-links a:hover {
     color: #1589ff;
+  }
+
+  .comp-icon{
+    all: unset;
+    width: 40px;
+    padding-bottom:1.5rem ;
+    height: auto;
+    opacity: 1;
   }
 }

@@ -13,26 +13,27 @@ import NewCard from '../components/NewCard';
 import ProjectDemo from '../components/ProjectDemo';
 import kkk from '../components/k';
 import HeroSection from '../components/HeroSection';
+import DesktopMockup from '../components/DesktopMockup';
 import CleanupHero from './CleanupHero';
 function Home() {
  
   return (
     <div>
-      
+      <DesktopMockup/>
       {/* <NavBar/> */}
       {/* <Hero/> */}
       {/* <CleanupHero/> */}
-      <HeroSection/>
-      <About/>
-      <Skills/>
+      {/* <HeroSection/> */}
+      {/* <About/> */}
+      {/* <Skills/> */}
       {/* <Email/> */}
-      <Project/>
+      {/* <Project/> */}
       {/* <kkk/> */}
       {/* <Card/> */}
       {/* <NewCard/> */}
       {/* <ProjectDemo/> */}
-      <Contact/>
-      <AppFooter/>
+      {/* <Contact/> */}
+      {/* <AppFooter/> */}
     </div>
   )
 }

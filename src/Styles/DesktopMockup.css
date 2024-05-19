@@ -1,0 +1,167 @@
+
+  .desktop-mockup {
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2d2d2d;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+  }
+  
+  .screen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .screen {
+    background-color: #000;
+    width: 100%;
+    height: 500px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 4px 8px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(145deg, #333, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  
+  .screen img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+  }
+  
+  .power-button {
+    width: 20px;
+    height: 20px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+  }
+  
+  .apple-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .apple-logo svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .stand {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+  }
+  
+  .stand-neck {
+    width: 20%;
+    height: 60px;
+    background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
+    border-radius: 5px 5px 0 0;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .stand-base {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, #4d4d4d, #2d2d2d);
+    border-radius: 0 0 10px 10px;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+  
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+  }
+  
+  .control-button {
+    background-color: #1589ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .control-button:hover {
+    background-color: #0f5fb0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .desktop-mockup {
+      width: 90%;
+    }
+  
+    .screen {
+      height: 300px;
+    }
+  
+    .stand {
+      width: 30%;
+    }
+  
+    .stand-neck {
+      height: 50px;
+    }
+  
+    .stand-base {
+      height: 15px;
+    }
+  
+    .controls {
+      width: 40%;
+    }
+  
+    .control-button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .screen {
+      height: 200px;
+    }
+  
+    .stand {
+      width: 40%;
+    }
+  
+    .stand-neck {
+      height: 40px;
+    }
+  
+    .stand-base {
+      height: 10px;
+    }
+  
+    .controls {
+      width: 60%;
+    }
+  
+    .control-button {
+      padding: 6px 12px;
+    }
+  }
+  

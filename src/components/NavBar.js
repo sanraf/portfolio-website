@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import iMacIcon from '../Assets/icons8-imac-100.png'
 import "../Styles/NavBar.css";
 
 const NavBar = () => {
@@ -42,6 +43,7 @@ const NavBar = () => {
             <a href="#mycontact">Contact</a>
           </li>
         </ul>
+        <img className="comp-icon" src={iMacIcon}/>
       </div>
     </nav>
   );
