@@ -15,7 +15,9 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="logo-hamburger">
 
-          <div className="navbar-logo">Santos.R</div>
+          <div className="navbar-logo">
+            <p>Santos.R</p>
+            </div>
           <div className="hamburger" onClick={toggleMenu}>
             <FontAwesomeIcon icon={isOpen ? faTimes : faBars} className="icon" />
           </div>
@@ -36,7 +38,7 @@ const NavBar = () => {
           <li>
             <a href="#myproject">Projects</a>
           </li>
-          <li>
+          <li className="last-li">
             <a href="#mycontact">Contact</a>
           </li>
         </ul>
