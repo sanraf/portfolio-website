@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.1b6d464e.css",
-    "main.js": "/portfolio-website/static/js/main.a623fd5b.js",
+    "main.css": "/portfolio-website/static/css/main.915c9888.css",
+    "main.js": "/portfolio-website/static/js/main.b648d2fb.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
@@ -17,6 +17,7 @@
     "static/media/scan-3.png": "/portfolio-website/static/media/scan-3.57447f348589b38e2da4.png",
     "static/media/smart book.png": "/portfolio-website/static/media/smart book.91e5cd58c19063569ea6.png",
     "static/media/scan-2.png": "/portfolio-website/static/media/scan-2.d316cfa43549c7db9418.png",
+    "static/media/971.png": "/portfolio-website/static/media/971.77dbd2e3c0545d0de281.png",
     "static/media/home.png": "/portfolio-website/static/media/home.b13af7da1d710c6fb1d1.png",
     "static/media/results.png": "/portfolio-website/static/media/results.b654bb101c25d576cc08.png",
     "static/media/login.png": "/portfolio-website/static/media/login.87037d744fbc19e83011.png",
@@ -62,12 +63,12 @@
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.1b6d464e.css.map": "/portfolio-website/static/css/main.1b6d464e.css.map",
-    "main.a623fd5b.js.map": "/portfolio-website/static/js/main.a623fd5b.js.map",
+    "main.915c9888.css.map": "/portfolio-website/static/css/main.915c9888.css.map",
+    "main.b648d2fb.js.map": "/portfolio-website/static/js/main.b648d2fb.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b6d464e.css",
-    "static/js/main.a623fd5b.js"
+    "static/css/main.915c9888.css",
+    "static/js/main.b648d2fb.js"
   ]
 }
