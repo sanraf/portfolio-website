@@ -29,6 +29,7 @@ import vote11Icon from '../Assets/voters.png'
 
 import prevIcon from '../Assets/icons8-previous-page-100.png'
 import nextIcon from '../Assets/icons8-next-page-100.png'
+import imacIcon from '../Assets/icons8-grey-imac-100.png'
 
 
 const project4Images = [
@@ -53,29 +54,34 @@ const project4Images = [
   
     return (
       <div className="desktop-mockup">
+             <div className="view_title">
+                <h2>viewing <span>name</span> project</h2>
+            </div>
         <div className="screen-container">
           <div className="screen">
             <img src={project4Images[currentImageIndex].url} alt={`Project ${project4Images[currentImageIndex].id}`} className="screen-image" />
             <div className="power-button"></div>
+            <div className="power-lump"></div>
            
           </div>
           <div className="stand">
             <div className="stand-neck">
-            
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="silver">
+                <div className='imac'>
+                    <img src={imacIcon}/>
+                </div>
+              {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="silver">
                 <path d="M47.448 34.178c-.081-8.17 6.697-12.121 6.988-12.295-3.813-5.57-9.744-6.333-11.873-6.403-5.036-.506-9.838 2.966-12.372 2.966-2.566 0-6.512-2.888-10.695-2.813-5.51.081-10.643 3.224-13.496 8.164-5.804 10.067-1.484 24.969 4.143 33.129 2.745 3.947 6.02 8.371 10.354 8.206 4.171-.16 5.74-2.675 10.776-2.675 5.03 0 6.462 2.675 10.896 2.586 4.481-.08 7.297-4.016 9.995-7.973 1.62-2.352 2.299-3.537 3.602-6.187-9.433-3.574-10.99-16.85-1.651-21.636zM41.945 7.626c2.372-2.873 3.973-6.868 3.533-10.823-3.415.142-7.532 2.254-9.992 5.127-2.229 2.566-4.188 6.72-3.655 10.671 3.868.317 7.742-1.96 10.114-4.975z"/>
-              </svg>
+              </svg> */}
             
             </div>
             <div className="stand-base"><p>santos r</p></div>
           </div>
-        </div>
-        <div className="controls">
+          <div className="controls">
             <img onClick={handlePrevious} className="control-button" src={prevIcon}/>
             <img onClick={handleNext} className="control-button" src={nextIcon}/>
-          {/* <button onClick={handlePrevious} >Previous</button>
-          <button onClick={handleNext} className="control-button">Next</button> */}
         </div>
+        </div>
+
       </div>
     );
   };

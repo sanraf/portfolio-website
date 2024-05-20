@@ -102,8 +102,11 @@
 }
 
 .comp-icon{
+  width: 0;
+  height: 0;
   position: absolute;
-  opacity: 0;
+  
+  /* opacity: 0; */
 }
 
 @media screen and (max-width: 760px) {
@@ -198,7 +201,7 @@
 
   .comp-icon{
     all: unset;
-    width: 40px;
+    width: 7%;
     padding-bottom:1.5rem ;
     height: auto;
     opacity: 1;
