@@ -27,6 +27,9 @@ import vote9Icon from '../Assets/results.png'
 import vote10Icon from '../Assets/station.png'
 import vote11Icon from '../Assets/voters.png'
 
+import prevIcon from '../Assets/icons8-previous-page-100.png'
+import nextIcon from '../Assets/icons8-next-page-100.png'
+
 
 const project4Images = [
     { id: 1, url: vote1Icon }, { id: 2, url: vote2Icon }, { id: 3, url: vote3Icon },
@@ -68,8 +71,10 @@ const project4Images = [
           </div>
         </div>
         <div className="controls">
-          <button onClick={handlePrevious} className="control-button">Previous</button>
-          <button onClick={handleNext} className="control-button">Next</button>
+            <img onClick={handlePrevious} className="control-button" src={prevIcon}/>
+            <img onClick={handleNext} className="control-button" src={nextIcon}/>
+          {/* <button onClick={handlePrevious} >Previous</button>
+          <button onClick={handleNext} className="control-button">Next</button> */}
         </div>
       </div>
     );

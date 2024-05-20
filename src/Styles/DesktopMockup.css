@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+/* .logo-container {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .logo-initial {
+    font-size: 2rem;
+    font-weight: bold;
+    color: silver;
+    margin-right: 0.5rem;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    color: grey;
+  } */
+  
+
 .desktop-mockup {
   width: 100%;
   height: 100vh;
@@ -12,7 +31,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  background-color: red;
+  background-color: var(--MainColor);
 }
 
 .screen-container {
@@ -21,7 +40,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: yellow;
 }
 
 .screen {
@@ -97,7 +115,7 @@
 }
 
 .stand-neck {
-  width: 30%;
+  width: 35%;
   height: 50px;
   display: flex;
   align-items: center;
@@ -105,7 +123,7 @@
   background: linear-gradient(to bottom, #000000, #242424);
   border-radius: 5px 5px 0 0;
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
-  /* background-color: rebeccapurple; */
+ 
 }
 
 .stand-neck svg{
@@ -115,13 +133,13 @@
 }
 .stand-base {
   width: 100%;
-  height: 20px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, #353535, #2d2d2d);
+  background: linear-gradient(to bottom, #353535, #060606);
   border-radius: 0 0 10px 10px;
-  box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 4px #ffffff33, 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .stand-base p{
@@ -130,34 +148,34 @@
     font-size: 0.7rem;
     font-weight: 400;
     font-style: italic;
-    color: black
+    color: #C0C0C0;;
   }
 
 .controls {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   justify-content: space-between;
   width: 20%;
 }
 
 .control-button {
-  background-color: #1589ff;
+    /* background: linear-gradient(to bottom, #353535, #2d2d2d);
+    box-shadow: inset 0 2px 4px #ffffff33, 0 2px 4px rgba(0, 0, 0, 0.4); */
+ width: 38px;
+ height: 38px;
   color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 300ms;
 }
 
 .control-button:hover {
-  background-color: #0f5fb0;
+    transform: scale(1.1);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .desktop-mockup {
-    background-color: wheat;
+   
   }
   .screen-container {
     width: 515px;
@@ -165,7 +183,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(9, 150, 171);
   }
   .screen {
     height: 300px;
@@ -187,14 +204,11 @@
     width: 40%;
   }
 
-  .control-button {
-    padding: 8px 16px;
-  }
+  
 }
 
 @media (max-width: 550px) {
     .desktop-mockup {
-        background-color: rgb(0, 0, 0);
       }
       .screen-container {
         width: 435px;
@@ -202,7 +216,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(26, 220, 0);
       }
       .screen {
         height: 250px;
@@ -215,12 +228,19 @@
       .stand-neck {
         height: 50px;
       }
+      .stand-base {
+        height: 24px;
+      }
+    
+      .controls {
+        margin-top: 20px;
+      
+      }
 }
 
 @media (max-width: 480px) {
 
     .desktop-mockup {
-        background-color: rebeccapurple;
       }
       
       .screen-container {
@@ -234,7 +254,7 @@
   }
 
   .stand {
-    width: 40%;
+    width: 30%;
   }
 
   .stand-neck {
@@ -242,21 +262,18 @@
   }
 
   .stand-base {
-    height: 25px;
+    height: 20px;
   }
 
   .controls {
     width: 60%;
   }
 
-  .control-button {
-    padding: 6px 12px;
-  }
+ 
 }
 
 @media (max-width: 400px) {
     .desktop-mockup {
-        background-color: rgb(9, 147, 9);
       }
       
       .screen-container {
