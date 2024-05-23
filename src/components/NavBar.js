@@ -27,19 +27,19 @@ const NavBar = () => {
 
       <div className={`navbar-links ${isOpen ? "open" : ""}`}>
         <ul>
-          <li>
+          <li onClick={toggleMenu}>
             <a href="#myhome">Home</a>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <a href="#myabout">About</a>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <a href="#myskills">Skills</a>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <a href="#myproject">Projects</a>
           </li>
-          <li className="last-li">
+          <li onClick={toggleMenu} className="last-li">
             <a href="#mycontact">Contact</a>
           </li>
         </ul>

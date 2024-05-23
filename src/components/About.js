@@ -25,13 +25,13 @@ function About() {
                         </div>
                     
                     
-                            <p className="inv-com">
+                            <div className="inv-com">
                                 <span className="top-span">who i am = () =&gt; <span className="first-bracket">&#123;</span></span>
                                 <p className="para-1">I am a well grounded hard working graduate in mathematical science and two years of computer science studies at the North-West University. I spend my time exploring different technologies and engage in them,I seek to be involved in bringing better technological solutions that are robust and safer, and aiding to expanding the scope of human technological knowledge in automation. 
                                 </p>
                                 <span className='return'>return true;</span>
                             <span className="last-bracket">&#125;</span>
-                            </p>
+                            </div>
                             
 
                     </div>
@@ -49,7 +49,7 @@ function About() {
                         </div>
                     
                     
-                            <p className="inv-com">
+                            <div className="inv-com">
                                 <span className="top-span">Experience and proficiency = () =&gt;<span className="first-bracket">&#123;</span></span>
                                 <p className="para-1">Detail-oriented with 
                                     strong grasp in computational techniques, algorithms, 
@@ -57,7 +57,7 @@ function About() {
                                 </p>
                                 <span className='return'>return true;</span>
                                 <span className="last-bracket">&#125;</span>
-                            </p>
+                            </div>
 
                     </div>
                     <div className="circle-image-4"></div>

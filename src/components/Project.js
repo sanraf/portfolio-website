@@ -133,22 +133,22 @@ function Project() {
         <div className="outliner">
           <div className="card-deskTop-border">
             <div className="top-deskTop-card-joyTech">
-              <div class="header">
-                <div class="logo">
-                  <h2 class="d-logo">J</h2>
-                  <h2 class="z-logo">T</h2>
+              <div className="header">
+                <div className="logo">
+                  <h2 className="d-logo">J</h2>
+                  <h2 className="z-logo">T</h2>
                 </div>
 
-                <ul class="links">
-                  <li class="about">
+                <ul className="links">
+                  <li className="about">
                     <a href="#">about</a>
                   </li>
-                  <li class="article">
+                  <li className="article">
                     <a href="#">articles</a>
                   </li>
                 </ul>
 
-                <button class="subscribe-button">SUBSCRIBE</button>
+                <button className="subscribe-button">SUBSCRIBE</button>
               </div>
               <h3 value="GadgetWebsite">JoyTech</h3>
             </div>

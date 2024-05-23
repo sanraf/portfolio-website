@@ -16,27 +16,28 @@ import HeroSection from '../components/HeroSection';
 import DesktopMockup from '../components/DesktopMockup';
 import CleanupHero from './CleanupHero';
 import ImageViewer from './ImageViewer';
+import MobileMockup from '../components/MobileMockup';
 function Home() {
  
   return (
     <div>
-      
+      <MobileMockup/>
       {/* <ImageViewer/> */}
       {/* <NavBar/> */}
       {/* <Hero/> */}
       {/* <CleanupHero/> */}
-      <HeroSection/>
-      <DesktopMockup/>
-      <About/>
-      <Skills/>
+      {/* <HeroSection/> */}
+      {/* <DesktopMockup/> */}
+      {/* <About/> */}
+      {/* <Skills/> */}
       {/* <Email/> */}
-      <Project/>
+      {/* <Project/> */}
       {/* <kkk/> */}
       {/* <Card/> */}
       {/* <NewCard/> */}
       {/* <ProjectDemo/> */}
-      <Contact/>
-      <AppFooter/>
+      {/* <Contact/> */}
+      {/* <AppFooter/> */}
     </div>
   )
 }
