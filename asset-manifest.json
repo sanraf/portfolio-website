@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.380a5648.css",
-    "main.js": "/portfolio-website/static/js/main.f32b168f.js",
+    "main.css": "/portfolio-website/static/css/main.bddb13e6.css",
+    "main.js": "/portfolio-website/static/js/main.605a764a.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
+    "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/navbar-bckg.jpg": "/portfolio-website/static/media/navbar-bckg.b850ec03400de404be02.jpg",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
@@ -63,12 +64,12 @@
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.380a5648.css.map": "/portfolio-website/static/css/main.380a5648.css.map",
-    "main.f32b168f.js.map": "/portfolio-website/static/js/main.f32b168f.js.map",
+    "main.bddb13e6.css.map": "/portfolio-website/static/css/main.bddb13e6.css.map",
+    "main.605a764a.js.map": "/portfolio-website/static/js/main.605a764a.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.380a5648.css",
-    "static/js/main.f32b168f.js"
+    "static/css/main.bddb13e6.css",
+    "static/js/main.605a764a.js"
   ]
 }
