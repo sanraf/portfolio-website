@@ -54,23 +54,23 @@ const MobileMockup = () => {
                     <li>
                         <div className="category-list"><h4>Project overview</h4></div>
                         <ul className="details">
-                            <li>brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve</li>
+                            <li><p>brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve</p></li>
                             
                         </ul>
                         </li>
                         <li>
                         <div className="category-list"><h4>List of technologies used</h4></div>
                         <ul className="details">
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>React</li>
+                            <li><p>Java</p></li>
+                            <li><p>Python</p></li>
+                            <li><p>React</p></li>
                         </ul>
                         </li>
                         <li>
                         <div className="category-list"><h4>Project Challenges</h4></div>
                         <ul className="details">
-                            <li>Learn new technology</li>
-                            <li>Solving errors</li>
+                            <li><p>Learn new technology</p></li>
+                            <li><p>Solving errors</p></li>
                         </ul>
                         </li>
                         

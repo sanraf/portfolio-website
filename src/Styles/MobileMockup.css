@@ -61,7 +61,6 @@
 .desc-content {
     width: 100%;
     height: 80%;
-    padding: 5px;
     overflow-y: scroll;
     overflow: auto;
     scroll-behavior: smooth;
@@ -128,24 +127,25 @@
     position: relative;
     left: 28%;
     list-style-type: disc;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-optical-sizing: auto;
-    font-style: normal;
     /* list-style-image: url('../Assets/back.png'); */
     padding-left: 20px;
     margin: 0;
     background-color: #fff;
   }
 
-  .details li{
+  .details p{
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
     
     word-wrap: break-word;
     text-wrap: wrap;
     text-align: start;
     line-height: 1.5rem;
-    background-color: #00000076;
+    background-color: #cb060676;
     /* padding: 0; */
   }
   
@@ -304,7 +304,7 @@
     .desc-card{
         width: 58%;
         border-radius: 1rem;
-        padding: 0.8rem 1.2rem;
+        padding: 0.8rem 1rem;
         background-color: #000;
     }
     .mobile-frame {
@@ -330,6 +330,7 @@
     .desc-card{
         width: 100%;
         max-height: 500px;
+        padding: 0.8rem;
         background-color: rgb(47, 0, 255);
     }
 
@@ -351,7 +352,7 @@
     .mobile-frame {
         background-color: yellow;
             /* width: 90%; */
-            max-width: 260px;
+            max-width: 250px;
             height: 500px;
             background: #bd0808;
     }
@@ -360,19 +361,27 @@
   @media (max-width: 380px) {
     .frame-wrapper{
         padding: 3rem 1.5rem;
-        background-color: #000000;
+        /* background-color: #000000; */
     }
 
     .frame-wrapper h2{
         font-size: 1.8em;
-        color: #00ee2c;
+        /* color: #00ee2c; */
     }
+    .details {
+        width: 84%;
+
+        left: 16%;
+      
+      }
 
     .desc-card h3{
-        padding: 2rem;
+        padding: 0;
+        padding-bottom: 1rem;
         font-size: 1.2em;
         font-weight: 400;
     }
+
 
     .category-list h4{
        font-size: 1em;
