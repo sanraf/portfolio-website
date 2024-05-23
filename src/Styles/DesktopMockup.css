@@ -188,9 +188,7 @@
 
 
 @media (max-width: 768px) {
-  .desktop-mockup {
-   
-  }
+
   .screen-container {
     width: 515px;
     
@@ -222,8 +220,7 @@
 }
 
 @media (max-width: 550px) {
-    .desktop-mockup {
-      }
+
       .screen-container {
         width: 435px;
         
@@ -302,9 +299,7 @@
 }
 
 @media (max-width: 400px) {
-    .desktop-mockup {
-      }
-      
+
       .screen-container {
         width: 98%;
 
