@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.261bc97c.css",
+    "main.css": "/portfolio-website/static/css/main.45f05b76.css",
     "main.js": "/portfolio-website/static/js/main.76a61f07.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
@@ -64,12 +64,12 @@
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "static/media/linkedin.svg": "/portfolio-website/static/media/linkedin.c74d5fc8f60e6a3922badaafa95f6b4a.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.261bc97c.css.map": "/portfolio-website/static/css/main.261bc97c.css.map",
+    "main.45f05b76.css.map": "/portfolio-website/static/css/main.45f05b76.css.map",
     "main.76a61f07.js.map": "/portfolio-website/static/js/main.76a61f07.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.261bc97c.css",
+    "static/css/main.45f05b76.css",
     "static/js/main.76a61f07.js"
   ]
 }
