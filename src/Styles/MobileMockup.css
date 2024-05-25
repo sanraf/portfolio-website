@@ -7,7 +7,7 @@
 
 
 .frame-wrapper{
-    background-color: #126c50;
+    background-color: var(--MainColor);
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -35,7 +35,6 @@
     justify-content: center;
     /* flex-wrap: wrap; */
     gap: 3rem;
-    background-color: rgb(89, 0, 255);
 }
 
 .desc-card{
@@ -48,8 +47,6 @@
     border-radius: 1rem;
     padding: 1.2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 2px solid #000;
-    background-color: red;
 }
 
 .desc-card h3{
@@ -64,7 +61,6 @@
     overflow-y: scroll;
     overflow: auto;
     scroll-behavior: smooth;
-    background-color: #fff;
     
     font-family: Arial, sans-serif;
   }
@@ -93,7 +89,6 @@
   .content-list {
     height: 100%;
     list-style-type: none;
-    background-color: green;
     padding: 0;
     margin: 0;
 
@@ -130,7 +125,6 @@
     /* list-style-image: url('../Assets/back.png'); */
     padding-left: 20px;
     margin: 0;
-    background-color: #fff;
   }
 
   .details p{
@@ -145,7 +139,6 @@
     text-wrap: wrap;
     text-align: start;
     line-height: 1.5rem;
-    background-color: #cb060676;
     /* padding: 0; */
   }
   
@@ -154,7 +147,6 @@
     justify-content:center;
     column-gap: 5%;
     margin-top: 5%;
-    background-color: yellow;
   }
   
   .button {
@@ -290,7 +282,6 @@
 
   @media (max-width: 924px) {
     .frame-wrapper{
-        background-color: #ff0000;
     }
 
     .desc-wrapper{
@@ -298,40 +289,34 @@
         align-items: center;
         padding: 0;
         gap: 2rem;
-        background-color: rgb(59, 11, 218);
     }
 
     .desc-card{
         width: 58%;
         border-radius: 1rem;
         padding: 0.8rem 1rem;
-        background-color: #000;
     }
     .mobile-frame {
         /* width: 90%; */
         max-width: 280px;
         height: 510px;
-        background: #bd0808;
       }
   }
 
   @media (max-width: 766px) {
     .frame-wrapper{
-        background-color: #00ee2c;
     }
 
     .desc-wrapper{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(255, 0, 204);
     }
 
     .desc-card{
         width: 100%;
         max-height: 500px;
         padding: 0.8rem;
-        background-color: rgb(47, 0, 255);
     }
 
     .mobile-frame {
@@ -339,7 +324,6 @@
         /* max-width: 290px;
         height: 580px; */
         height: 500px;
-        background: #bd0808;
       }
     
   }
