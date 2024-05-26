@@ -21,22 +21,23 @@ function Home() {
  
   return (
     <div>
-      <MobileMockup/>
+     
       {/* <ImageViewer/> */}
       {/* <NavBar/> */}
       {/* <Hero/> */}
       {/* <CleanupHero/> */}
-      {/* <HeroSection/> */}
-      {/* <DesktopMockup/> */}
-      {/* <About/> */}
-      {/* <Skills/> */}
+      <HeroSection/>
+      <MobileMockup/>
+      <DesktopMockup/>
+      <About/>
+      <Skills/>
       {/* <Email/> */}
-      {/* <Project/> */}
+      <Project/>
       {/* <kkk/> */}
       {/* <Card/> */}
       {/* <NewCard/> */}
       {/* <ProjectDemo/> */}
-      {/* <Contact/> */}
+      <Contact/>
       {/* <AppFooter/> */}
     </div>
   )

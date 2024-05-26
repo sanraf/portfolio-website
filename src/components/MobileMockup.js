@@ -44,7 +44,10 @@ const MobileMockup = () => {
 
   return (
     <div className='frame-wrapper'>
-        <h2>Project Name </h2>
+
+           <div className="view_title">
+                <h2>viewing <span>name</span> project</h2>
+            </div>
 
         <div className='desc-wrapper'>
             <div className='desc-card'>
@@ -54,7 +57,12 @@ const MobileMockup = () => {
                     <li>
                         <div className="category-list"><h4>Project overview</h4></div>
                         <ul className="details">
-                            <li><p>brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve</p></li>
+                            <li>
+                               <p>
+                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
+                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
+                                </p>
+                            </li>
                             
                         </ul>
                         </li>
