@@ -192,11 +192,12 @@
  border-radius: 50%;
  box-shadow: inset 0 2px 4px #ffffff33, 0 2px 4px rgba(0, 0, 0, 0.575);
   cursor: pointer;
-  transition: transform 300ms;
+  transition: all 300ms ease-in-out;
 }
 
 .control-button:hover {
     transform: scale(1.1);
+    background-color: #444;
 }
 
 @media (max-width: 924px) {

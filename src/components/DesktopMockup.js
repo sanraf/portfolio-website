@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import '../Styles/DesktopMockup.css';
+import githubIcon from "../Assets/icons8-github.svg";
+import backIcon from "../Assets/icons8-go-back-100.png";
 
 import note1Icon from '../Assets/note1.png'
 import note2Icon from '../Assets/note2.png'
@@ -27,8 +29,8 @@ import vote9Icon from '../Assets/results.png'
 import vote10Icon from '../Assets/station.png'
 import vote11Icon from '../Assets/voters.png'
 
-import prevIcon from '../Assets/icons8-previous-page-100.png'
-import nextIcon from '../Assets/icons8-next-page-100.png'
+import prevIcon from '../Assets/icons8-previous-100.png'
+import nextIcon from '../Assets/icons8-next-100.png'
 import imacIcon from '../Assets/icons8-grey-imac-100.png'
 
 
@@ -96,8 +98,8 @@ const project4Images = [
                     </div>
                     
                     <div className="buttons">
-                        <button className="button">Close</button>
-                        <button className="button">Open</button>
+                        <button className="button"><img src={githubIcon}/>Repo</button>
+                        <button className="button"><img src={backIcon}/>Back</button>
                     </div>
 
             </div>

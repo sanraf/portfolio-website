@@ -20,9 +20,9 @@
 .navbar-links a::before{
   content: '';
   display: block;
-  height: 3px;
+  height: 5px;
   background: var(--PrimaryColor);
-  margin: 1px 0;
+  margin: 5px 0;
   transform: scale(0,1);
   transition: transform ease-in-out 250ms;
 } 
@@ -68,6 +68,7 @@
 
 .navbar-links {
   display: flex;
+  padding-bottom: 10px;
   transition:transform 520ms ease-in-out;
   overflow: hidden;
 }
@@ -84,11 +85,10 @@
 }
 
 .navbar-links a {
- 
   color: var(--HeadingText);
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 500;
   font-style: normal;
   text-decoration: none;

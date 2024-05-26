@@ -1,7 +1,7 @@
 import React from 'react'
 import starIcon from '../Assets/icons8-stars-48.png'
 import upIcon from '../Assets/upbutton.png'
-import '../Styles/Hero.css'
+// import '../Styles/Hero.css'
 import { Link, useNavigate } from 'react-router-dom'
 
 function Hero() {

@@ -1,14 +1,18 @@
 import React from 'react'
 import '../Styles/About.css'
 import '../Styles/DefaultColors.css'
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 function About() {
+    let aboutMe_1 = 'I am a dedicated and driven graduate with a strong foundation in Mathematical Sciences and two years of advanced Computer Science studies from North-West University. My passion for technology drives me to continuously explore and master diverse technologies. I am eager to contribute to the development of robust, secure, and innovative technological solutions. My goal is to advance the field of automation, enhancing human knowledge and capabilities through cutting-edge technology.'
+
+    let aboutMe_2 = 'I am dedicated to continuous learning and staying abreast of the latest technological advancements. I enjoy collaborating with teams to design and implement robust and secure applications that enhance user experiences and drive business success. My goal is to contribute to meaningful projects that push the boundaries of what\'s possible in technology, particularly in the field of automation. I am eager to bring my skills and enthusiasm to a dynamic and forward-thinking team, where I can grow and make a significant impact.';
+
   return (
     <div className="about-me" id="myabout">
             
             <div className="about-title">
                 <h1>about me</h1>
-                {/* <hr/> */}
             </div>
 
             <div className='main-card-wrapper'>
@@ -22,18 +26,20 @@ function About() {
                             <span className="dot-1"></span>
                             <span className="dot-2"></span>
                             <span className="dot-3"></span>
+                            <h2>More About Me </h2>
                         </div>
                     
-                    
                             <div className="inv-com">
-                                <span className="top-span">who i am = () =&gt; <span className="first-bracket">&#123;</span></span>
-                                <p className="para-1">I am a well grounded hard working graduate in mathematical science and two years of computer science studies at the North-West University. I spend my time exploring different technologies and engage in them,I seek to be involved in bringing better technological solutions that are robust and safer, and aiding to expanding the scope of human technological knowledge in automation. 
-                                </p>
-                                <span className='return'>return true;</span>
-                            <span className="last-bracket">&#125;</span>
+                        
+                                <p className="para-1">{aboutMe_1}</p>
+                               
                             </div>
                             
-
+                            <div className='dots-wrap_bottom'>
+                                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                <a href="mailto:your-email@example.com"><FaEnvelope /></a>
+                            </div>
                     </div>
 
                 </div>
@@ -46,17 +52,20 @@ function About() {
                             <span className="dot-1"></span>
                             <span className="dot-2"></span>
                             <span className="dot-3"></span>
+                            <h2>More About More </h2>
                         </div>
                     
                     
                             <div className="inv-com">
-                                <span className="top-span">Experience and proficiency = () =&gt;<span className="first-bracket">&#123;</span></span>
-                                <p className="para-1">Detail-oriented with 
-                                    strong grasp in computational techniques, algorithms, 
-                                    an android application developer good experince with android studio,XML,firebase and google-Ads platform.
-                                </p>
-                                <span className='return'>return true;</span>
-                                <span className="last-bracket">&#125;</span>
+                            
+                                <p className="para-1">{aboutMe_2}</p>
+
+                            </div>
+
+                            <div className='dots-wrap_bottom'>
+                                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                <a href="mailto:your-email@example.com"><FaEnvelope /></a>
                             </div>
 
                     </div>

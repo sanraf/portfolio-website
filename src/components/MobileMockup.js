@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/MobileMockup.css';
 
-import vid from '../Assets/scanvid.mp4'
+import vid from '../Assets/scanvid.mp4';
+import githubIcon from "../Assets/icons8-github.svg";
+import backIcon from "../Assets/icons8-go-back-100.png";
 
 const MobileMockup = () => {
   const videoRef = useRef(null);
@@ -51,7 +53,7 @@ const MobileMockup = () => {
 
         <div className='desc-wrapper'>
             <div className='desc-card'>
-                <h3>Project description</h3>
+                <h3>About The Project</h3>
                 <div className="desc-content">
                     <ul className="content-list">
                     <li>
@@ -88,8 +90,8 @@ const MobileMockup = () => {
                     </div>
                     
                     <div className="buttons">
-                        <button className="button">Close</button>
-                        <button className="button">Open</button>
+                        <button className="button"><img src={githubIcon}/>Repo</button>
+                        <button className="button"><img src={backIcon}/>Back</button>
                     </div>
 
             </div>

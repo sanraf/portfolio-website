@@ -77,15 +77,21 @@ color: var(--HeadingText);
   .desc-content::-webkit-scrollbar{
      
     background: #06496a;
-    /* border-radius: 10px; */
-    width: 25px;
+    border-radius: 10px;
+    width: 12px;
 }
 
 .desc-content::-webkit-scrollbar-thumb{
   
-    /* border-radius: 8px; */
-    box-shadow: 0px 0px 4px var(--PrimaryColor);
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 4px var(--PrimaryColor); */
     background: #0d71d4;
+
+}
+
+.desc-content::-webkit-scrollbar-thumb:hover{
+
+  background: #0c65bf;
 
 }
   
@@ -141,17 +147,13 @@ color: var(--HeadingText);
 
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-style: normal;
     font-optical-sizing: auto;
-    font-style: normal;
+    font-style: oblique;
     font-size: 1.1em;
     word-wrap: break-word;
     text-wrap: wrap;
     text-align: start;
     margin: -0.5rem 0;
-
-    /* line-height: 1.5rem; */
-    /* padding: 0; */
   }
   
   .buttons {
@@ -162,14 +164,25 @@ color: var(--HeadingText);
   }
   
   .button {
-    width: 100px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    width: 110px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.8rem 0 0.4rem;
+    background-color: transparent;
+    color: var(--HeadingText);
+    font-weight: 600;
+    border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    transition: all 300ms ease-in-out;
+  }
+
+  .button img{
+  width: 25px;
+  height: 25px;
   }
   
   .button:hover {
