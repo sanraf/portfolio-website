@@ -170,7 +170,8 @@ color: var(--HeadingText);
     align-items: center;
     justify-content: space-between;
     padding: 0 0.8rem 0 0.4rem;
-    background-color: transparent;
+    border: none;
+    background-color: #0d70d45b;
     color: var(--HeadingText);
     font-weight: 600;
     border-radius: 0.5rem;
@@ -186,7 +187,7 @@ color: var(--HeadingText);
   }
   
   .button:hover {
-    background-color: #444;
+    background-color: #0d70d486;
   }
   
   .mobile-frame {
