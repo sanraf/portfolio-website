@@ -8,10 +8,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   padding: 3.5rem 3.5rem;
-  background: linear-gradient(270deg, #023047, #023047ed),
-    url("../Assets/980.jpg");
+  /* background: linear-gradient(270deg, #023047, #023047ed),
+    url("../Assets/980.jpg"); */
   background-repeat: no-repeat;
   margin-left: auto;
   background-size: cover;
@@ -245,17 +245,21 @@
 }
 
 @media screen and (max-width: 425px) {
+  .hero-wrapper{
+    background-color: rgb(12, 74, 128);
+    height:fit-content ;
+  }
   .hero-content h6{
     font-size: 0.8em;
     color: #93c7ff
     ;
-    /* color: greenyellow; */
+    color: greenyellow;
 
   }
 
   .skill-desc p {font-size: 0.9em;}
 
-  .hero-image {background-size: 90% 60%;}
+  .hero-image {background-size: 90% 50%;}
 }
 
 @media (orientation: landscape) {
