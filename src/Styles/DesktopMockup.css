@@ -29,23 +29,23 @@
     padding-bottom: 3rem;
 }
 
-.view_title h2{
+/* .view_title h2{
  
   font-size: 2.2em;
   text-transform: capitalize;
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: oblique;
-  color: var(--HeadingText);
-}
+  color: var(--BaseColor);
+} */
 
-.view_title span{
+/* .view_title span{
     
     font-family: monospace;
     font-style: italic;
     font-size: 1.2em;
     font-weight: 200;
-}
+} */
 .screen-container {
   width: 600px;
   position: relative;

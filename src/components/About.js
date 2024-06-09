@@ -1,15 +1,15 @@
 import React from 'react'
 import '../Styles/About.css'
 import '../Styles/DefaultColors.css'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope,FaCopy } from 'react-icons/fa';
 
-function About() {
+function About({aboutRef}) {
     let aboutMe_1 = 'I am a dedicated and driven graduate with a strong foundation in Mathematical Sciences and two years of advanced Computer Science studies from North-West University. My passion for technology fuels my continuous exploration and mastery of diverse technologies. I am eager to contribute to the development of robust, secure, and innovative solutions, with a goal of advancing automation and enhancing human capabilities through cutting-edge technology'
 
-    let aboutMe_2 = 'I am dedicated to continuous learning and staying abreast of the latest technological advancements. I enjoy collaborating with teams to design and implement robust and secure applications that enhance user experiences and drive business success. My goal is to contribute to meaningful projects that push the boundaries of what\'s possible in technology, particularly in the field of automation. I am eager to bring my skills and enthusiasm to a dynamic and forward-thinking team, where I can grow and make a significant impact';
+    let aboutMe_2 = 'I am committed to lifelong learning and keeping up with the latest technological developments. My passion lies in collaborating with teams to create secure and robust applications that improve user experiences and drive business success. I aspire to contribute to innovative projects that push the boundaries of technology, especially in the field of automation. I am enthusiastic about joining a dynamic and forward-thinking team where I can continue to learn and make a meaningful impact';
 
   return (
-    <div className="about-me" id="myabout">
+    <div className="about-me" id="myabout" ref={aboutRef}>
             
             <div className="about-title">
                 <h1>about me</h1>
@@ -19,7 +19,6 @@ function About() {
                     
                 <div className="circle-card-wrapper">
 
-                    <div className="circle-image-1"></div>
 
                     <div className="zoom-container">
                         <div className="dots-wrap_top">
@@ -29,9 +28,10 @@ function About() {
                             <h2>More About Me </h2>
                         </div>
                     
-                            <div className="inv-com">
+                            <div className="inv-com_1">
+                                <div className='illustration_1'></div>
                         
-                                <p className="para-1">{aboutMe_1}</p>
+                                <p className="para-1">&#128075; {aboutMe_1}</p>
                                
                             </div>
                             
@@ -59,9 +59,10 @@ function About() {
                         </div>
                     
                     
-                            <div className="inv-com">
+                            <div className="inv-com_2">
                             
-                                <p className="para-1">{aboutMe_2}</p>
+                                <p className="para-2">{aboutMe_2}</p>
+                                <div className='illustration_2'></div>
 
                             </div>
 
@@ -72,7 +73,6 @@ function About() {
                             </div>
 
                     </div>
-                    <div className="circle-image-4"></div>
 
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Styles/Skills.css";
 import javaIcon from "../Assets/icons8-java.svg";
 import pythonIcon from "../Assets/icons8-python.svg";
@@ -10,7 +10,7 @@ import matlabIcon from "../Assets/icons8-matlab.svg";
 import githubIcon from "../Assets/icons8-github.svg";
 import htmlIcon from "../Assets/icons8-html-5-48.png";
 
-function Skills() {
+function Skills({componentRef}) {
   const java =
     "proficient in java 8+,spring boot framework and spring security";
   const python =
@@ -20,13 +20,16 @@ function Skills() {
   const sql =
     "Proficient in data manipulation and retrieval,with a strong understanding of relational database concepts";
   const matlab =
-    "Skilled in solving mathematical problems,differential equations,and optimization,numerical computing and matrix";
+    "Skilled in solving mathematical problems,differential equations,and optimization,numerical computing and ";
   const reactjs =
     "Skilled in state management (React hooks, Context API, Redux) and asynchronous data fetching (Axios,fetch)";
   const github =
     "Skilled in Git and GitHub,including repository management and GitHub Pages for hosting websites";
   const androidJava =
     "Skilled in Android Java development, including Jetpack components and RESTful API integration";
+
+
+
 
   return (
     <div className="skills-section" id="myskills">
@@ -167,6 +170,7 @@ function Skills() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </div>

@@ -2,13 +2,66 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/MobileMockup.css';
 
 import vid from '../Assets/scanvid.mp4';
-import githubIcon from "../Assets/icons8-github.svg";
-import backIcon from "../Assets/icons8-go-back-100.png";
+import { GrGithub } from 'react-icons/gr';
+import { BiArrowBack } from 'react-icons/bi';
 
-const MobileMockup = () => {
+const MobileMockup = ({projectName,setisViewProject}) => {
   const videoRef = useRef(null);
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
+
+  const smartNoteObject =[{
+    demo:vid,
+    overView :'note note note note note note note note note note note note note note note note note note note note note note note note note note note ',
+    technologies:[
+      {tech:'java'},
+      { tech:'Android Studio'},
+      {tech:'Room Database' }
+    ],
+    challengies:[
+      {challenge:'challenge1'},
+      {challenge:'challenge2'},
+      {challenge:'challenge3'}]
+  }
+]
+
+const smartScanObject =[{
+  demo:vid,
+  overView :'scan',
+  technologies:[
+    {tech:'java'},
+    { tech:'Android Studio'},
+    {tech:'Room Database' }
+  ],
+  challengies:[
+    {challenge:'challenge1'},
+    {challenge:'challenge2'},
+    {challenge:'challenge3'}]
+}
+]
+
+const smartBookObject =[{
+  demo:vid,
+  overView :'book',
+  technologies:[
+    {tech:'java'},
+    { tech:'Android Studio'},
+    {tech:'Room Database' }
+  ],
+  challengies:[
+    {challenge:'challenge1'},
+    {challenge:'challenge2'},
+    {challenge:'challenge3'}]
+}
+]
+
+console.table(smartNoteObject)
+
+  const mobileObect = () =>{
+    if(projectName == 'Smart Note') return smartNoteObject;
+    if(projectName == 'Smart Book') return smartBookObject;
+    if(projectName == 'Smart Scan') return smartScanObject;
+  }
 
   const handleScreenClick = () => {
     if (videoRef.current.paused) {
@@ -48,50 +101,58 @@ const MobileMockup = () => {
     <div className='frame-wrapper'>
 
            <div className="view_title">
-                <h2>viewing <span>name</span> project</h2>
-            </div>
+                <h2>viewing <span>{projectName}</span> project</h2>
+           </div>
 
         <div className='desc-wrapper'>
             <div className='desc-card'>
                 <h3>About The Project</h3>
                 <div className="desc-content">
-                    <ul className="content-list">
-                    <li>
-                        <div className="category-list"><h4>Project overview</h4></div>
-                        <ul className="details">
-                            <li>
-                               <p>
-                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
-                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
-                                </p>
-                            </li>
-                            
-                        </ul>
-                        </li>
-                        <li>
-                        <div className="category-list"><h4>List of technologies used</h4></div>
-                        <ul className="details">
-                            <li><p>Java</p></li>
-                            <li><p>Python</p></li>
-                            <li><p>React</p></li>
-                        </ul>
-                        </li>
-                        <li>
-                        <div className="category-list"><h4>Project Challenges</h4></div>
-                        <ul className="details">
-                            <li><p>Learn new technology</p></li>
-                            <li><p>Solving errors</p></li>
-                        </ul>
-                        </li>
-                        
-                    </ul>
+                  {mobileObect().map((data,index)=>
+                                    
+                                      <ul className="content-list" key={index}>
+                                      <li>
+                                          <div className="category-list"><h4>Project overview</h4></div>
+                                          <ul className="details">
+                                              <li key={index}>
+                                                 <p>
+                                                  {data.overView}
+                                                  </p>
+                                              </li>
+                                              
+                                          </ul>
+                                          </li>
+                                          <li>
+                                          <div className="category-list"><h4>List of technologies used</h4></div>
+                                        
+                                            <ul className="details" >
+                                            {data.challengies.map((challenge,challengeIndex)=>
+                                              <li key={challengeIndex}><p>{challenge.challenge}</p></li>
+                                            )}
+                                          </ul>
+                                        
+
+                                          </li>
+                                          <li>
+                                          <div className="category-list"><h4>Project Challenges</h4></div>
+                                          <ul className="details">
+                                            {data.technologies.map((tech,techIndex)=>
+                                            <li key={techIndex}><p>{tech.tech}</p></li>
+                                            )}
+                                            
+                                          </ul>
+                                          </li>
+                                          
+                                      </ul>
+                  )}
+
 
 
                     </div>
                     
                     <div className="buttons">
-                        <button className="button"><img src={githubIcon}/>Repo</button>
-                        <button className="button"><img src={backIcon}/>Back</button>
+                        <button className="button"><GrGithub/> Repo</button>
+                        <button className="button" onClick={()=>setisViewProject(false)}> <BiArrowBack/> Back</button>
                     </div>
 
             </div>

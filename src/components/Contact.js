@@ -5,6 +5,8 @@ import copyIcon from '../Assets/icons8-copy-100.png'
 import emailIcon from '../Assets/icons8-email-100.png'
 import locationIcon from '../Assets/icons8-location-100.png'
 import phoneIcon from '../Assets/icons8-phone.svg'
+import { FaLocationArrow, FaEnvelope,FaCopy ,FaPhoneAlt} from 'react-icons/fa';
+import Footer from '../components/Footer'
 
 function Contact() {
 
@@ -35,28 +37,27 @@ function Contact() {
 
         <div className="contact-title">
             <h1>contact</h1>
-            {/* <hr className="hr-line"/> */}
         </div>
 
         <div className='mycontact'>
 
             <div className='icon-Wrapper-1' >
-                <h5 ><img src={emailIcon}/>{contact.email}</h5>
-                <img className='copyIcon' src={copyIcon} onClick={()=>handleCopy(contact.email)}/>
+                <h5 ><FaEnvelope/>{contact.email}</h5>
+                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.email)}/>
             </div>
 
             <div className='icon-Wrapper-2'>
-                <h5><img src={phoneIcon}/>{contact.phone}</h5>
-                <img className='copyIcon' src={copyIcon} onClick={()=>handleCopy(contact.phone)}/>
+                <h5><FaPhoneAlt/>{contact.phone}</h5>
+                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.phone)}/>
             </div>
             <div className='icon-Wrapper-2'>
-                <h5><img src={phoneIcon}/>{contact.altphone}</h5>
-                <img className='copyIcon' src={copyIcon} onClick={()=>handleCopy(contact.altphone)}/>
+                <h5><FaPhoneAlt/>{contact.altphone}</h5>
+                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.altphone)}/>
             </div>
 
             <div className='icon-Wrapper-3'>
-                <h5><img src={locationIcon}/>{contact.myLocation}</h5>
-                <img className='copyIcon' src={copyIcon} onClick={()=>handleCopy(contact.myLocation)}/>
+                <h5><FaLocationArrow/>{contact.myLocation}</h5>
+                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.myLocation)}/>
             </div>
 
             
@@ -64,6 +65,8 @@ function Contact() {
             
 
         </div>
+
+        <Footer/>
 
     </div>
   )

@@ -1,24 +1,18 @@
-import React from 'react'
-import '../Styles/ViewProject.css'
-import { Link, useNavigate } from 'react-router-dom'
+import React, { useState } from "react";
+import "../Styles/ViewProject.css";
+import { Link, useNavigate } from "react-router-dom";
+import MobileMockup from "../components/MobileMockup";
+import DesktopMockup from "../components/DesktopMockup";
 
-function ViewProject() {
-    const navigste = useNavigate()
+function ViewProject({ isMobile, projectName ,setisViewProject}) {
+  // setIsMobileViewe(isMobile)
+
   return (
-    <div className='view-project_wrapper'>
-        <div className='projects-wrapp'>
-            <div className='project-1'>
-
-            </div>
-
-            <div className='project-button'>
-                <button onClick={()=>navigste('/')}>back</button>
-                <Link>Open repository</Link>
-            </div>
-        </div>
-
+    <div className="view-project_wrapper">
+      {isMobile ? (<MobileMockup projectName={projectName} setisViewProject ={setisViewProject}/>) : (<DesktopMockup projectName={projectName} />)}
     </div>
-  )
+  );
 }
 
-export default ViewProject
+export default ViewProject;
+

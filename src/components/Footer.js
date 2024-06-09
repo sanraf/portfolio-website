@@ -1,9 +1,7 @@
 import React from 'react'
 import '../Styles/Footer.css'
-import facebookIcon from '../Assets/facebook.svg'
-import linkedinIcon from '../Assets/linkedin.svg'
-import githubIcon from '../Assets/icons8-github.svg'
 import { Link } from 'react-router-dom'
+import { FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -12,22 +10,21 @@ function Footer() {
             
             <div className="media-wrapper">
                 <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
-                        <img src={facebookIcon} alt="facebook"/>
+                        <FaFacebook/>
                 </Link>
 
                 <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={'https://github.com/sanraf?tab=repositories'}>
-                <img src={githubIcon} alt="github"/>
+                  <FaGithub/>
                 </Link>
 
                 <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
-                <img src={linkedinIcon} alt="linkedin"/>
+                  <FaLinkedin/>
                 </Link>
             </div>
-
+              <div className='hr-line'></div>
             <div className="copy-right">
-                <p>&#169; Santos Rafaelo 2024</p>
+                <p>&#169; Santos Rafaelo software developer 2024</p>
             </div>
-
     </div>
   )
 }

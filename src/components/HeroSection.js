@@ -32,7 +32,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       <div className="big-circle"></div>
       <div className="small-circle"></div>
 
-      {/* <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/> */}
+      <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
 
       <div className="hero-container">
         <div className="hero-content-wrapper">

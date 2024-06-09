@@ -41,7 +41,7 @@ const project4Images = [
     { id: 10, url: vote10Icon }, { id: 11, url: vote11Icon }
   ];
   
-  const DesktopMockup = () => {
+  const DesktopMockup = ({projectName}) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
     const handleNext = () => {
@@ -53,11 +53,11 @@ const project4Images = [
         prevIndex === 0 ? project4Images.length - 1 : prevIndex - 1
       );
     };
-  
+
     return (
       <div className="desktop-mockup">
              <div className="view_title">
-                <h2>viewing <span>name</span> project</h2>
+                <h2>viewing <span>{projectName}</span> project</h2>
             </div>
         <div className='desk-top_wrapper'>
             <div className='desc-card'>
