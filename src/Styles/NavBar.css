@@ -53,14 +53,15 @@
   font-weight: 600;
   color: var(--ActionColor);
   animation: logoAnimation 3000ms ease-in-out infinite;
+  transition: all 3000ms ease;
 }
 @keyframes logoAnimation {
   0%, 100% {
-    color: #000000;
+    color: var(--BaseColor);
     transform: scale(1);
   }
   50% {
-    color: var(--HeadingText);
+    color: var(--PrimaryColor);
     transform: scale(1.1);
   }
 }
@@ -115,7 +116,7 @@
 
 @media screen and (max-width: 760px) {
   .navbar {
-    background-color: #23857ade;
+    background-color: #23857a00;
     padding:  1rem 0 1rem 1rem;
  
   
@@ -130,7 +131,7 @@
     padding: 0%;
     text-align: center;
     background: var(--MainColor);
-    background-image: linear-gradient(-45deg,#23857ade,#23857ade),url("../Assets/navbar-bckg.jpg");
+    background-image: linear-gradient(-45deg,var(--BaseColor),var(--BaseColor)),url("../Assets/navbar-bckg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,7 +148,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 0.9em;
-    color: #012e45;
+    color: var(--PrimaryColor);
     font-style: normal;
   } 
 
@@ -196,7 +197,7 @@
     display: flex;
   }
   .icon {
-    color: var(--BaseColor); 
+    color: var(--PrimaryColor); 
     font-size: 1.5rem;
   }
 

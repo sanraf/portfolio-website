@@ -293,7 +293,12 @@
     width: auto;
   }
 
-  .hero-content{
+  .hero-content {
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px var(--PrimaryColor);
+  }
+
+  /* .hero-content{
     background:linear-gradient(270deg, #02304700,#023047 ),url("../Assets/heerr.png");
     background-position: center;
     background-size:contain;
@@ -301,7 +306,7 @@
     height: 100%;
     width: 100%;
 
-  }
+  } */
 
    .hero-image {
     display: none;
@@ -312,12 +317,12 @@
   }
 
   .hero-content h6 {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--PrimaryColor);
   }
 
   .skill-desc p {
-    font-weight: 400;
+    font-weight: 300;
   }
   
   
