@@ -1,6 +1,6 @@
 :root{
 
-    --PrimaryColor:#1589ff;
+    /* --PrimaryColor:#1589ff; */
     --PrimaryHoverColor:#0e5fb2;
     --SecondaryColor:#000000;
     --FontColor:#ffffff;
@@ -15,6 +15,11 @@
     /* --SkillImage:url("../icons/scattered-forcefield.svg"); */
     --CardBackground:#041b33;
     --ExperienceColor:#0230478a;
+
+    --BaseColor:#023047;
+    --PrimaryColor:#23857A;
+    --SecondaryColour:#00C6B2 ;
+    --ActionColor:#344B48;
   
   }
 
@@ -26,7 +31,6 @@
 
 
   [class*="-title"] h1{
-    color: var(--HeadingText);
     text-transform: uppercase;
     font-weight: 800;
     position: relative;

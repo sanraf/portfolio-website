@@ -8,12 +8,13 @@
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(5px);
-  background: linear-gradient(0deg, #02304767 0%, #0230472f 100%);
+  background-color: #23857adc;
   padding:  1rem 1rem 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
+  /* border-bottom: 2.5px solid var(--PrimaryColor); */
 
 }
 
@@ -21,7 +22,7 @@
   content: '';
   display: block;
   height: 5px;
-  background: var(--PrimaryColor);
+  background: var(--BaseColor);
   margin: 5px 0;
   transform: scale(0,1);
   transition: transform ease-in-out 250ms;
@@ -41,18 +42,16 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0.5rem 6rem 0.5rem 4rem;
-  background: linear-gradient(45deg,  var(--MainColor),var(--PrimaryColor)); 
+  padding: 0.5rem 6rem 0.5rem 3rem;
+  background: linear-gradient(45deg, var(--PrimaryColor),  var(--BaseColor)); 
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
-
-  /* animation: logoAnimation 2000ms ease-in-out infinite; */
 }
 .navbar-logo p{
 
   font-family: 'Dancing Script', cursive;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--HeadingText);
+  color: var(--ActionColor);
   animation: logoAnimation 3000ms ease-in-out infinite;
 }
 @keyframes logoAnimation {
@@ -85,16 +84,21 @@
 }
 
 .navbar-links a {
-  color: var(--HeadingText);
+  color: var(--BaseColor);
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  font-size: 1.2em;
-  font-weight: 500;
+  font-size: 1.em;
+  font-weight: 400;
   font-style: normal;
   text-decoration: none;
 }
+.primary-color a{
+  color: var(--PrimaryColor);
 
-
+}
+.secondary-color a{
+  color: var(--BaseColor);
+}
 .hamburger {
   display: none;
   cursor: pointer;
@@ -111,7 +115,7 @@
 
 @media screen and (max-width: 760px) {
   .navbar {
-    background-color: var(--MainColor);
+    background-color: #23857ade;
     padding:  1rem 0 1rem 1rem;
  
   
@@ -126,9 +130,9 @@
     padding: 0%;
     text-align: center;
     background: var(--MainColor);
-    background-image: linear-gradient(-45deg,var(--MainTrans-2),var(--MainColor)),url("../Assets/navbar-bckg.jpg");
+    background-image: linear-gradient(-45deg,#23857ade,#23857ade),url("../Assets/navbar-bckg.jpg");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: 3rem;
@@ -141,8 +145,9 @@
   .navbar-links a{
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1.1em;
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #012e45;
     font-style: normal;
   } 
 
@@ -179,19 +184,19 @@
 
   .navbar-links li {
     width: 100%;
-    border-top: 1px #004365  solid;
+    border-top: 1px var(--PrimaryColor)  solid;
     margin: 0;
     padding: 1.2rem 0;
   }
   .last-li{
-    border-bottom: 1px  #004365 solid;
+    border-bottom: 1px  var(--PrimaryColor) solid;
   }
 
   .hamburger {
     display: flex;
   }
   .icon {
-    color: var(--PrimaryColor); 
+    color: var(--BaseColor); 
     font-size: 1.5rem;
   }
 

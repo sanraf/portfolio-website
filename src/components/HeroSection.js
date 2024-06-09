@@ -8,9 +8,11 @@ import NavBar from "./NavBar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FaFacebook, FaGithub, FaLinkedin,FaArrowUp} from 'react-icons/fa';
 import "../Styles/NavBar.css";
+import { Link } from "react-router-dom";
 
-const HeroSection = () => {
+const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
@@ -22,14 +24,18 @@ const HeroSection = () => {
       <div className="up-wrapper">
         <button className="up">
           <a onClick={() => scrollTop()} href="#my-home">
-            <img src={upIcon} />
+            <FaArrowUp/>
           </a>
         </button>
       </div>
 
-      <NavBar />
+      <div className="big-circle"></div>
+      <div className="small-circle"></div>
+
+      {/* <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/> */}
 
       <div className="hero-container">
+        <div className="hero-content-wrapper">
         <div className="hero-content">
           <div className="typing-effect">
             <h1>software developer</h1>
@@ -46,10 +52,30 @@ const HeroSection = () => {
           <a href="#myproject" className="explore-work">
             Expore
           </a>
+
+        </div>
+        <div className="hero-media">
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
+                          <FaFacebook/>
+                  </Link>
+
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={'https://github.com/sanraf?tab=repositories'}>
+                    <FaGithub/>
+                  </Link>
+
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
+                    <FaLinkedin/>
+                  </Link>
+          </div>
         </div>
 
-        <div className="hero-image"></div>
+
+        <div className="hero-image">
+          <img/>
+        </div>
+
       </div>
+      
     </div>
   );
 };

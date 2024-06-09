@@ -5,15 +5,16 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import iMacIcon from '../Assets/icons8-imac-100.png'
 import "../Styles/NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({isAboutVisible,isProjectVisible}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+
   return (
-    <nav className="navbar">
+    <nav  className="navbar" >
       <div className="logo-hamburger">
 
           <div className="navbar-logo">
@@ -26,7 +27,7 @@ const NavBar = () => {
       </div>
 
       <div className={`navbar-links ${isOpen ? "open" : ""}`}>
-        <ul>
+        <ul >
           <li onClick={toggleMenu}>
             <a href="#myhome">Home</a>
           </li>
