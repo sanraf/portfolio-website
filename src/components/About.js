@@ -25,7 +25,7 @@ function About({aboutRef}) {
                             <span className="dot-1"></span>
                             <span className="dot-2"></span>
                             <span className="dot-3"></span>
-                            <h2>More About Me </h2>
+                            <h2>Introduction </h2>
                         </div>
                     
                             <div className="inv-com_1">
@@ -55,7 +55,7 @@ function About({aboutRef}) {
                             <span className="dot-1"></span>
                             <span className="dot-2"></span>
                             <span className="dot-3"></span>
-                            <h2>More About More </h2>
+                            <h2>Dedication</h2>
                         </div>
                     
                     

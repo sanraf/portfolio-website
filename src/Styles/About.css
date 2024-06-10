@@ -61,10 +61,10 @@
 
 [class*="dot-"] {
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  left: -15%;
+  left: -8%;
   top: 0;
 }
 
