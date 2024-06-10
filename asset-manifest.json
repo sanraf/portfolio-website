@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.8e1b3110.css",
-    "main.js": "/portfolio-website/static/js/main.3d1db14f.js",
+    "main.css": "/portfolio-website/static/css/main.80b2f935.css",
+    "main.js": "/portfolio-website/static/js/main.19aed85a.js",
     "static/js/592.3a529184.chunk.js": "/portfolio-website/static/js/592.3a529184.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/strip.jpg": "/portfolio-website/static/media/strip.7b7130de8e1de0c30033.jpg",
-    "static/media/navbar-bckg.jpg": "/portfolio-website/static/media/navbar-bckg.b850ec03400de404be02.jpg",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
     "static/media/novelnest.png": "/portfolio-website/static/media/novelnest.faa6ae67998bac01a12b.png",
     "static/media/admin.png": "/portfolio-website/static/media/admin.0592b452beda79daab31.png",
@@ -59,12 +58,12 @@
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "static/media/facebook.svg": "/portfolio-website/static/media/facebook.8bd7076bdab74e8fdeffd009e2b60ec8.svg",
-    "main.8e1b3110.css.map": "/portfolio-website/static/css/main.8e1b3110.css.map",
-    "main.3d1db14f.js.map": "/portfolio-website/static/js/main.3d1db14f.js.map",
+    "main.80b2f935.css.map": "/portfolio-website/static/css/main.80b2f935.css.map",
+    "main.19aed85a.js.map": "/portfolio-website/static/js/main.19aed85a.js.map",
     "592.3a529184.chunk.js.map": "/portfolio-website/static/js/592.3a529184.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e1b3110.css",
-    "static/js/main.3d1db14f.js"
+    "static/css/main.80b2f935.css",
+    "static/js/main.19aed85a.js"
   ]
 }
