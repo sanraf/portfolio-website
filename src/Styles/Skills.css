@@ -124,10 +124,9 @@
   
   .flip-card-back p{
   
-   
     color: var(--BaseColor);
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     text-align: center;
   
@@ -187,6 +186,15 @@
       justify-content: center;
       gap: 1.5rem;
       
+    }
+
+    .flip-card-back p{
+  
+   
+      color: var(--BaseColor);
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;font-size: 1em;
+    
     }
 
 
