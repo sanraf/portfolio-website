@@ -8,13 +8,12 @@
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(5px);
-  background-color: #23857adc;
-  padding:  1rem 1rem 1rem 0;
+  background-color: transparent;
+  padding:  1rem  0;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  /* border-bottom: 2.5px solid var(--PrimaryColor); */
 
 }
 
@@ -41,9 +40,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  padding: 0.5rem 6rem 0.5rem 3rem;
-  background: linear-gradient(45deg, var(--PrimaryColor),  var(--BaseColor)); 
+  padding: 0.5rem 4rem 0.5rem 2.5rem;
+  background: linear-gradient(45deg, var(--PrimaryColor),  var(--PrimaryColor)); 
   clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
 }
 .navbar-logo p{
@@ -51,26 +49,30 @@
   font-family: 'Dancing Script', cursive;
   font-size: 1.2rem;
   font-weight: 600;
-  color: var(--ActionColor);
+  color: var(--BaseColor);
   animation: logoAnimation 3000ms ease-in-out infinite;
-  transition: all 3000ms ease;
+  transition: color 3000ms ease;
 }
 @keyframes logoAnimation {
   0%, 100% {
-    color: var(--BaseColor);
-    transform: scale(1);
+    
+    
+    transform: scale(0.8);
   }
   50% {
-    color: var(--PrimaryColor);
-    transform: scale(1.1);
+ 
+    transform: scale(1);
   }
 }
 
 .navbar-links {
   display: flex;
-  padding-bottom: 10px;
+  height: 3rem;
+  padding: 0 0 0 2.5rem;
   transition:transform 520ms ease-in-out;
   overflow: hidden;
+  clip-path: polygon(0% 0%, 6% 100%, 100% 100%, 100% 0%);
+  background-color: var(--PrimaryColor);
 }
 
 .navbar-links ul {
@@ -116,22 +118,22 @@
 
 @media screen and (max-width: 760px) {
   .navbar {
-    background-color: #23857a00;
+    background-color: var(--BaseColor);
     padding:  1rem 0 1rem 1rem;
  
   
   }
   .navbar-links {
     width: 100%;
-    height: 400px; 
+    height: 100dvh; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 0%;
     text-align: center;
-    background: var(--MainColor);
-    background-image: linear-gradient(-45deg,var(--BaseColor),var(--BaseColor)),url("../Assets/navbar-bckg.jpg");
+    background: var(--BaseColor);
+    /* background-image: linear-gradient(-45deg,var(--BaseColor),var(--BaseColor)),url("../Assets/navbar-bckg.jpg"); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -141,6 +143,8 @@
     transform:scale(0,0);
     transform-origin:  top;
     transition:transform 520ms ease-in-out;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
+
   }
 
   .navbar-links a{
@@ -169,8 +173,19 @@
 
 .navbar-logo{
   padding: 0.5rem 2rem 0.5rem 4rem;
-  background: linear-gradient(45deg, var(--PrimaryColor), var(--MainColor)); 
+  background: linear-gradient(45deg, var(--PrimaryColor), var(--PrimaryColor)); 
   clip-path: polygon(0% 0%, 20% 100%, 100% 100%, 100% 0%);
+}
+
+@keyframes logoAnimation {
+  0%, 100% {
+    color: #001e2d;
+    transform: scale(1);
+  }
+  50% {
+    color: var(--ActionColor);
+    transform: scale(1.1);
+  }
 }
 
   .navbar-links.open {
@@ -185,12 +200,12 @@
 
   .navbar-links li {
     width: 100%;
-    border-top: 1px var(--PrimaryColor)  solid;
+    border-top: 1px #23857a46 solid;
     margin: 0;
     padding: 1.2rem 0;
   }
   .last-li{
-    border-bottom: 1px  var(--PrimaryColor) solid;
+    border-bottom: 1px  #23857a46 solid;
   }
 
   .hamburger {
@@ -206,8 +221,8 @@
   }
 
   .comp-icon{
-    all: unset;
-    width: 7%;
+   top: 65%;
+    width: 2.5rem;
     padding-bottom:1.5rem ;
     height: auto;
     opacity: 1;

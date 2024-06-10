@@ -41,28 +41,35 @@ function Contact() {
 
         <div className='mycontact'>
 
-            <div className='icon-Wrapper-1' >
-                <h5 ><FaEnvelope/>{contact.email}</h5>
-                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.email)}/>
-            </div>
+          <div className='column_1'>
+
+          <div className='icon-Wrapper-1' >
+                  <h5 ><FaEnvelope/>{contact.email}</h5>
+                  < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.email)}/>
+              </div>
+
+              <div className='icon-Wrapper-2'>
+                  <h5><FaPhoneAlt/>{contact.phone}</h5>
+                  < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.phone)}/>
+              </div>
+
+          </div>
+
+
+          <div className='column_2'>
 
             <div className='icon-Wrapper-2'>
-                <h5><FaPhoneAlt/>{contact.phone}</h5>
-                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.phone)}/>
-            </div>
-            <div className='icon-Wrapper-2'>
-                <h5><FaPhoneAlt/>{contact.altphone}</h5>
-                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.altphone)}/>
-            </div>
+                  <h5><FaPhoneAlt/>{contact.altphone}</h5>
+                  < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.altphone)}/>
+              </div>
 
-            <div className='icon-Wrapper-3'>
-                <h5><FaLocationArrow/>{contact.myLocation}</h5>
-                < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.myLocation)}/>
-            </div>
+              <div className='icon-Wrapper-3'>
+                  <h5><FaLocationArrow/>{contact.myLocation}</h5>
+                  < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.myLocation)}/>
+              </div>
 
-            
-           
-            
+          </div>
+
 
         </div>
 

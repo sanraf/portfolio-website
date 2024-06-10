@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../Styles/HeroSection.css"; // Create this CSS file
 // import heroimage from './heroimage.png'
 
-import upIcon from "../Assets/upbutton.png";
 import NavBar from "./NavBar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
