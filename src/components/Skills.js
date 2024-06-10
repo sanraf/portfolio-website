@@ -9,6 +9,7 @@ import android from "../Assets/icons8-android-logo.svg";
 import matlabIcon from "../Assets/icons8-matlab.svg";
 import githubIcon from "../Assets/icons8-github.svg";
 import htmlIcon from "../Assets/icons8-html-5-48.png";
+import { GiClick } from "react-icons/gi";
 
 function Skills({componentRef}) {
   const java =
@@ -44,6 +45,7 @@ function Skills({componentRef}) {
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
+                    <GiClick id="clickable"/>
                     <img src={javaIcon} className="skill-icon" />
                     <p className="subject">Java</p>
                   </div>
@@ -59,6 +61,7 @@ function Skills({componentRef}) {
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
+                    
                     <img src={pythonIcon} className="skill-icon" />
                     <p className="subject">Python</p>
                   </div>

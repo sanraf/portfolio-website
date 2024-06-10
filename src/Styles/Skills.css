@@ -161,7 +161,10 @@
   }
   
 
-
+  #clickable{
+    font-size: 1.2rem;
+    opacity: 0;
+  }
 
 
 
@@ -196,6 +199,9 @@
       font-weight: 300;font-size: 1em;
     
     }
+    #clickable{
+      opacity: 1;
+    }
 
 
     
@@ -206,12 +212,21 @@
 
   .flip-card {
 
-    width: 7.5em;
-    height: 9.5em;
+    width: 9.5em;
+    height: 11.5em;
     perspective: 1000px;
   }
 
-}
+  .flip-card-back p{
+  
+   
+    color: var(--BaseColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;font-size: 1em;
+  
+  }
+
+} 
 
 
 

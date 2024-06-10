@@ -12,6 +12,7 @@
     justify-content: center;
     background:var(--BaseColor);
     gap: 2rem;
+    padding: 3rem 0;
     flex-wrap: wrap;
     transition:transform 500ms ease-in-out;
   }
@@ -64,7 +65,7 @@
     font-weight: 300;
     padding: 0.5rem;
     font-family: "Roboto", sans-serif;
-    text-transform: capitalize;
+    text-transform: none;
     font-optical-sizing: auto;
     color: var(--PrimaryColor);
   }
@@ -74,15 +75,10 @@
   .copyIcon{
     opacity: 0;
     cursor: pointer;
-    transition: all 275ms ease-in-out;  
+    transition: all 300ms ease-in-out;  
   }
 
-  
-  .copyIcon{
-    opacity: 0;
-    cursor: pointer;
-    transition: all 275ms ease-in-out;  
-  }
+
  
 
   [class*='icon-Wrapper-']:hover .copyIcon{
@@ -98,12 +94,18 @@
 
 
 
+
+  @media screen and (max-width: 760px){
+    .copyIcon{
+      opacity: 1; 
+    }
+  }
   @media screen and (max-width: 425px){
 
     [class*='icon-Wrapper-']{
       font-size: 1em;
       color: var(--PrimaryColor);
-      transition: all 3000ms ease-in-out; 
+      transition: all 300ms ease-in-out; 
     }
   }
  

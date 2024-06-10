@@ -48,9 +48,9 @@
 
   font-family: 'Dancing Script', cursive;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--BaseColor);
-  animation: logoAnimation 3000ms ease-in-out infinite;
+  /* animation: logoAnimation 3000ms ease-in-out infinite; */
   transition: color 3000ms ease;
 }
 @keyframes logoAnimation {

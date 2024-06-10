@@ -7,6 +7,9 @@ import locationIcon from '../Assets/icons8-location-100.png'
 import phoneIcon from '../Assets/icons8-phone.svg'
 import { FaLocationArrow, FaEnvelope,FaCopy ,FaPhoneAlt} from 'react-icons/fa';
 import Footer from '../components/Footer'
+import { Flip, ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom'
 
 function Contact() {
 
@@ -24,7 +27,17 @@ function Contact() {
    
     navigator.clipboard.writeText(textToCopy)
       .then(() => {
-        alert('copied')
+        toast.success(' Copied', {
+          position: "top-center",
+          autoClose: 1500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: 0,
+          theme: "yellow",
+          transition: Flip,
+          });
         setTimeout(() => setIsCopied(false), 2000); 
       })
       .catch(err => {
@@ -44,13 +57,17 @@ function Contact() {
           <div className='column_1'>
 
           <div className='icon-Wrapper-1' >
-                  <h5 ><FaEnvelope/>{contact.email}</h5>
+              <Link to={`mailto:${contact.email}`}>
+              <h5 ><FaEnvelope/>{contact.email}</h5>
+              </Link>
+                  
                   < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.email)}/>
               </div>
 
               <div className='icon-Wrapper-2'>
                   <h5><FaPhoneAlt/>{contact.phone}</h5>
                   < FaCopy className='copyIcon' onClick={()=>handleCopy(contact.phone)}/>
+                 
               </div>
 
           </div>
@@ -74,7 +91,19 @@ function Contact() {
         </div>
 
         <Footer/>
-
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={ Flip}
+        />
     </div>
   )
 }

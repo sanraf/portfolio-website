@@ -10,6 +10,7 @@ import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FaFacebook, FaGithub, FaLinkedin,FaArrowUp} from 'react-icons/fa';
 import "../Styles/NavBar.css";
 import { Link } from "react-router-dom";
+import { BsWhatsapp } from "react-icons/bs";
 
 const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   const scrollTop = () => {
@@ -17,7 +18,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   };
 
   const [isOpen, setIsOpen] = useState(false);
-
+const email = 'santoschristopher199@gmail.com';
   return (
     <div className="hero-wrapper" id="myhome">
       <div className="up-wrapper">
@@ -30,6 +31,8 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
 
       <div className="big-circle"></div>
       <div className="small-circle"></div>
+      <div className="big-circle_1"></div>
+      <div className="small-circle_1"></div>
 
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
 
@@ -54,15 +57,15 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
 
         </div>
         <div className="hero-media">
-                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
-                          <FaFacebook/>
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer"  >
+                  <BsWhatsapp/>
                   </Link>
 
                   <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={'https://github.com/sanraf?tab=repositories'}>
                     <FaGithub/>
                   </Link>
 
-                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" >
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={'https://linkedin.com/in/santos-rafaelo-a4511a260'} >
                     <FaLinkedin/>
                   </Link>
           </div>
