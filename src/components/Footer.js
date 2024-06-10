@@ -10,7 +10,7 @@ function Footer() {
     <div className="footer">
               
             
-            <div className="footer-media-wrapper">
+            <div className="media-wrapper">
                 <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={`https://wa.me/27671089950?text=${text}`} >
                   <BsWhatsapp/>
                 </Link>
