@@ -201,6 +201,24 @@
     }
     #clickable{
       opacity: 1;
+       animation: clickableWave 3000ms ease-in-out infinite;
+      
+    }
+
+    @keyframes clickableWave {
+
+     
+        0%, 100% {
+          
+          
+          transform: scale(0.8);
+        }
+        50% {
+       
+          transform: scale(1.2);
+        }
+   
+      
     }
 
 
