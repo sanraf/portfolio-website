@@ -5,12 +5,13 @@ import { FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 
 function Footer() {
+  let text = 'Hi 👋. I saw your portfolio and ...'
   return (
     <div className="footer">
               
             
-            <div className="media-wrapper">
-                <Link className="media-icon" target="_blank" rel="noopener noreferrer"  >
+            <div className="footer-media-wrapper">
+                <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={`https://wa.me/27671089950?text=${text}`} >
                   <BsWhatsapp/>
                 </Link>
 

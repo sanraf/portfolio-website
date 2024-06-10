@@ -36,9 +36,9 @@ function About({aboutRef}) {
                             </div>
                             
                             <div className='dots-wrap_bottom'>
-                                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                                <a href="mailto:your-email@example.com"><FaEnvelope /></a>
+                                <a href="https://linkedin.com/in/santos-rafaelo-a4511a260" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                                <a href="https://github.com/sanraf?tab=repositories" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                <a href="mailto:santoschristopher199@gmail.com"><FaEnvelope /></a>
                             </div>
                     </div>
 
@@ -67,9 +67,9 @@ function About({aboutRef}) {
                             </div>
 
                             <div className='dots-wrap_bottom'>
-                                <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                                <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                                <a href="mailto:your-email@example.com"><FaEnvelope /></a>
+                                <a href="https://linkedin.com/in/santos-rafaelo-a4511a260" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+                                <a href="https://github.com/sanraf?tab=repositories" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                <a href="mailto:santoschristopher199@gmail.com"><FaEnvelope /></a>
                             </div>
 
                     </div>

@@ -16,9 +16,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   const scrollTop = () => {
     window.scrollTo(0, 0);
   };
-
-  const [isOpen, setIsOpen] = useState(false);
-const email = 'santoschristopher199@gmail.com';
+  let text = 'Hi 👋. I saw your portfolio and ...';
   return (
     <div className="hero-wrapper" id="myhome">
       <div className="up-wrapper">
@@ -57,7 +55,7 @@ const email = 'santoschristopher199@gmail.com';
 
         </div>
         <div className="hero-media">
-                  <Link className="media-icon" target="_blank" rel="noopener noreferrer"  >
+                  <Link className="media-icon" target="_blank" rel="noopener noreferrer" to={`https://wa.me/27671089950?text=${text}`} >
                   <BsWhatsapp/>
                   </Link>
 

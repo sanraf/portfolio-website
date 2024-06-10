@@ -319,7 +319,12 @@
     color: var(--PrimaryColor);
   }
   
+  .media-icon:hover{
+    color: var(--ActionColor);
+    background-color:var(--BaseColor) ;
   
+  
+  }
 
     /* .hero-image {
       background:linear-gradient(270deg, #23857a89,#23857a00 ),url("../Assets/heerr.png");
