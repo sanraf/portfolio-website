@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.013d3058.css",
+    "main.css": "/portfolio-website/static/css/main.6aeacc5d.css",
     "main.js": "/portfolio-website/static/js/main.fef511be.js",
     "static/js/592.3a529184.chunk.js": "/portfolio-website/static/js/592.3a529184.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
@@ -25,7 +25,6 @@
     "static/media/note10.png": "/portfolio-website/static/media/note10.0b8e52e7ed7f6c1b8eb5.png",
     "static/media/note11.png": "/portfolio-website/static/media/note11.2c0851c9282071df4ca0.png",
     "static/media/comments.png": "/portfolio-website/static/media/comments.a41ea6fc9520a593cd48.png",
-    "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.ad60503967e196219783.svg",
     "static/media/note9.png": "/portfolio-website/static/media/note9.6465950aee6d9db7df69.png",
     "static/media/story1.png": "/portfolio-website/static/media/story1.63e1c767d68f7e525b87.png",
     "static/media/story6.png": "/portfolio-website/static/media/story6.9ecd35cd11e2023d8095.png",
@@ -37,6 +36,7 @@
     "static/media/note8.png": "/portfolio-website/static/media/note8.f1598459660915370ee3.png",
     "static/media/station.png": "/portfolio-website/static/media/station.3dc67c9ffdc36465e602.png",
     "static/media/story2.png": "/portfolio-website/static/media/story2.068dd039106a00b31787.png",
+    "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.9f9e29f5d5fab8f4a77b.svg",
     "static/media/story5.png": "/portfolio-website/static/media/story5.851f747d9cd940eec75c.png",
     "static/media/note1.png": "/portfolio-website/static/media/note1.5ad94cb3dcd7c98cf96f.png",
     "static/media/edit.png": "/portfolio-website/static/media/edit.2398f9b63cfeba9f0ead.png",
@@ -60,12 +60,12 @@
     "static/media/Rect Light.svg": "/portfolio-website/static/media/Rect Light.394db2476cd34c23c8c4.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.013d3058.css.map": "/portfolio-website/static/css/main.013d3058.css.map",
+    "main.6aeacc5d.css.map": "/portfolio-website/static/css/main.6aeacc5d.css.map",
     "main.fef511be.js.map": "/portfolio-website/static/js/main.fef511be.js.map",
     "592.3a529184.chunk.js.map": "/portfolio-website/static/js/592.3a529184.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.013d3058.css",
+    "static/css/main.6aeacc5d.css",
     "static/js/main.fef511be.js"
   ]
 }
