@@ -202,11 +202,11 @@
     }
     #clickable{
       opacity: 1;
-       /* animation: clickableWave 3000ms ease-in-out infinite; */
+       animation: clickableWave 3000ms ease-in-out infinite;
       
     }
 
-    /* @keyframes clickableWave {
+    @keyframes clickableWave {
 
      
         0%, 100% {
@@ -220,7 +220,7 @@
         }
    
       
-    } */
+    }
 
 
     
