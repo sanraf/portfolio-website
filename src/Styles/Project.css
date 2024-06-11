@@ -7,10 +7,10 @@
   background-color: var(--PrimaryColor);
   overflow-x: hidden;
 
-  /* background-image:linear-gradient(270deg, #23857a00,#23857a00 ),url("../Assets/hero_2.png"); */
+  background-image:linear-gradient(270deg, #23857a00,#2f0c5f00 ),url("../Assets/Wave\ Line1.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .project-title{

@@ -292,6 +292,27 @@
 
 @media screen and (max-width: 760px) {
 
+  .hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100svh;
+    /* padding: 0rem 3.5rem; */
+    background: var(--BaseColor);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    background-size: cover;
+    background-position: right;
+    overflow-x: hidden;
+   
+    background-image:linear-gradient(270deg, #23857a00,#23857a00 ),url("../Assets/Sprinkle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   .hero-container {
     flex-direction: column;
   }
