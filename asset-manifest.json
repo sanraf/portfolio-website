@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.1fd9cb78.css",
+    "main.css": "/portfolio-website/static/css/main.bbeda272.css",
     "main.js": "/portfolio-website/static/js/main.fef511be.js",
     "static/js/592.3a529184.chunk.js": "/portfolio-website/static/js/592.3a529184.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
@@ -10,6 +10,7 @@
     "static/media/novelnest.png": "/portfolio-website/static/media/novelnest.faa6ae67998bac01a12b.png",
     "static/media/admin.png": "/portfolio-website/static/media/admin.0592b452beda79daab31.png",
     "static/media/heerr.png": "/portfolio-website/static/media/heerr.69e61202cf41caf52c8a.png",
+    "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.caec4ed367cdeb6cf917.svg",
     "static/media/reg candidate.png": "/portfolio-website/static/media/reg candidate.4f96afe48052c100de6d.png",
     "static/media/scan-1.png": "/portfolio-website/static/media/scan-1.b8518cc988889af4ac78.png",
     "static/media/signup.png": "/portfolio-website/static/media/signup.fda7ec6b2047745da060.png",
@@ -37,7 +38,6 @@
     "static/media/station.png": "/portfolio-website/static/media/station.3dc67c9ffdc36465e602.png",
     "static/media/story2.png": "/portfolio-website/static/media/story2.068dd039106a00b31787.png",
     "static/media/story5.png": "/portfolio-website/static/media/story5.851f747d9cd940eec75c.png",
-    "static/media/Circuit Primary up.svg": "/portfolio-website/static/media/Circuit Primary up.f2a712da71d0b56b2cbc.svg",
     "static/media/note1.png": "/portfolio-website/static/media/note1.5ad94cb3dcd7c98cf96f.png",
     "static/media/edit.png": "/portfolio-website/static/media/edit.2398f9b63cfeba9f0ead.png",
     "static/media/note7.png": "/portfolio-website/static/media/note7.95b27e5e35cbac7a5df1.png",
@@ -48,10 +48,10 @@
     "static/media/brand1-modified.png": "/portfolio-website/static/media/brand1-modified.7535f8cec3b0cdfb584a.png",
     "static/media/Sebitja Secondary.png": "/portfolio-website/static/media/Sebitja Secondary.fd5a9ff73677cb56e3e3.png",
     "static/media/smart_scan_launcher-1.png": "/portfolio-website/static/media/smart_scan_launcher-1.d5573c716ed1b431c747.png",
+    "static/media/Sprinkle.svg": "/portfolio-website/static/media/Sprinkle.a64a6afdc72e1ef3cff9.svg",
     "static/media/icons8-react-js.svg": "/portfolio-website/static/media/icons8-react-js.3feac4c8a9cf7df4652396cc8191e2fd.svg",
     "static/media/icons8-my-sql.svg": "/portfolio-website/static/media/icons8-my-sql.b24a6e0ed3b876e858e03237e5b6b486.svg",
     "static/media/icons8-java.svg": "/portfolio-website/static/media/icons8-java.5f796e6908368735ca2113bbd305633c.svg",
-    "static/media/Animated Shape.svg": "/portfolio-website/static/media/Animated Shape.f7bd6debbeb2e03ed026.svg",
     "static/media/logo.svg": "/portfolio-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/icons8-css.svg": "/portfolio-website/static/media/icons8-css.8c8979aec33cc7f98fd32f62013e30ed.svg",
     "static/media/icons8-github.svg": "/portfolio-website/static/media/icons8-github.f5bce113950e57537676b88df0428fdc.svg",
@@ -60,12 +60,12 @@
     "static/media/Rect Light.svg": "/portfolio-website/static/media/Rect Light.394db2476cd34c23c8c4.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.1fd9cb78.css.map": "/portfolio-website/static/css/main.1fd9cb78.css.map",
+    "main.bbeda272.css.map": "/portfolio-website/static/css/main.bbeda272.css.map",
     "main.fef511be.js.map": "/portfolio-website/static/js/main.fef511be.js.map",
     "592.3a529184.chunk.js.map": "/portfolio-website/static/js/592.3a529184.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fd9cb78.css",
+    "static/css/main.bbeda272.css",
     "static/js/main.fef511be.js"
   ]
 }
