@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import "../Styles/Contact.css";
-import facebookIcon from "../Assets/facebook.svg";
-import copyIcon from "../Assets/icons8-copy-100.png";
-import emailIcon from "../Assets/icons8-email-100.png";
-import locationIcon from "../Assets/icons8-location-100.png";
-import phoneIcon from "../Assets/icons8-phone.svg";
 import {
   FaLocationArrow,
   FaEnvelope,

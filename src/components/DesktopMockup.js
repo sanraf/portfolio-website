@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import '../Styles/DesktopMockup.css';
 import githubIcon from "../Assets/icons8-github.svg";
-import backIcon from "../Assets/icons8-go-back-100.png";
 
 import note1Icon from '../Assets/note1.png'
 import note2Icon from '../Assets/note2.png'
@@ -99,7 +98,7 @@ const project4Images = [
                     
                     <div className="buttons">
                         <button className="button"><img src={githubIcon}/>Repo</button>
-                        <button className="button"><img src={backIcon}/>Back</button>
+                        {/* <button className="button"><img src={backIcon}/>Back</button> */}
                     </div>
 
             </div>

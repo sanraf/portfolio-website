@@ -16,6 +16,11 @@
     flex-wrap: wrap;
     transition:transform 500ms ease-in-out;
     overflow-x: hidden;
+
+    background-image:linear-gradient(270deg, #23857a00,#23857a00 ),url("../Assets/World\ Map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .contact-title{

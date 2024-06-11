@@ -16,11 +16,11 @@
     --CardBackground:#041b33;
     --ExperienceColor:#0230478a;
 
-    --BaseColor:#023047;
-    --PrimaryColor:#23857A;
-    --SecondaryColour:#00C6B2 ;
+    --BaseColor:#022f46;
+    --PrimaryColor:#23857a;
+    --SecondaryColour:#00c7b334 ;
     --ActionColor:#344B48;
-  
+    /* #23857A */
   }
 
   *{
@@ -35,7 +35,6 @@
   padding: 0;
   overflow-x: hidden;
  } */
-
 
   [class*="-title"] h1{
     text-transform: uppercase;
