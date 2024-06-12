@@ -20,6 +20,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       top: 0,
       behavior: 'smooth',
     });
+    alert('hello')
   };
 
   const handleScroll = () => {
@@ -42,17 +43,15 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   let text = 'Hi 👋. I saw your portfolio and ...';
   return (
     <div className="hero-wrapper" id="myhome">
-      <Draggable>
+      <Draggable >
       <div className="up-wrapper">
-        <button title="hello" className="up"
+        <button onClick={() => scrollTop()} className="up"
               style={{
                 opacity: showButton ? 1 : 0,
                 transition: 'opacity 500ms ease',
                 zIndex: 999,
               }}>
-          <a onClick={() => scrollTop()} href="#my-home">
             <FaArrowUp/>
-          </a>
         </button>
       </div>
       </Draggable>
