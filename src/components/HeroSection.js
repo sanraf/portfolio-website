@@ -1,5 +1,5 @@
 // HeroSection.js
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/HeroSection.css"; // Create this CSS file
 // import heroimage from './heroimage.png'
 
@@ -13,24 +13,51 @@ import { Link } from "react-router-dom";
 import { BsWhatsapp } from "react-icons/bs";
 
 const HeroSection = ({isAboutVisible,isProjectVisible}) => {
+  const [showButton, setShowButton] = useState(false);
   const scrollTop = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
+
+  const handleScroll = () => {
+    setShowButton(window.scrollY > 200); // Show button after scrolling down 200px
+  };
+
+  const handleTouchMove = () => {
+    setShowButton(true); // Show button when user touches the screen
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('touchmove', handleTouchMove);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('touchmove', handleTouchMove);
+    };
+  }, []);
+
   let text = 'Hi 👋. I saw your portfolio and ...';
   return (
     <div className="hero-wrapper" id="myhome">
       <div className="up-wrapper">
-        <button className="up">
+        <button className="up"
+              style={{
+                opacity: showButton ? 1 : 0,
+                transition: 'opacity 500ms ease',
+                zIndex: 999,
+              }}>
           <a onClick={() => scrollTop()} href="#my-home">
             <FaArrowUp/>
           </a>
         </button>
       </div>
 
-      <div className="big-circle"></div>
+      {/* <div className="big-circle"></div>
       <div className="small-circle"></div>
       <div className="big-circle_1"></div>
-      <div className="small-circle_1"></div>
+      <div className="small-circle_1"></div> */}
 
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
 
