@@ -325,6 +325,10 @@
   .hero-content {
     border-radius: 0.5rem;
     box-shadow: 0px 0px 2px var(--PrimaryColor);
+
+  
+      background-color: transparent;
+ 
   }
 
    .hero-image {
