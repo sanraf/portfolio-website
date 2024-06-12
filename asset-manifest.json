@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.fc7b6998.css",
+    "main.css": "/portfolio-website/static/css/main.cc7ce660.css",
     "main.js": "/portfolio-website/static/js/main.d2eac7f6.js",
     "static/js/592.3a529184.chunk.js": "/portfolio-website/static/js/592.3a529184.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
@@ -37,6 +37,7 @@
     "static/media/note8.png": "/portfolio-website/static/media/note8.f1598459660915370ee3.png",
     "static/media/station.png": "/portfolio-website/static/media/station.3dc67c9ffdc36465e602.png",
     "static/media/story2.png": "/portfolio-website/static/media/story2.068dd039106a00b31787.png",
+    "static/media/hero_2.png": "/portfolio-website/static/media/hero_2.43e7d74a338039de7816.png",
     "static/media/story5.png": "/portfolio-website/static/media/story5.851f747d9cd940eec75c.png",
     "static/media/note1.png": "/portfolio-website/static/media/note1.5ad94cb3dcd7c98cf96f.png",
     "static/media/edit.png": "/portfolio-website/static/media/edit.2398f9b63cfeba9f0ead.png",
@@ -62,12 +63,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.fc7b6998.css.map": "/portfolio-website/static/css/main.fc7b6998.css.map",
+    "main.cc7ce660.css.map": "/portfolio-website/static/css/main.cc7ce660.css.map",
     "main.d2eac7f6.js.map": "/portfolio-website/static/js/main.d2eac7f6.js.map",
     "592.3a529184.chunk.js.map": "/portfolio-website/static/js/592.3a529184.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc7b6998.css",
+    "static/css/main.cc7ce660.css",
     "static/js/main.d2eac7f6.js"
   ]
 }
