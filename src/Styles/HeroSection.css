@@ -30,7 +30,7 @@
   height: fit-content;
   position: fixed;
   bottom: 0;
-  margin: 2rem 1rem;
+  margin: 2rem 0.4rem;
   right: 1%;
   z-index: 100;
   background-color: transparent;
@@ -109,9 +109,8 @@
 }
 
 .hero-image {
-  
   transform: translateY(100px);
-  background:linear-gradient(270deg, #23857a89,#23857a00 ),url("../Assets/heerr.png");
+  background:linear-gradient(270deg, #23857a5c,#23857a00 ),url("../Assets/hero_screen.png");
   background-position: center;
   background-size: contain;
   height: 25rem;
@@ -257,7 +256,7 @@
   }
   .hero-image {
 
-    background:linear-gradient(270deg, #23857a89,#23857a00 ),url("../Assets/heerr.png");
+    background:linear-gradient(270deg, #23857a5c,#23857a00 ),url("../Assets/hero_screen.png");
     background-position: center;
     background-size: contain;
     height: 20rem;
@@ -360,7 +359,7 @@
   }
 
     /* .hero-image {
-      background:linear-gradient(270deg, #23857a89,#23857a00 ),url("../Assets/heerr.png");
+      background:linear-gradient(270deg, #23857a89,#23857a00 ),url("../Assets/hero_screen.png");
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
