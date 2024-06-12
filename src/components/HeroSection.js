@@ -11,7 +11,6 @@ import { FaFacebook, FaGithub, FaLinkedin,FaArrowUp} from 'react-icons/fa';
 import "../Styles/NavBar.css";
 import { Link } from "react-router-dom";
 import { BsWhatsapp } from "react-icons/bs";
-import Draggable from "react-draggable";
 
 const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   const [showButton, setShowButton] = useState(false);
@@ -20,7 +19,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       top: 0,
       behavior: 'smooth',
     });
-    alert('hello')
+ 
   };
 
   const handleScroll = () => {
@@ -43,7 +42,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   let text = 'Hi 👋. I saw your portfolio and ...';
   return (
     <div className="hero-wrapper" id="myhome">
-      <Draggable cancel=".up">
+    
       <div className="up-wrapper">
         <button onClick={() => scrollTop()} className="up"
               style={{
@@ -54,7 +53,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
             <FaArrowUp/>
         </button>
       </div>
-      </Draggable>
+      
 
 
       {/* <div className="big-circle"></div>
