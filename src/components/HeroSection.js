@@ -44,8 +44,8 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
   return (
     <div className="hero-wrapper" id="myhome">
       <Draggable >
-      <div className="up-wrapper">
-        <button onClick={() => scrollTop()} className="up"
+      <div className="up-wrapper" onClick={() => scrollTop()} >
+        <button className="up"
               style={{
                 opacity: showButton ? 1 : 0,
                 transition: 'opacity 500ms ease',
