@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.2fc13429.css",
-    "main.js": "/portfolio-website/static/js/main.f5939ad0.js",
+    "main.css": "/portfolio-website/static/css/main.ca41d3d2.css",
+    "main.js": "/portfolio-website/static/js/main.4215ccd3.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
@@ -12,7 +12,6 @@
     "static/media/admin.png": "/portfolio-website/static/media/admin.0592b452beda79daab31.png",
     "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.0232ed088a6a5aa9c66a.svg",
     "static/media/hero_screen.png": "/portfolio-website/static/media/hero_screen.69e61202cf41caf52c8a.png",
-    "static/media/1718122131828.png": "/portfolio-website/static/media/1718122131828.19833953f6dcb7784df7.png",
     "static/media/reg candidate.png": "/portfolio-website/static/media/reg candidate.4f96afe48052c100de6d.png",
     "static/media/scan-1.png": "/portfolio-website/static/media/scan-1.b8518cc988889af4ac78.png",
     "static/media/signup.png": "/portfolio-website/static/media/signup.fda7ec6b2047745da060.png",
@@ -24,6 +23,7 @@
     "static/media/login.png": "/portfolio-website/static/media/login.87037d744fbc19e83011.png",
     "static/media/story3.png": "/portfolio-website/static/media/story3.810ee07d54af0725b1e5.png",
     "static/media/World Map.svg": "/portfolio-website/static/media/World Map.735d4cea7407608381c5.svg",
+    "static/media/task_bckg.png": "/portfolio-website/static/media/task_bckg.d51e1ec82a031351ab5c.png",
     "static/media/story4.png": "/portfolio-website/static/media/story4.d8563178f196680b68ce.png",
     "static/media/note10.png": "/portfolio-website/static/media/note10.0b8e52e7ed7f6c1b8eb5.png",
     "static/media/note11.png": "/portfolio-website/static/media/note11.2c0851c9282071df4ca0.png",
@@ -65,12 +65,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.2fc13429.css.map": "/portfolio-website/static/css/main.2fc13429.css.map",
-    "main.f5939ad0.js.map": "/portfolio-website/static/js/main.f5939ad0.js.map",
+    "main.ca41d3d2.css.map": "/portfolio-website/static/css/main.ca41d3d2.css.map",
+    "main.4215ccd3.js.map": "/portfolio-website/static/js/main.4215ccd3.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fc13429.css",
-    "static/js/main.f5939ad0.js"
+    "static/css/main.ca41d3d2.css",
+    "static/js/main.4215ccd3.js"
   ]
 }
