@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.895173a4.css",
-    "main.js": "/portfolio-website/static/js/main.d2eac7f6.js",
-    "static/js/592.3a529184.chunk.js": "/portfolio-website/static/js/592.3a529184.chunk.js",
+    "main.css": "/portfolio-website/static/css/main.6d616a14.css",
+    "main.js": "/portfolio-website/static/js/main.f5939ad0.js",
+    "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/strip.jpg": "/portfolio-website/static/media/strip.7b7130de8e1de0c30033.jpg",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
+    "static/media/hero-image.png": "/portfolio-website/static/media/hero-image.f8b320444c4b4bd186b8.png",
     "static/media/novelnest.png": "/portfolio-website/static/media/novelnest.faa6ae67998bac01a12b.png",
     "static/media/admin.png": "/portfolio-website/static/media/admin.0592b452beda79daab31.png",
     "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.0232ed088a6a5aa9c66a.svg",
     "static/media/hero_screen.png": "/portfolio-website/static/media/hero_screen.69e61202cf41caf52c8a.png",
+    "static/media/1718122131828.png": "/portfolio-website/static/media/1718122131828.19833953f6dcb7784df7.png",
     "static/media/reg candidate.png": "/portfolio-website/static/media/reg candidate.4f96afe48052c100de6d.png",
     "static/media/scan-1.png": "/portfolio-website/static/media/scan-1.b8518cc988889af4ac78.png",
     "static/media/signup.png": "/portfolio-website/static/media/signup.fda7ec6b2047745da060.png",
@@ -63,12 +65,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.895173a4.css.map": "/portfolio-website/static/css/main.895173a4.css.map",
-    "main.d2eac7f6.js.map": "/portfolio-website/static/js/main.d2eac7f6.js.map",
-    "592.3a529184.chunk.js.map": "/portfolio-website/static/js/592.3a529184.chunk.js.map"
+    "main.6d616a14.css.map": "/portfolio-website/static/css/main.6d616a14.css.map",
+    "main.f5939ad0.js.map": "/portfolio-website/static/js/main.f5939ad0.js.map",
+    "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.895173a4.css",
-    "static/js/main.d2eac7f6.js"
+    "static/css/main.6d616a14.css",
+    "static/js/main.f5939ad0.js"
   ]
 }
