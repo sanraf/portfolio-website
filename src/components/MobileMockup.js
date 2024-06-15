@@ -4,6 +4,13 @@ import '../Styles/MobileMockup.css';
 import vid from '../Assets/scanvid.mp4';
 import { GrGithub } from 'react-icons/gr';
 import { BiArrowBack } from 'react-icons/bi';
+import { BsArrowDownCircleFill } from 'react-icons/bs';
+import { CgScrollH, CgScrollV } from 'react-icons/cg';
+import '../Styles/StackedCards.css'; // Import your CSS file
+import { FcNext, FcPrevious } from 'react-icons/fc';
+import bak from '../Assets/hero-image.png'
+import bak1 from '../Assets/hero_2.png'
+import bak2 from '../Assets/1718122131828.png'
 
 const MobileMockup = ({projectName,setisViewProject}) => {
   const videoRef = useRef(null);
@@ -12,7 +19,7 @@ const MobileMockup = ({projectName,setisViewProject}) => {
 
   const smartNoteObject =[{
     demo:vid,
-    overView :'note note note note note note note note note note note note note note note note note note note note note note note note note note note ',
+    overView :'CSS sizing units available, categorizing them into absolute, font-relative, viewport-relative, and container-relative units. It emphasizes understanding the distinction between specified, computed, and used values in CSS, which are key concepts in effectively applying these units in web design. ',
     technologies:[
       {tech:'java'},
       { tech:'Android Studio'},
@@ -27,7 +34,7 @@ const MobileMockup = ({projectName,setisViewProject}) => {
 
 const smartScanObject =[{
   demo:vid,
-  overView :'scan',
+  overView :'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur. Augue mauris augue neque gravida in fermentum et. Facilisi cras fermentum odio eu feugiat. Malesuada proin libero nunc consequat. Quam vulputate dignissim suspendisse in est ante. Nibh nisl condimentum id venenatis a condimentum. Dictum non consectetur a erat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Posuere ac ut consequat semper viverra nam libero justo laoreet. Id eu nisl nunc mi ipsum faucibus. Pellentesque elit eget gravida cum sociis natoque penatibus et. Fringilla phasellus faucibus scelerisque eleifend. Euismod in pellentesque massa placerat duis ultricies.',
   technologies:[
     {tech:'java'},
     { tech:'Android Studio'},
@@ -42,13 +49,25 @@ const smartScanObject =[{
 
 const smartBookObject =[{
   demo:vid,
-  overView :'book',
+  overView :'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur. Augue mauris augue neque gravida in fermentum et. Facilisi cras fermentum odio eu feugiat. Malesuada proin libero nunc consequat. Quam vulputate dignissim suspendisse in est ante. Nibh nisl condimentum id venenatis a condimentum. Dictum non consectetur a erat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Posuere ac ut consequat semper viverra nam libero justo laoreet. Id eu nisl nunc mi ipsum faucibus. Pellentesque elit eget gravida cum sociis natoque penatibus et. Fringilla phasellus faucibus scelerisque eleifend. Euismod in pellentesque massa placerat duis ultricies.',
   technologies:[
     {tech:'java'},
     { tech:'Android Studio'},
     {tech:'Room Database' }
+    , {tech:'java'},
+    { tech:'Adroid Studio'},
+    {tech:'Room Database' }
+    , {tech:'java'},
+    { tech:'Android Studio'},
+    {tech:'Room Database' }
   ],
   challengies:[
+    {challenge:'challenge1'},
+    {challenge:'challenge2'},
+    {challenge:'challenge3'},
+    {challenge:'challenge1'},
+    {challenge:'challenge2'},
+    {challenge:'challenge3'},
     {challenge:'challenge1'},
     {challenge:'challenge2'},
     {challenge:'challenge3'}]
@@ -97,25 +116,125 @@ console.table(smartNoteObject)
     };
   }, []);
 
+
+  const [cards, setCards] = useState([
+    {
+      id: 1,
+      title: "Project Overview",
+      content: (
+        <p className='overview'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur.
+     
+        </p>
+      ),
+      backgroundImage: bak,
+      backgroundColor:'#00c7b3'    },
+    {
+      id: 2,
+      title: "Used Technologies",
+      content: (
+        <p className='overview'>
+          &#x27A5; Java <br />
+          &#x27A5; Android Studio <br />
+          &#x27A5; Room Database <br />
+          &#x27A5; Java <br />
+          &#x27A5; Android Studio <br />
+          &#x27A5; Room Database
+          
+        </p>
+      ),
+      backgroundImage: bak1,
+      backgroundColor:'#00c7b3'
+    },
+    {
+      id: 3,
+      title: "Communication Skills",
+      content: (
+        <p className='overview'>
+        According to Google, a good manager: 
+        1. Is a good coach. 
+        2. Empowers team and does not micromanage.
+      </p>
+      ),
+      backgroundImage: bak2,
+      backgroundColor:'#23857a'
+    }
+  ]);
+
+  const containerRef = useRef(null);
+  const [startX, setStartX] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [animationClass, setAnimationClass] = useState("");
+
+  const handleNext = () => {
+    setAnimationClass("throwing-next");
+    setTimeout(() => {
+      setCards((prevCards) => {
+        const updatedCards = [...prevCards];
+        const firstCard = updatedCards.shift();
+        updatedCards.push(firstCard);
+        return updatedCards;
+      });
+      setAnimationClass("");
+    }, 500);
+  };
+
+  const handlePrev = () => {
+    setAnimationClass("throwing-prev");
+    setTimeout(() => {
+      setCards((prevCards) => {
+        const updatedCards = [...prevCards];
+        const lastCard = updatedCards.pop();
+        updatedCards.unshift(lastCard);
+        return updatedCards;
+      });
+      setAnimationClass("");
+    }, 500);
+  };
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.clientX || e.touches[0].clientX);
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    const currentX = e.clientX || e.touches[0].clientX;
+    const diff = currentX - startX;
+
+    if (diff > 50) {
+        handleNext();
+      setIsDragging(false);
+    } else if (diff < -50) {
+        handlePrev();
+      setIsDragging(false);
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
+
   return (
     <div className='frame-wrapper'>
 
-           <div className="view_title">
-                <h2>viewing <span>{projectName}</span> project</h2>
-           </div>
+        {/* <div className='desc-wrapper'> */}
 
-        <div className='desc-wrapper'>
-            <div className='desc-card'>
+            {/* <div className='desc-card'>
                 <h3>About The Project</h3>
+                <CgScrollV className='scroll-arrow'/>
                 <div className="desc-content">
+                  
                   {mobileObect().map((data,index)=>
                                     
-                                      <ul className="content-list" key={index}>
+                                      <ul className="content-list" >
                                       <li>
                                           <div className="category-list"><h4>Project overview</h4></div>
                                           <ul className="details">
-                                              <li key={index}>
+                                          
+                                              <li >
                                                  <p>
+                                            
                                                   {data.overView}
                                                   </p>
                                               </li>
@@ -126,9 +245,10 @@ console.table(smartNoteObject)
                                           <div className="category-list"><h4>List of technologies used</h4></div>
                                         
                                             <ul className="details" >
+                                           
                                             {data.challengies.map((challenge,challengeIndex)=>
-                                              <li key={challengeIndex}><p>{challenge.challenge}</p></li>
-                                            )}
+                                               <li key={challengeIndex}><p>{challenge.challenge}</p></li> 
+                                             )} 
                                           </ul>
                                         
 
@@ -136,28 +256,61 @@ console.table(smartNoteObject)
                                           <li>
                                           <div className="category-list"><h4>Project Challenges</h4></div>
                                           <ul className="details">
+                                    
                                             {data.technologies.map((tech,techIndex)=>
                                             <li key={techIndex}><p>{tech.tech}</p></li>
+                                            
                                             )}
                                             
                                           </ul>
                                           </li>
                                           
                                       </ul>
-                  )}
+                   )} 
 
 
 
-                    </div>
+                 </div>
                     
-                    <div className="buttons">
-                        <button className="button"><GrGithub/> Repo</button>
-                        <button className="button" onClick={()=>setisViewProject(false)}> <BiArrowBack/> Back</button>
+                    <div className="button-wrapper">
+                        <button ><GrGithub/> Repo</button>
+                        <button onClick={()=>setisViewProject(false)}> <BiArrowBack/> Back</button>
                     </div>
 
-            </div>
+            </div> */}
 
-            <div className="mobile-frame" onClick={handleScreenClick}>
+<div className="containers">
+      <div
+        className="card-stack"
+        ref={containerRef}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleMouseDown}
+        onTouchMove={handleMouseMove}
+        onTouchEnd={handleMouseUp}
+      >
+        <ul className="card-list">
+          {cards.slice(0, 3).map((card, index) => (
+            <li
+              key={card.id}
+              className={index === 0 ? animationClass : ""}
+              style={{ backgroundImage: `url(${card.backgroundImage})` ,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'left',
+              backgroundSize: '50% 90%',
+              backgroundColor: card.backgroundColor}}
+            >
+              <h2>{card.title}</h2>
+              {card.content}
+            </li>
+          ))}
+        </ul>
+        <FcPrevious className="buttonss prev" onClick={handlePrev}/>
+        <FcNext className="buttonss next" onClick={handleNext}/>
+      </div>
+
+      <div className="mobile-frame" onClick={handleScreenClick}>
             <div className="mobile-notch">
                 <div className="notch-camera"></div>
                 <div className="notch-speaker"></div>
@@ -178,8 +331,14 @@ console.table(smartNoteObject)
                 <div className="progress" style={{ width: `${progress}%` }}></div>
                 </div>
             </div>
-            </div>
-        </div>
+      </div>
+
+    </div>
+
+
+
+
+        {/* </div> */}
 
     </div>
 

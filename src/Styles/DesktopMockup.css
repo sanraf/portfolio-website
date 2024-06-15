@@ -204,9 +204,9 @@
   .desk-top_wrapper{
     flex-direction: column;
    }
- .desc-card{
+ /* .desc-card{
   width: 70%;
- }
+ } */
 }
 
 @media (max-width: 768px) {

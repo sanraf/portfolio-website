@@ -6,10 +6,11 @@ import DesktopMockup from "../components/DesktopMockup";
 
 function ViewProject({ isMobile, projectName ,setisViewProject}) {
   // setIsMobileViewe(isMobile)
+  const defaultv = true;
 
   return (
     <div className="view-project_wrapper">
-      {isMobile ? (<MobileMockup projectName={projectName} setisViewProject ={setisViewProject}/>) : (<DesktopMockup projectName={projectName} />)}
+      {defaultv ? (<MobileMockup projectName={projectName} setisViewProject ={setisViewProject}/>) : (<DesktopMockup projectName={projectName} />)}
     </div>
   );
 }

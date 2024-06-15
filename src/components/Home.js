@@ -13,6 +13,7 @@ import DesktopMockup from '../components/DesktopMockup';
 import MobileMockup from '../components/MobileMockup';
 import ViewProject from '../components/ViewProject';
 import Card from './Card';
+import StackedCards from './StackedCards';
 function Home() {
  
 
@@ -53,7 +54,7 @@ function Home() {
 
   return (
     <div>
-     
+     {/* <StackedCards/> */}
       {/* <NavBar/> */}
       <HeroSection isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
       {/* <MobileMockup/> */}

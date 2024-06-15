@@ -59,7 +59,7 @@ const project4Images = [
                 <h2>viewing <span>{projectName}</span> project</h2>
             </div>
         <div className='desk-top_wrapper'>
-            <div className='desc-card'>
+            {/* <div className='desc-card'>
                 <h3>Project description</h3>
                 <div className="desc-content">
                     <ul className="content-list">
@@ -98,10 +98,10 @@ const project4Images = [
                     
                     <div className="buttons">
                         <button className="button"><img src={githubIcon}/>Repo</button>
-                        {/* <button className="button"><img src={backIcon}/>Back</button> */}
+                        <button className="button"><img src={backIcon}/>Back</button>
                     </div>
 
-            </div>
+            </div> */}
 
            <div className="screen-container">
               <div className="screen">
