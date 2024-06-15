@@ -10,7 +10,7 @@ import '../Styles/StackedCards.css'; // Import your CSS file
 import { FcNext, FcPrevious } from 'react-icons/fc';
 import bak from '../Assets/hero-image.png'
 import bak1 from '../Assets/hero_2.png'
-import bak2 from '../Assets/1718122131828.png'
+import bak2 from '../Assets/task_bckg.png'
 
 const MobileMockup = ({projectName,setisViewProject}) => {
   const videoRef = useRef(null);
@@ -128,7 +128,7 @@ console.table(smartNoteObject)
         </p>
       ),
       backgroundImage: bak,
-      backgroundColor:'#00c7b3'    },
+      backgroundColor:'#022f46'    },
     {
       id: 2,
       title: "Used Technologies",
@@ -144,7 +144,7 @@ console.table(smartNoteObject)
         </p>
       ),
       backgroundImage: bak1,
-      backgroundColor:'#00c7b3'
+      backgroundColor:'#022f46'
     },
     {
       id: 3,
@@ -157,7 +157,7 @@ console.table(smartNoteObject)
       </p>
       ),
       backgroundImage: bak2,
-      backgroundColor:'#23857a'
+      backgroundColor:'#022f46'
     }
   ]);
 

@@ -56,16 +56,16 @@ function Home() {
     <div>
      {/* <StackedCards/> */}
       {/* <NavBar/> */}
-      <HeroSection isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
+      {/* <HeroSection isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/> */}
       {/* <MobileMockup/> */}
       {/* <DesktopMockup/> */}
-      <About aboutRef={aboutRef} />
-      <Skills/>
+      {/* <About aboutRef={aboutRef} /> */}
+      {/* <Skills/> */}
       <Project projectRef={projectRef}/>
       {/* <ViewProject/> */}
       {/* <Card/> */}
       {/* <NewCard/> */}
-      <Contact/>
+      {/* <Contact/> */}
       {/* <AppFooter/> */}
     </div>
   )

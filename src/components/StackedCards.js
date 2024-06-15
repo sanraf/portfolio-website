@@ -6,7 +6,7 @@ import React, { useState, useRef } from "react";
 import { FcNext, FcPrevious } from 'react-icons/fc';
 import bak from '../Assets/hero-image.png'
 import bak1 from '../Assets/hero_2.png'
-import bak2 from '../Assets/1718122131828.png'
+import bak2 from '../Assets/task_bckg.png'
 
 
 const StackedCards = () => {
@@ -127,8 +127,8 @@ const StackedCards = () => {
               className={index === 0 ? animationClass : ""}
               style={{ backgroundImage: `url(${card.backgroundImage})` ,
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'left',
-              backgroundSize: '50% 90%',
+              backgroundPosition: 'center',
+              backgroundSize: 'contain',
               backgroundColor: card.backgroundColor}}
             >
               <h2>{card.title}</h2>
