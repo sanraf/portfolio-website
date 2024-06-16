@@ -30,6 +30,7 @@ import ViewProject from "./ViewProject";
 export const ProjectNameContext = createContext();
 function Project({projectRef}) {
   const navigate = useNavigate();
+  const [myvalue,setMyvalue] = useState('');
   const [isViewProject, setisViewProject] = useState(false);
   const [isMobile, setIsMobleView] = useState(true);
   const [isViewGone, setIsViewGone] = useState(!false);
@@ -52,21 +53,20 @@ const msg = 'HELLO'
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
 
 
-    const handleMobileView = (name,mobileTrigger) =>{
-      setisViewProject(true);
-      setProjectName(name);
-      setIsMobleView(mobileTrigger)
+    const handleMobileView = (name) =>{
+      localStorage.setItem('project name',JSON.stringify(name))
+      navigate('/view-project')
     }
+
+
   return (
-    <div className="projects" id="myproject" ref={projectRef}>
+    <div className="projects" id="myproject" ref={projectRef} >
       <div className="project-title">
         <h1>projects</h1>
       </div>
 
       <div className="card-wrapper">
-        {isViewProject ? (
-          <ViewProject isMobile ={isMobile} projectName = {projectName} setisViewProject ={setisViewProject} />
-        ) : (
+  
           <>
             <div className="outliner">
               <div className="card-mobile-border">
@@ -90,7 +90,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Note',true)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Note')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -126,7 +126,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Scan',true)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Scan')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -162,7 +162,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Book',true)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Book')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -213,7 +213,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('JoyTech',false)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('JoyTech')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -266,7 +266,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Novel Nest',false)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Novel Nest')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -298,7 +298,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('schoolWeb',false)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('schoolWeb')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -330,7 +330,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('EziVote',false)}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('EziVote')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -344,7 +344,7 @@ const msg = 'HELLO'
               </div>
             </div>
           </>
-        )}
+        
       </div>
     </div>
 

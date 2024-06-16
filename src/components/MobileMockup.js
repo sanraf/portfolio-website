@@ -12,11 +12,13 @@ import bak from '../Assets/hero-image.png'
 import bak1 from '../Assets/hero_2.png'
 import bak2 from '../Assets/task_bckg.png'
 
-const MobileMockup = ({projectName,setisViewProject}) => {
+const MobileMockup = ({setisViewProject}) => {
   const videoRef = useRef(null);
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
-
+  const [width,setWidth] = useState(0)
+  const projectName = JSON.parse(localStorage.getItem('project name'))
+ 
   const smartNoteObject =[{
     demo:vid,
     overView :'CSS sizing units available, categorizing them into absolute, font-relative, viewport-relative, and container-relative units. It emphasizes understanding the distinction between specified, computed, and used values in CSS, which are key concepts in effectively applying these units in web design. ',
@@ -210,13 +212,27 @@ console.table(smartNoteObject)
       setIsDragging(false);
     }
   };
-
   const handleMouseUp = () => {
     setIsDragging(false);
   };
+  
+
+  window.addEventListener('resize', function(event) {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+    setWidth(window.innerWidth);
+    // Do something with the updated screen dimensions
+    console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
+  });
+
+
+
+ console.log(projectName)
+
 
   return (
     <div className='frame-wrapper'>
+      <h1>{projectName}</h1>
 
         {/* <div className='desc-wrapper'> */}
 
@@ -295,11 +311,17 @@ console.table(smartNoteObject)
             <li
               key={card.id}
               className={index === 0 ? animationClass : ""}
-              style={{ backgroundImage: `url(${card.backgroundImage})` ,
+              style={width >= 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'left',
               backgroundSize: '50% 90%',
-              backgroundColor: card.backgroundColor}}
+              backgroundColor: card.backgroundColor}:
+              { backgroundImage: `url(${card.backgroundImage})` ,
+              backgroundRepeat: 'no-repeat',
+              backgroundPosition: 'left',
+              backgroundSize: '30% 50%',
+              backgroundColor: card.backgroundColor}
+            }
             >
               <h2>{card.title}</h2>
               {card.content}

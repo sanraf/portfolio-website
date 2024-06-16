@@ -22,6 +22,8 @@ function Home() {
 
   const aboutRef = useRef(null); 
   const projectRef = useRef(null); 
+  const navigate = useNavigate()
+  const [projectName ,setProjectName] = useState('')
 
   const handleIntersection = (entries) => {
     entries.forEach((entry) => {
@@ -52,9 +54,10 @@ function Home() {
     };
   }, []);
 
+
   return (
     <div>
-     {/* <StackedCards/> */}
+     {/* <StackedCards /> */}
       {/* <NavBar/> */}
       {/* <HeroSection isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/> */}
       {/* <MobileMockup/> */}
