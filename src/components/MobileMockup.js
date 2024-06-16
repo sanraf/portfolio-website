@@ -17,7 +17,12 @@ const MobileMockup = ({setisViewProject}) => {
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
   const [width,setWidth] = useState(0)
-  const projectName = sessionStorage.getItem('project name')
+  const [projectName,setProjectName] = useState('');
+
+  useEffect(()=>{
+      let tiltle = window.sessionStorage.getItem('project name');
+      setProjectName(tiltle);
+  },[])
  
   const smartNoteObject =[{
     demo:vid,
