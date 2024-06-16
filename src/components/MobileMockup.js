@@ -323,8 +323,8 @@ console.table(smartNoteObject)
               backgroundColor: card.backgroundColor}:
               { backgroundImage: `url(${card.backgroundImage})` ,
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'left',
-              backgroundSize: '30% 50%',
+              backgroundPosition: '2% 60%',
+              backgroundSize: '32% 60%',
               backgroundColor: card.backgroundColor}
             }
             >

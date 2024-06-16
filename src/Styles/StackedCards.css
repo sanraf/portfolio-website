@@ -202,7 +202,24 @@
 
   .card-stack {
     max-width: 100%;
-    height: 17rem;
+    height: 16rem;
+  }
+
+  .overview {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90%;
+    position: relative;
+    width: 70%;
+    right: -18%;
+    color: var(--PrimaryColor);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    
+    align-self: center;
+    padding: 0.5rem;
+    margin: 0 auto;
   }
   .buttonss{
     opacity: 0;
