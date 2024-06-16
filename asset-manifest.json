@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.0bea6c88.css",
-    "main.js": "/portfolio-website/static/js/main.03137690.js",
+    "main.js": "/portfolio-website/static/js/main.333cd10d.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
@@ -66,11 +66,11 @@
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
     "main.0bea6c88.css.map": "/portfolio-website/static/css/main.0bea6c88.css.map",
-    "main.03137690.js.map": "/portfolio-website/static/js/main.03137690.js.map",
+    "main.333cd10d.js.map": "/portfolio-website/static/js/main.333cd10d.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0bea6c88.css",
-    "static/js/main.03137690.js"
+    "static/js/main.333cd10d.js"
   ]
 }
