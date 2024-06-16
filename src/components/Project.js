@@ -54,7 +54,8 @@ const msg = 'HELLO'
 
 
     const handleMobileView = (name) =>{
-      localStorage.setItem('project name',JSON.stringify(name))
+      sessionStorage.setItem('project name', name);
+      // localStorage.setItem('',JSON.stringify(name))
       navigate('/view-project')
     }
 

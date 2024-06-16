@@ -17,7 +17,7 @@ const MobileMockup = ({setisViewProject}) => {
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
   const [width,setWidth] = useState(0)
-  const projectName = JSON.parse(localStorage.getItem('project name') || '')
+  const projectName = sessionStorage.getItem('project name')
  
   const smartNoteObject =[{
     demo:vid,
