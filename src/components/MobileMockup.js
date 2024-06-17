@@ -3,14 +3,14 @@ import '../Styles/MobileMockup.css';
 
 import vid from '../Assets/scanvid.mp4';
 import {  GrGithub, GrNext, GrPrevious } from 'react-icons/gr';
-import '../Styles/StackedCards.css'; // Import your CSS file
-import overvewImage from '../Assets/overview-illustration.png'
-import challengeImage from '../Assets/challeges-illustration.png'
-import technologyImage from '../Assets/technology-illustration.png'
+import '../Styles/StackedCards.css'; 
 import { BiArrowBack } from 'react-icons/bi';
 import { Link, useNavigate } from 'react-router-dom';
 
-const MobileMockup = ({setisViewProject}) => {
+import ProjectData from "../components/ProjectData";
+import { ImNext } from 'react-icons/im';
+
+const MobileMockup = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate()
   const [isPaused, setIsPaused] = useState(true);
@@ -25,71 +25,42 @@ const MobileMockup = ({setisViewProject}) => {
       setProjectRepo(repo)
       setProjectName(tiltle);
   },[])
+
+
  
-  const smartNoteObject =[{
-    demo:vid,
-    overView :'CSS sizing units available, categorizing them into absolute, font-relative, viewport-relative, and container-relative units. It emphasizes understanding the distinction between specified, computed, and used values in CSS, which are key concepts in effectively applying these units in web design. ',
-    technologies:[
-      {tech:'java'},
-      { tech:'Android Studio'},
-      {tech:'Room Database' }
-    ],
-    challengies:[
-      {challenge:'challenge1'},
-      {challenge:'challenge2'},
-      {challenge:'challenge3'}]
-  }
-]
+  const cardData = new ProjectData();
+  const [cards, setCards] = useState([]);
 
-const smartScanObject =[{
-  demo:vid,
-  overView :'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur. Augue mauris augue neque gravida in fermentum et. Facilisi cras fermentum odio eu feugiat. Malesuada proin libero nunc consequat. Quam vulputate dignissim suspendisse in est ante. Nibh nisl condimentum id venenatis a condimentum. Dictum non consectetur a erat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Posuere ac ut consequat semper viverra nam libero justo laoreet. Id eu nisl nunc mi ipsum faucibus. Pellentesque elit eget gravida cum sociis natoque penatibus et. Fringilla phasellus faucibus scelerisque eleifend. Euismod in pellentesque massa placerat duis ultricies.',
-  technologies:[
-    {tech:'java'},
-    { tech:'Android Studio'},
-    {tech:'Room Database' }
-  ],
-  challengies:[
-    {challenge:'challenge1'},
-    {challenge:'challenge2'},
-    {challenge:'challenge3'}]
-}
-]
+  useEffect(() => {
+    switch (projectName) {
+        case 'Smart Note':
+            setCards(cardData.SmartNote());
+            break;
+        case 'Smart Book':
+            setCards(cardData.SmartBook());
+            break;
+        case 'Smart Scan':
+            setCards(cardData.SmartScan());
+            break;
+        case 'JoystiTech':
+            setCards(cardData.joyTech());
+            break;
+        case 'Novel Nest':
+            setCards(cardData.NovelNest());
+            break;
+        case 'SchoolWeb':
+            setCards(cardData.SchoolWeb());
+            break;
+        case 'EziVote':
+            setCards(cardData.EziVote());
+            break;
+        default:
+            setCards([]);
+            break;
+    }
+}, [projectName]);
 
-const smartBookObject =[{
-  demo:vid,
-  overView :'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur. Augue mauris augue neque gravida in fermentum et. Facilisi cras fermentum odio eu feugiat. Malesuada proin libero nunc consequat. Quam vulputate dignissim suspendisse in est ante. Nibh nisl condimentum id venenatis a condimentum. Dictum non consectetur a erat. Pellentesque pulvinar pellentesque habitant morbi tristique senectus. Posuere ac ut consequat semper viverra nam libero justo laoreet. Id eu nisl nunc mi ipsum faucibus. Pellentesque elit eget gravida cum sociis natoque penatibus et. Fringilla phasellus faucibus scelerisque eleifend. Euismod in pellentesque massa placerat duis ultricies.',
-  technologies:[
-    {tech:'java'},
-    { tech:'Android Studio'},
-    {tech:'Room Database' }
-    , {tech:'java'},
-    { tech:'Adroid Studio'},
-    {tech:'Room Database' }
-    , {tech:'java'},
-    { tech:'Android Studio'},
-    {tech:'Room Database' }
-  ],
-  challengies:[
-    {challenge:'challenge1'},
-    {challenge:'challenge2'},
-    {challenge:'challenge3'},
-    {challenge:'challenge1'},
-    {challenge:'challenge2'},
-    {challenge:'challenge3'},
-    {challenge:'challenge1'},
-    {challenge:'challenge2'},
-    {challenge:'challenge3'}]
-}
-]
 
-console.table(smartNoteObject)
-
-  const mobileObect = () =>{
-    if(projectName == 'Smart Note') return smartNoteObject;
-    if(projectName == 'Smart Book') return smartBookObject;
-    if(projectName == 'Smart Scan') return smartScanObject;
-  }
 
   const handleScreenClick = () => {
     if (videoRef.current.paused) {
@@ -125,56 +96,6 @@ console.table(smartNoteObject)
     };
   }, []);
 
-
-  const [cards, setCards] = useState([
-    {
-      id: 1,
-      title: "Project Overview",
-      content: (
-        <p className='overview'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet sagittis id consectetur.
-     
-        </p>
-      ),
-      backgroundImage: overvewImage,
-      backgroundColor:'#022F46',
-      color: '#23857a'   },
-    {
-      id: 2,
-      title: "Challenges",
-      content: (
-        <p className='overview'>
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1
-        </p>
-     
-      ),
-      backgroundImage: challengeImage,
-      backgroundColor:'#008484',
-        color: '#012a3f'
-    },
-    {
-      id: 3,
-      title: "Used Technologies",
-      content: (
-        <p className='overview'>
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database <br />
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database
-        </p>
-      ),
-      backgroundImage:technologyImage,
-      backgroundColor:'#00586E',
-        color: '#00C6B2'
-    }
-  ]);
 
   const containerRef = useRef(null);
   const [startX, setStartX] = useState(0);
@@ -250,146 +171,86 @@ console.table(smartNoteObject)
     <div className='frame-wrapper'>
       <h1>{projectName}</h1>
         {width}
-        {/* <div className='desc-wrapper'> */}
 
-            {/* <div className='desc-card'>
-                <h3>About The Project</h3>
-                <CgScrollV className='scroll-arrow'/>
-                <div className="desc-content">
-                  
-                  {mobileObect().map((data,index)=>
-                                    
-                                      <ul className="content-list" >
-                                      <li>
-                                          <div className="category-list"><h4>Project overview</h4></div>
-                                          <ul className="details">
-                                          
-                                              <li >
-                                                 <p>
-                                            
-                                                  {data.overView}
-                                                  </p>
-                                              </li>
-                                              
-                                          </ul>
-                                          </li>
-                                          <li>
-                                          <div className="category-list"><h4>List of technologies used</h4></div>
-                                        
-                                            <ul className="details" >
-                                           
-                                            {data.challengies.map((challenge,challengeIndex)=>
-                                               <li key={challengeIndex}><p>{challenge.challenge}</p></li> 
-                                             )} 
-                                          </ul>
-                                        
-
-                                          </li>
-                                          <li>
-                                          <div className="category-list"><h4>Project Challenges</h4></div>
-                                          <ul className="details">
-                                    
-                                            {data.technologies.map((tech,techIndex)=>
-                                            <li key={techIndex}><p>{tech.tech}</p></li>
-                                            
-                                            )}
-                                            
-                                          </ul>
-                                          </li>
-                                          
-                                      </ul>
-                   )} 
-
-
-
-                 </div>
-                    
-                    <div className="button-wrapper">
-                        <button ><GrGithub/> Repo</button>
-                        <button onClick={()=>setisViewProject(false)}> <BiArrowBack/> Back</button>
-                    </div>
-
-            </div> */}
-
-<div className="containers">
-      <div
-        className="card-stack"
-        ref={containerRef}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onTouchStart={handleMouseDown}
-        onTouchMove={handleMouseMove}
-        onTouchEnd={handleMouseUp}
-      >
-        <ul className="card-list">
-          {cards.slice(0, 3).map((card, index) => (
-            <li
-              key={card.id}
-              className={index === 0 ? animationClass : ""}
-              style={width > 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '15% 55%',
-              backgroundSize: '30% 65%',
-              backgroundColor: card.backgroundColor,
-              color:card.color
-            }:
-              { backgroundImage: `url(${card.backgroundImage})` ,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: '2% 55%',
-              backgroundSize: '32% 62%',
-              backgroundColor: card.backgroundColor,
-              color:card.color
-            }
-            }
+      <div className="containers">
+            <div
+              className="card-stack"
+              ref={containerRef}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onTouchStart={handleMouseDown}
+              onTouchMove={handleMouseMove}
+              onTouchEnd={handleMouseUp}
             >
-              <h2>{card.title}</h2>
-              {card.content}
-            </li>
-          ))}
-        </ul>
-        <GrPrevious className="buttonss prev" onClick={handlePrev}/>
-        <GrNext className="buttonss next" onClick={handleNext}/>
-        <div className='view-button_wrapper'>
+              <ul className="card-list">
+                {cards.slice(0, 3).map((card, index) => (
+                  <li
+                    key={card.id}
+                    className={index === 0 ? animationClass : ""}
+                    style={width > 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: '15% 55%',
+                    backgroundSize: '30% 65%',
+                    backgroundColor: card.backgroundColor,
+                    color:card.color
+                  }:
+                    { backgroundImage: `url(${card.backgroundImage})` ,
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: '2% 55%',
+                    backgroundSize: '32% 62%',
+                    backgroundColor: card.backgroundColor,
+                    color:card.color
+                  }
+                  }
+                  >
+                    <h2>{card.title}</h2>
+                    {card.content}
+                  </li>
+                ))}
+              </ul>
+              <GrPrevious className="buttonss prev" onClick={handlePrev}/>
+              <GrNext className="buttonss next" onClick={handleNext}/>
+              <div className='view-button_wrapper'>
 
-        <button onClick={()=>goBack()} class="button-view " role="button">
-          <BiArrowBack/> Back
-        </button>
+              <button onClick={()=>goBack()} className ="button-view " role="button">
+                <BiArrowBack/> Back
+              </button>
 
-        <Link to={projectRepo} target='_blank' rel='noopener noreferrer'>
-          <button  class="button-view " role="button">
-          <GrGithub/> Repo
-          </button>
-       </Link>
+              <Link to={projectRepo} target='_blank' rel='noopener noreferrer'>
+                <button  className="button-view " role="button">
+                <GrGithub/> Repo
+                </button>
+            </Link>
 
-        </div>
-       
-      </div>
-      
-      <div className="mobile-frame" onClick={handleScreenClick}>
-            <div className="mobile-notch">
-                <div className="notch-camera"></div>
-                <div className="notch-speaker"></div>
+              </div>
+            
             </div>
-            <div className="mobile-screen">
-                <video
-                ref={videoRef}
-                className="video"
-                controlsList="nodownload"
-                disablePictureInPicture
-                onClick={e => e.stopPropagation()} // Prevent video click from bubbling to parent
-                >
-                <source src={vid} type="video/mp4" />
-                Your browser does not support the video tag.
-                </video>
-                <div className={`play-pause-icon ${isPaused ? 'paused' : 'playing'}`}></div>
-                <div className="progress-bar">
-                <div className="progress" style={{ width: `${progress}%` }}></div>
-                </div>
+            
+            <div className="mobile-frame" onClick={handleScreenClick}>
+                  <div className="mobile-notch">
+                      <div className="notch-camera"></div>
+                      <div className="notch-speaker"></div>
+                  </div>
+                  <div className="mobile-screen">
+                      <video
+                      ref={videoRef}
+                      className="video"
+                      controlsList="nodownload"
+                      disablePictureInPicture
+                      onClick={e => e.stopPropagation()} // Prevent video click from bubbling to parent
+                      >
+                      <source src={vid} type="video/mp4" />
+                      Your browser does not support the video tag.
+                      </video>
+                      <div className={`play-pause-icon ${isPaused ? 'paused' : 'playing'}`}></div>
+                      <div className="progress-bar">
+                      <div className="progress" style={{ width: `${progress}%` }}></div>
+                      </div>
+                  </div>
             </div>
+            
       </div>
-      
-    </div>
 
     
 

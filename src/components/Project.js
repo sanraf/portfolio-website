@@ -7,6 +7,8 @@ import project4 from "../Assets/ezivote.png";
 import project5 from "../Assets/Sebitja Secondary.png";
 import { Link, useNavigate } from "react-router-dom";
 
+import data from '../components/ProjectData'
+
 // import "../Styles/NewCard.css";
 import noteLogo from "../Assets/brand1-modified.png";
 import scanLogo from "../Assets/smart_scan_launcher-1.png";
@@ -37,21 +39,6 @@ function Project({projectRef}) {
   const [project, setProject] = useState(true);
   const [projectName, setProjectName] = useState("");
 const msg = 'HELLO'
-  const project1Desc =
-    "The Android Java-based note-taking app, powered by Room Database, simplifies note organization and management. With a user-friendly interface, users can effortlessly create, edit, and delete notes on the go. Reliable storage and seamless retrieval ensure productivity and accessibility";
-
-  const project2Desc =
-    "Smart Books is an Android Java-based book app is tailored for immersive reading experiences, offering users access to a curated selection of short stories and PDFs. With a sleek interface optimized for storytelling, users can easily navigate through various genres and dive into captivating narratives. Powered by Room Database, the app guarantees seamless storage and retrieval, ensuring users can enjoy their favorite stories on the go";
-
-  const project3Desc =
-    "School-website is  web-based school app, combining React frontend and Spring Boot backend, empowers students to calculate AP scores and access posts, galleries, and blogs. With a user-friendly interface and robust data management, it enriches learning experiences and fosters academic growth.";
-
-  const project4Desc =
-    "EziVote: A dynamic online voting platform crafted with Spring Boot for backend functionality and React for a seamless frontend experience. Users are empowered with secure login and registration features, while our Java-powered backend ensures robust authentication and data management. With a user-friendly interface powered by React.";
-
-  const project5Desc =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
-
 
     const handleMobileView = (name,gitRepo) =>{
       window.sessionStorage.setItem('PROJECT_NAME', name);
@@ -60,10 +47,17 @@ const msg = 'HELLO'
       navigate('/view-project')
     }
 
+    const handleDeskView = (name,gitRepo) =>{
+      window.sessionStorage.setItem('PROJECT_NAME', name);
+      window.sessionStorage.setItem('PROJECT_REPO', gitRepo);
+      // localStorage.setItem('',JSON.stringify(name))
+      navigate('/view-project-v2')
+    }
 
   return (
     <div className="projects" id="myproject" ref={projectRef} >
       <div className="project-title">
+        
         <h1>projects</h1>
       </div>
 
@@ -215,7 +209,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('JoystiTech','https://github.com/sanraf/Joystitech.git')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleDeskView('JoystiTech','https://github.com/sanraf/Joystitech.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -268,7 +262,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Novel Nest','https://github.com/sanraf/Assignment1.git')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleDeskView('Novel Nest','https://github.com/sanraf/Assignment1.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -300,7 +294,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('schoolWeb','https://github.com/sanraf/my-school-website.git')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleDeskView('SchoolWeb','https://github.com/sanraf/my-school-website.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -332,7 +326,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('EziVote','https://github.com/sanraf/EziVote.git')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleDeskView('EziVote','https://github.com/sanraf/EziVote.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"

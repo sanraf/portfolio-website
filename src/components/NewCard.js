@@ -178,7 +178,7 @@ function NewCard() {
     </ul>
 
     <div class="macbook">
-      <div class="screen">
+      <div class="screennew">
         <div class="viewport" style={{ backgroundImage: book1Icon }}></div>
       </div>
       <div class="base"></div>

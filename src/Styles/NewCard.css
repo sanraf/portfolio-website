@@ -105,7 +105,7 @@
   max-width: 800px;
 }
 
-.screen {
+.screennew {
   background: #000;
   border-radius: 3% 3% 0.5% 0.5% / 5%;
   margin: 0 auto;
@@ -113,7 +113,7 @@
   width: 80%;
 }
 
-.screen:before {
+.screennew:before {
   border: 2px solid #cacacc;
   border-radius: 3% 3% 0.5% 0.5% / 5%;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.8) inset,
@@ -124,7 +124,7 @@
   padding-top: 67%;
 }
 
-.screen:after {
+.screennew:after {
   content: "";
   border-top: 2px solid rgba(255, 255, 255, 0.15);
   position: absolute;
@@ -210,7 +210,7 @@
   padding-top: 10%;
 }
 
-/* Screenshot Hover Scroll Additions
+/* Screennewshot Hover Scroll Additions
   -------------------------------------------------------------- */
 
 .macbook .viewport {

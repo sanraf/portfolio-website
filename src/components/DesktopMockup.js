@@ -1,6 +1,6 @@
 // src/DesktopMockup.js
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/DesktopMockup.css';
 import githubIcon from "../Assets/icons8-github.svg";
 
@@ -32,7 +32,10 @@ import prevIcon from '../Assets/icons8-previous-100.png'
 import nextIcon from '../Assets/icons8-next-100.png'
 import imacIcon from '../Assets/icons8-grey-imac-100.png'
 
-
+import ProjectData from "../components/ProjectData";
+import { Link, useNavigate } from 'react-router-dom';
+import { GrGithub, GrNext, GrPrevious } from 'react-icons/gr';
+import { BiArrowBack } from 'react-icons/bi';
 const project4Images = [
     { id: 1, url: vote1Icon }, { id: 2, url: vote2Icon }, { id: 3, url: vote3Icon },
     { id: 4, url: vote4Icon }, { id: 5, url: vote5Icon }, { id: 6, url: vote6Icon },
@@ -40,7 +43,11 @@ const project4Images = [
     { id: 10, url: vote10Icon }, { id: 11, url: vote11Icon }
   ];
   
-  const DesktopMockup = ({projectName}) => {
+  const DesktopMockup = () => {
+    const [width,setWidth] = useState(0)
+    const navigate = useNavigate();
+    const [projectName,setProjectName] = useState('');
+    const [projectRepo,setProjectRepo] = useState('');
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
     const handleNext = () => {
@@ -53,55 +60,169 @@ const project4Images = [
       );
     };
 
+    useEffect(()=>{
+      let tiltle = window.sessionStorage.getItem('PROJECT_NAME');
+      let repo = window.sessionStorage.getItem('PROJECT_REPO');
+      setProjectRepo(repo)
+      setProjectName(tiltle);
+  },[])
+    const cardData = new ProjectData();
+    const [cards, setCards] = useState([]);
+  
+    useEffect(() => {
+      switch (projectName) {
+          case 'Smart Note':
+              setCards(cardData.SmartNote());
+              break;
+          case 'Smart Book':
+              setCards(cardData.SmartBook());
+              break;
+          case 'Smart Scan':
+              setCards(cardData.SmartScan());
+              break;
+          case 'JoystiTech':
+              setCards(cardData.joyTech());
+              break;
+          case 'Novel Nest':
+              setCards(cardData.NovelNest());
+              break;
+          case 'SchoolWeb':
+              setCards(cardData.SchoolWeb());
+              break;
+          case 'EziVote':
+              setCards(cardData.EziVote());
+              break;
+          default:
+              setCards([]);
+              break;
+      }
+  }, [projectName]);
+    const containerRef = useRef(null);
+    const [startX, setStartX] = useState(0);
+    const [isDragging, setIsDragging] = useState(false);
+    const [animationClass, setAnimationClass] = useState("");
+
+    const handleNextc = () => {
+      setAnimationClass("throwing-next");
+      setTimeout(() => {
+        setCards((prevCards) => {
+          const updatedCards = [...prevCards];
+          const firstCard = updatedCards.shift();
+          updatedCards.push(firstCard);
+          return updatedCards;
+        });
+        setAnimationClass("");
+      }, 500);
+    };
+  
+    const handlePrev = () => {
+      setAnimationClass("throwing-prev");
+      setTimeout(() => {
+        setCards((prevCards) => {
+          const updatedCards = [...prevCards];
+          const lastCard = updatedCards.pop();
+          updatedCards.unshift(lastCard);
+          return updatedCards;
+        });
+        setAnimationClass("");
+      }, 500);
+    };
+  
+    const handleMouseDown = (e) => {
+      setIsDragging(true);
+      setStartX(e.clientX || e.touches[0].clientX);
+    };
+  
+    const handleMouseMove = (e) => {
+      if (!isDragging) return;
+      const currentX = e.clientX || e.touches[0].clientX;
+      const diff = currentX - startX;
+  
+      if (diff > 50) {
+          handleNext();
+        setIsDragging(false);
+      } else if (diff < -50) {
+          handlePrev();
+        setIsDragging(false);
+      }
+    };
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+    
+  
+    window.addEventListener('resize', function(event) {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+      setWidth(window.innerWidth);
+      // Do something with the updated screen dimensions
+      console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
+    });
+
+    const goBack = () =>{
+      window.sessionStorage.clear()
+      navigate('/portfolio-website')
+    }
+
     return (
       <div className="desktop-mockup">
-             <div className="view_title">
-                <h2>viewing <span>{projectName}</span> project</h2>
-            </div>
+            
+                <h1>{projectName}</h1>
+            
         <div className='desk-top_wrapper'>
-            {/* <div className='desc-card'>
-                <h3>Project description</h3>
-                <div className="desc-content">
-                    <ul className="content-list">
-                    <li>
-                        <div className="category-list"><h4>Project overview</h4></div>
-                        <ul className="details">
-                            <li>
-                               <p>
-                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
-                                brief introduction about the project.what problem does it solve brief introduction about the project.what problem does it solve
-                                </p>
-                            </li>
-                            
-                        </ul>
-                        </li>
-                        <li>
-                        <div className="category-list"><h4>List of technologies used</h4></div>
-                        <ul className="details">
-                            <li><p>Java</p></li>
-                            <li><p>Python</p></li>
-                            <li><p>React</p></li>
-                        </ul>
-                        </li>
-                        <li>
-                        <div className="category-list"><h4>Project Challenges</h4></div>
-                        <ul className="details">
-                            <li><p>Learn new technology</p></li>
-                            <li><p>Solving errors</p></li>
-                        </ul>
-                        </li>
-                        
-                    </ul>
+          <div
+                className="card-stack"
+                ref={containerRef}
+                onMouseDown={handleMouseDown}
+                onMouseMove={handleMouseMove}
+                onMouseUp={handleMouseUp}
+                onTouchStart={handleMouseDown}
+                onTouchMove={handleMouseMove}
+                onTouchEnd={handleMouseUp}
+              >
+                <ul className="card-list">
+                  {cards.slice(0, 3).map((card, index) => (
+                    <li
+                      key={card.id}
+                      className={index === 0 ? animationClass : ""}
+                      style={width > 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: '15% 55%',
+                      backgroundSize: '30% 65%',
+                      backgroundColor: card.backgroundColor,
+                      color:card.color
+                    }:
+                      { backgroundImage: `url(${card.backgroundImage})` ,
+                      backgroundRepeat: 'no-repeat',
+                      backgroundPosition: '2% 55%',
+                      backgroundSize: '32% 62%',
+                      backgroundColor: card.backgroundColor,
+                      color:card.color
+                    }
+                    }
+                    >
+                      <h2>{card.title}</h2>
+                      {card.content}
+                    </li>
+                  ))}
+                </ul>
+                <GrPrevious className="buttonss prev" onClick={handlePrev}/>
+                <GrNext className="buttonss next" onClick={handleNextc}/>
+                <div className='view-button_wrapper'>
 
+                <button onClick={()=>goBack()} className ="button-view " role="button">
+                  <BiArrowBack/> Back
+                </button>
 
-                    </div>
-                    
-                    <div className="buttons">
-                        <button className="button"><img src={githubIcon}/>Repo</button>
-                        <button className="button"><img src={backIcon}/>Back</button>
-                    </div>
+                <Link to={projectRepo} target='_blank' rel='noopener noreferrer'>
+                  <button  className="button-view " role="button">
+                  <GrGithub/> Repo
+                  </button>
+              </Link>
 
-            </div> */}
+                </div>
+              
+          </div>
 
            <div className="screen-container">
               <div className="screen">
@@ -120,10 +241,10 @@ const project4Images = [
                 <div className="stand-base"><p>santos r</p></div>
               </div>
               <div className="controls">
-                <img onClick={handlePrevious} className="control-button" src={prevIcon}/>
-                <img onClick={handleNext} className="control-button" src={nextIcon}/>
+                <GrPrevious onClick={handlePrevious} className="control-button"/>
+                <GrNext onClick={handleNext} className="control-button"/>
             </div>
-        </div>
+           </div>
         </div>
 
 
