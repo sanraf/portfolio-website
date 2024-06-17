@@ -337,12 +337,12 @@ function Project({projectRef}) {
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleDeskView('Project Management System','https://github.com/sanraf/EziVote.git')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleDeskView('Project Management System','https://github.com/tshimologong-react-project/Project-Management-System.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/EziVote.git"}
+                      to={"https://github.com/tshimologong-react-project/Project-Management-System.git"}
                     >
                       Repo
                     </Link>
