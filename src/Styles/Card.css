@@ -8,7 +8,35 @@
 
 .main {
   max-width: 1200px;
+  height: 100%;
   margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.newCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31.6rem;
+  height: 21.6rem;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(90deg, #7d40626d ,#022f46),url('../Assets/971.png');
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #be0000;
+}
+/* #e2b0ff */
+/* #2e8b57 */
+/* #00ced1 */
+.newCard p{
+ 
+ color: #23857a;
 }
 
 .cards {

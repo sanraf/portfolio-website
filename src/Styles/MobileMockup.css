@@ -9,17 +9,27 @@
 .frame-wrapper{
     background-color: transparent;
     width: 100%;
-    min-height: 100dvh;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 2rem 0;
+    background: url('../Assets/wwwhirlk.svg');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     background-color: var(--PrimaryColor);
 
 }
 
+.frame-wrapper h1{
+ position: relative;
+ top: 0rem;
+ font-size: 2em;
+ z-index: 2;
+ color: var(--BaseColor);
 
+}
 
 .desc-wrapper{
     width: 100%;
@@ -93,6 +103,48 @@
 
 }
   
+.view-button_wrapper{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 20%;
+  margin-top: 1.5rem;
+  padding: 2px;
+}
+
+
+
+.view-button_wrapper button {
+  background-image: linear-gradient(-180deg, var(--ActionColor), var(--BaseColor) 100%);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: var(--SecondaryColour);
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem ;
+  text-decoration: none;
+  border: 0;
+  border-top: 5px solid var(--BaseColor);
+  border-right: 5px solid #06293b;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transition: border 10ms ease-in-out;
+
+}
+
+.button-view:hover {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .button-view {
+    padding: 1rem 2rem;
+  }
+}
   .project-title {
     text-align: center;
     margin-bottom: 20px;
@@ -162,35 +214,9 @@
     text-align: start;
     padding: 0.2rem;
   }
+
   
-  .button-wrapper {
-    display: flex;
-    justify-content:center;
-    column-gap: 5%;
-    margin-top: 5%;
-  }
   
-  .button-wrapper button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-    padding: 0.4rem 0.5rem;
-    border: 1px solid var(--ActionColor);
-    background-color: var(--ActionColor);
-    color: var(--BaseColor);
-    font-weight: 300;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: "Roboto", sans-serif;
-    font-size: 1em;
-    transition: background-color 300ms ease-in-out;
-  }
-  
-  .button-wrapper button:hover {
-    background-color: var(--BaseColor);
-    color: var(--ActionColor);
-  }
   
   .mobile-frame {
   
@@ -377,7 +403,11 @@
     z-index: 2;
   }
   
-
+  .button-view:hover {
+   
+    border-top: 5px solid var(--BaseColor);
+    border-right: 5px solid #06293b;
+  }
     
   }
   

@@ -53,8 +53,9 @@ const msg = 'HELLO'
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
 
 
-    const handleMobileView = (name) =>{
-      window.sessionStorage.setItem('project name', name);
+    const handleMobileView = (name,gitRepo) =>{
+      window.sessionStorage.setItem('PROJECT_NAME', name);
+      window.sessionStorage.setItem('PROJECT_REPO', gitRepo);
       // localStorage.setItem('',JSON.stringify(name))
       navigate('/view-project')
     }
@@ -91,12 +92,12 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Note')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Note','https://github.com/sanraf/Smart-Note-App.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/Smart-Book.git"}
+                      to={"https://github.com/sanraf/Smart-Note-App.git"}
                     >
                       Repo
                     </Link>
@@ -115,7 +116,7 @@ const msg = 'HELLO'
 
                 <div className="bottom-card">
                   <div className="info-box">
-                    <h3>Project Name</h3>
+                    <h3>Smart Scan</h3>
                     <div className="img-div">
                       <img src={java} />
                       <h4>java</h4>
@@ -127,7 +128,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Scan')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Scan','https://github.com/sanraf/Smart-Book.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -163,7 +164,7 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Smart Book')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Smart Book','https://github.com/sanraf/Smart-Book.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
@@ -202,7 +203,7 @@ const msg = 'HELLO'
 
                 <div className="bottom-card">
                   <div className="info-box">
-                    <h3>Project Name</h3>
+                    <h3>JoystiTech</h3>
                     <div className="img-div">
                       <img src={html} />
                       <h4>html</h4>
@@ -214,12 +215,12 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('JoyTech')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('JoystiTech','https://github.com/sanraf/Joystitech.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/Smart-Book.git"}
+                      to={"https://github.com/sanraf/Joystitech.git"}
                     >
                       Repo
                     </Link>
@@ -255,7 +256,7 @@ const msg = 'HELLO'
 
                 <div className="bottom-card">
                   <div className="info-box">
-                    <h3>Project Name</h3>
+                    <h3>Novel Nest</h3>
                     <div className="img-div">
                       <img src={html} />
                       <h4>html</h4>
@@ -267,12 +268,12 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('Novel Nest')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('Novel Nest','https://github.com/sanraf/Assignment1.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/Smart-Book.git"}
+                      to={"'https://github.com/sanraf/Assignment1.git"}
                     >
                       Repo
                     </Link>
@@ -287,7 +288,7 @@ const msg = 'HELLO'
 
                 <div className="bottom-card">
                   <div className="info-box">
-                    <h3>schoolWeb</h3>
+                    <h3>SchoolWeb</h3>
                     <div className="img-div">
                       <img src={java} />
                       <h4>java</h4>
@@ -299,12 +300,12 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('schoolWeb')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('schoolWeb','https://github.com/sanraf/my-school-website.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/Smart-Book.git"}
+                      to={"https://github.com/sanraf/my-school-website.git"}
                     >
                       Repo
                     </Link>
@@ -331,12 +332,12 @@ const msg = 'HELLO'
                   </div>
 
                   <div className="button_card">
-                    <span className="view-projects" onClick={()=>handleMobileView('EziVote')}>view work</span>
+                    <span className="view-projects" onClick={()=>handleMobileView('EziVote','https://github.com/sanraf/EziVote.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"
                       rel="noopener noreferrer"
-                      to={"https://github.com/sanraf/Smart-Book.git"}
+                      to={"https://github.com/sanraf/EziVote.git"}
                     >
                       Repo
                     </Link>
@@ -441,3 +442,6 @@ const msg = 'HELLO'
 }
 
 export default Project;
+// https://sanraf.github.io/Assignment1/
+// https://sanraf.github.io/Joystitech/
+// https://sanraf.github.io/my-school-website/

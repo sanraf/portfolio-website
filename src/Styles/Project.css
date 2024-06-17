@@ -687,7 +687,8 @@ a {
     position: absolute;
     display: flex;
     align-items: center;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 400;
     border-radius: 0 2.5rem;
     background: var(--PrimaryColor);
     top: 0;

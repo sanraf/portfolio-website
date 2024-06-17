@@ -1,12 +1,12 @@
 import React from 'react'
 // import '../Styles/Card.css'
 import icon from '../Assets/971.png'
-
+import '../Styles/Card.css'
 function Card() {
   return (
   
   <div className="main">
-    <ul className="cards">
+    {/* <ul className="cards">
         <li className="cards_item">
         <div className="card">
             <div className="card_image"><img src={icon} alt="mixed vegetable salad in a mason jar. "/></div>
@@ -55,7 +55,13 @@ function Card() {
             </div>
         </div>
         </li>
-    </ul>
+    </ul> */}
+
+    <div className='newCard'>
+        <p>
+        HTML Arrows is a comprehensive reference website for finding HTML symbol codes and entities, ASCII characters and Unicode hexadecimal values to use in your web design. Browse in grid or table format, search for HTML symbols, and check out 
+        </p>
+    </div>
 </div>
     
   )

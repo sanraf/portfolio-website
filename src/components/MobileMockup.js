@@ -2,25 +2,27 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/MobileMockup.css';
 
 import vid from '../Assets/scanvid.mp4';
-import { GrGithub } from 'react-icons/gr';
-import { BiArrowBack } from 'react-icons/bi';
-import { BsArrowDownCircleFill } from 'react-icons/bs';
-import { CgScrollH, CgScrollV } from 'react-icons/cg';
+import {  GrGithub, GrNext, GrPrevious } from 'react-icons/gr';
 import '../Styles/StackedCards.css'; // Import your CSS file
-import { FcNext, FcPrevious } from 'react-icons/fc';
-import bak from '../Assets/hero-image.png'
-import bak1 from '../Assets/hero_2.png'
-import bak2 from '../Assets/task_bckg.png'
+import overvewImage from '../Assets/overview-illustration.png'
+import challengeImage from '../Assets/challeges-illustration.png'
+import technologyImage from '../Assets/technology-illustration.png'
+import { BiArrowBack } from 'react-icons/bi';
+import { Link, useNavigate } from 'react-router-dom';
 
 const MobileMockup = ({setisViewProject}) => {
   const videoRef = useRef(null);
+  const navigate = useNavigate()
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
   const [width,setWidth] = useState(0)
   const [projectName,setProjectName] = useState('');
+  const [projectRepo,setProjectRepo] = useState('');
 
   useEffect(()=>{
-      let tiltle = window.sessionStorage.getItem('project name');
+      let tiltle = window.sessionStorage.getItem('PROJECT_NAME');
+      let repo = window.sessionStorage.getItem('PROJECT_REPO');
+      setProjectRepo(repo)
       setProjectName(tiltle);
   },[])
  
@@ -134,37 +136,43 @@ console.table(smartNoteObject)
      
         </p>
       ),
-      backgroundImage: bak,
-      backgroundColor:'#022f46'    },
+      backgroundImage: overvewImage,
+      backgroundColor:'#022F46',
+      color: '#23857a'   },
     {
       id: 2,
-      title: "Used Technologies",
+      title: "Challenges",
       content: (
         <p className='overview'>
-          &#x27A5; Java <br />
-          &#x27A5; Android Studio <br />
-          &#x27A5; Room Database <br />
-          &#x27A5; Java <br />
-          &#x27A5; Android Studio <br />
-          &#x27A5; Room Database
-          
+            &#x27A5; challenge1 <br />
+            &#x27A5; challenge1 <br />
+            &#x27A5; challenge1 <br />
+            &#x27A5; challenge1 <br />
+            &#x27A5; challenge1 <br />
+            &#x27A5; challenge1
         </p>
+     
       ),
-      backgroundImage: bak1,
-      backgroundColor:'#022f46'
+      backgroundImage: challengeImage,
+      backgroundColor:'#008484',
+        color: '#012a3f'
     },
     {
       id: 3,
-      title: "Communication Skills",
+      title: "Used Technologies",
       content: (
         <p className='overview'>
-        According to Google, a good manager: 
-        1. Is a good coach. 
-        2. Empowers team and does not micromanage.
-      </p>
+        &#x27A5; Java <br />
+        &#x27A5; Android Studio <br />
+        &#x27A5; Room Database <br />
+        &#x27A5; Java <br />
+        &#x27A5; Android Studio <br />
+        &#x27A5; Room Database
+        </p>
       ),
-      backgroundImage: bak2,
-      backgroundColor:'#022f46'
+      backgroundImage:technologyImage,
+      backgroundColor:'#00586E',
+        color: '#00C6B2'
     }
   ]);
 
@@ -230,15 +238,18 @@ console.table(smartNoteObject)
     console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
   });
 
+  const goBack = () =>{
+    window.sessionStorage.clear()
+    navigate('/portfolio-website')
+  }
 
 
- console.log(projectName)
 
 
   return (
     <div className='frame-wrapper'>
       <h1>{projectName}</h1>
-
+        {width}
         {/* <div className='desc-wrapper'> */}
 
             {/* <div className='desc-card'>
@@ -316,16 +327,20 @@ console.table(smartNoteObject)
             <li
               key={card.id}
               className={index === 0 ? animationClass : ""}
-              style={width >= 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
+              style={width > 768 ? { backgroundImage: `url(${card.backgroundImage})` ,
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'left',
-              backgroundSize: '50% 90%',
-              backgroundColor: card.backgroundColor}:
+              backgroundPosition: '15% 55%',
+              backgroundSize: '30% 65%',
+              backgroundColor: card.backgroundColor,
+              color:card.color
+            }:
               { backgroundImage: `url(${card.backgroundImage})` ,
               backgroundRepeat: 'no-repeat',
-              backgroundPosition: '2% 60%',
-              backgroundSize: '32% 60%',
-              backgroundColor: card.backgroundColor}
+              backgroundPosition: '2% 55%',
+              backgroundSize: '32% 62%',
+              backgroundColor: card.backgroundColor,
+              color:card.color
+            }
             }
             >
               <h2>{card.title}</h2>
@@ -333,10 +348,24 @@ console.table(smartNoteObject)
             </li>
           ))}
         </ul>
-        <FcPrevious className="buttonss prev" onClick={handlePrev}/>
-        <FcNext className="buttonss next" onClick={handleNext}/>
-      </div>
+        <GrPrevious className="buttonss prev" onClick={handlePrev}/>
+        <GrNext className="buttonss next" onClick={handleNext}/>
+        <div className='view-button_wrapper'>
 
+        <button onClick={()=>goBack()} class="button-view " role="button">
+          <BiArrowBack/> Back
+        </button>
+
+        <Link to={projectRepo} target='_blank' rel='noopener noreferrer'>
+          <button  class="button-view " role="button">
+          <GrGithub/> Repo
+          </button>
+       </Link>
+
+        </div>
+       
+      </div>
+      
       <div className="mobile-frame" onClick={handleScreenClick}>
             <div className="mobile-notch">
                 <div className="notch-camera"></div>
@@ -359,10 +388,10 @@ console.table(smartNoteObject)
                 </div>
             </div>
       </div>
-
+      
     </div>
 
-
+    
 
 
         {/* </div> */}
@@ -373,6 +402,8 @@ console.table(smartNoteObject)
 };
 
 export default MobileMockup;
+
+
 
 
 
