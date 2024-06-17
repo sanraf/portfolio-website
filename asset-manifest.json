@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.dea1f848.css",
-    "main.js": "/portfolio-website/static/js/main.7c49ddce.js",
+    "main.css": "/portfolio-website/static/css/main.1f63a316.css",
+    "main.js": "/portfolio-website/static/js/main.2d5423dc.js",
     "static/js/592.e7dcf586.chunk.js": "/portfolio-website/static/js/592.e7dcf586.chunk.js",
     "static/media/scanvid.mp4": "/portfolio-website/static/media/scanvid.beacedb5f41084465364.mp4",
     "static/media/joytech.png": "/portfolio-website/static/media/joytech.48b3a50e9ac8351b312c.png",
     "static/media/strip.jpg": "/portfolio-website/static/media/strip.7b7130de8e1de0c30033.jpg",
     "static/media/schoolweb.png": "/portfolio-website/static/media/schoolweb.3a2b33364b92f583ac7d.png",
     "static/media/hero-image.png": "/portfolio-website/static/media/hero-image.f8b320444c4b4bd186b8.png",
+    "static/media/overview-illustration.png": "/portfolio-website/static/media/overview-illustration.8941836ce76476a03d05.png",
+    "static/media/technology-illustration.png": "/portfolio-website/static/media/technology-illustration.d583c7b237a447ca6d6f.png",
     "static/media/novelnest.png": "/portfolio-website/static/media/novelnest.faa6ae67998bac01a12b.png",
+    "static/media/challeges-illustration.png": "/portfolio-website/static/media/challeges-illustration.3a632ff58301394a15a1.png",
     "static/media/admin.png": "/portfolio-website/static/media/admin.0592b452beda79daab31.png",
     "static/media/Circuit Primary.svg": "/portfolio-website/static/media/Circuit Primary.0232ed088a6a5aa9c66a.svg",
     "static/media/hero_screen.png": "/portfolio-website/static/media/hero_screen.69e61202cf41caf52c8a.png",
@@ -49,6 +52,7 @@
     "static/media/note6.png": "/portfolio-website/static/media/note6.b0479a0fbede2e78d754.png",
     "static/media/note4.png": "/portfolio-website/static/media/note4.9a26653d1a06e741d363.png",
     "static/media/brand1-modified.png": "/portfolio-website/static/media/brand1-modified.7535f8cec3b0cdfb584a.png",
+    "static/media/wwwhirlk.svg": "/portfolio-website/static/media/wwwhirlk.17c057dea814b5bcea3f.svg",
     "static/media/Sebitja Secondary.png": "/portfolio-website/static/media/Sebitja Secondary.fd5a9ff73677cb56e3e3.png",
     "static/media/smart_scan_launcher-1.png": "/portfolio-website/static/media/smart_scan_launcher-1.d5573c716ed1b431c747.png",
     "static/media/Sprinkle.svg": "/portfolio-website/static/media/Sprinkle.a64a6afdc72e1ef3cff9.svg",
@@ -65,12 +69,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.dea1f848.css.map": "/portfolio-website/static/css/main.dea1f848.css.map",
-    "main.7c49ddce.js.map": "/portfolio-website/static/js/main.7c49ddce.js.map",
+    "main.1f63a316.css.map": "/portfolio-website/static/css/main.1f63a316.css.map",
+    "main.2d5423dc.js.map": "/portfolio-website/static/js/main.2d5423dc.js.map",
     "592.e7dcf586.chunk.js.map": "/portfolio-website/static/js/592.e7dcf586.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dea1f848.css",
-    "static/js/main.7c49ddce.js"
+    "static/css/main.1f63a316.css",
+    "static/js/main.2d5423dc.js"
   ]
 }
