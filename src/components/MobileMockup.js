@@ -1,17 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/MobileMockup.css';
 
-import vid from '../Assets/scanvid.mp4';
+import noteDemo from '../Assets/noteDemo.mp4';
+import scannerDemo from '../Assets/scannerDemo.mp4';
+import bookDemo from '../Assets/bookDemo.mp4';
 import {  GrGithub, GrNext, GrPrevious } from 'react-icons/gr';
 import '../Styles/StackedCards.css'; 
 import { BiArrowBack } from 'react-icons/bi';
 import { Link, useNavigate } from 'react-router-dom';
 
 import ProjectData from "../components/ProjectData";
-import { ImNext } from 'react-icons/im';
 
 const MobileMockup = () => {
   const videoRef = useRef(null);
+  const [demo,setDemo] = useState('')
   const navigate = useNavigate()
   const [isPaused, setIsPaused] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -27,34 +29,26 @@ const MobileMockup = () => {
   },[])
 
 
- 
+
   const cardData = new ProjectData();
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
     switch (projectName) {
         case 'Smart Note':
+            setDemo( <source src={noteDemo} type="video/mp4" />);
             setCards(cardData.SmartNote());
             break;
         case 'Smart Book':
+            setDemo( <source src={bookDemo} type="video/mp4" />);
             setCards(cardData.SmartBook());
             break;
         case 'Smart Scan':
+            setDemo( <source src={scannerDemo} type="video/mp4" />);
             setCards(cardData.SmartScan());
             break;
-        case 'JoystiTech':
-            setCards(cardData.joyTech());
-            break;
-        case 'Novel Nest':
-            setCards(cardData.NovelNest());
-            break;
-        case 'SchoolWeb':
-            setCards(cardData.SchoolWeb());
-            break;
-        case 'EziVote':
-            setCards(cardData.EziVote());
-            break;
         default:
+          setDemo('');
             setCards([]);
             break;
     }
@@ -155,8 +149,7 @@ const MobileMockup = () => {
     const screenWidth = window.innerWidth;
     const screenHeight = window.innerHeight;
     setWidth(window.innerWidth);
-    // Do something with the updated screen dimensions
-    console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
+    // console.log(`Screen width: ${screenWidth}px, Screen height: ${screenHeight}px`);
   });
 
   const goBack = () =>{
@@ -165,7 +158,7 @@ const MobileMockup = () => {
   }
 
 
-
+    
 
   return (
     <div className='frame-wrapper'>
@@ -234,13 +227,14 @@ const MobileMockup = () => {
                   </div>
                   <div className="mobile-screen">
                       <video
+                      key={demo}
                       ref={videoRef}
                       className="video"
                       controlsList="nodownload"
                       disablePictureInPicture
                       onClick={e => e.stopPropagation()} // Prevent video click from bubbling to parent
                       >
-                      <source src={vid} type="video/mp4" />
+                     {demo}
                       Your browser does not support the video tag.
                       </video>
                       <div className={`play-pause-icon ${isPaused ? 'paused' : 'playing'}`}></div>

@@ -5,25 +5,25 @@ import challengeImage from '../Assets/challeges-illustration.png'
 import technologyImage from '../Assets/technology-illustration.png'
 
 const smartNoteOverview =
-"The Android Java-based note-taking app, powered by Room Database, simplifies note organization and management. With a user-friendly interface, users can effortlessly create, edit, and delete notes on the go. Reliable storage and seamless retrieval ensure productivity and accessibility";
+"A Java-based Android note-taking app utilizing Room Database for reliable storage. It offers a user-friendly interface for creating, editing, and deleting notes, ensuring seamless retrieval and easy organization on the go";
 
 const smartScanOverview =
-"NOTHING TO SHOW"
+"Smart Scan is an Android app for scanning image to text using google lens and images fron device, It creates and scan QR Code. It features an intuitive interface, Room Database for data storage,"
 
 const smartBookOverview=
-"Smart Books is an Android Java-based book app is tailored for immersive reading experiences, offering users access to a curated selection of short stories and PDFs. With a sleek interface optimized for storytelling, users can easily navigate through various genres and dive into captivating narratives. Powered by Room Database, the app guarantees seamless storage and retrieval, ensuring users can enjoy their favorite stories on the go";
+"Smart Books is a Java-based Android app designed for an engaging reading experience. It features a collection of short stories and PDFs, a user-friendly interface for easy navigation, and uses Room Database for efficient data management, allowing readers to enjoy stories anytime, anywhere.";
 
 const joyTechOverview =
-"EziVote: A dynamic online voting platform crafted with Spring Boot for backend functionality and React for a seamless frontend experience. Users are empowered with secure login and registration features, while our Java-powered backend ensures robust authentication and data management. With a user-friendly interface powered by React.";
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
 
 const novelNestOverview =
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
+"Novel Nest is an online platform for buying and selling books. It offers a wide range of titles, an easy-to-use interface, and secure transaction processing for a convenient book shopping experience";
 
 const schoolWebOverview =
-"School-website is  web-based school app, combining React frontend and Spring Boot backend, empowers students to calculate AP scores and access posts, galleries, and blogs. With a user-friendly interface and robust data management, it enriches learning experiences and fosters academic growth.";
+"School-website is a web app for students featuring React and Spring Boot, offering tools for AP score calculation, and access to posts, galleries, and blogs. It provides a smooth user experience and strong data handling to enhance education";
 
 const eziVoteOverview =
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
+"EziVote is an online voting platform combining Spring Boot for backend operations and React for a smooth frontend. It offers secure user authentication, robust data management, and an intuitive React interface for a straightforward voting process.";
 
 const pmsOverview =
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et ultrices neque ornare aenean euismod elementum nisi. Dignissim convallis aenean et tortor at risus viverra adipiscing.";
@@ -51,12 +51,11 @@ class ProjectData extends Component {
       title: "Challenges",
       content: (
         <p className='overview'>
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1
+            &#x27A5; Implementing fast and accurate search within notes <br />
+            &#x27A5; Deprecated Database dependecy for specific sdk<br />
+            &#x27A5; Providing backup data<br />
+            &#x27A5; Setting up notification <br />
+            &#x27A5; Implementing sharing method <br />
         </p>
      
       ),
@@ -73,8 +72,7 @@ class ProjectData extends Component {
         &#x27A5; Android Studio <br />
         &#x27A5; Room Database <br />
         &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database
+        &#x27A5; Third party libraries <br />
         </p>
       ),
       backgroundImage:technologyImage,
@@ -104,7 +102,6 @@ class ProjectData extends Component {
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
             &#x27A5; challenge1
         </p>
      
@@ -121,9 +118,7 @@ class ProjectData extends Component {
         &#x27A5; Java <br />
         &#x27A5; Android Studio <br />
         &#x27A5; Room Database <br />
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database
+        &#x27A5; Google lens library <br />
         </p>
       ),
       backgroundImage:technologyImage,
@@ -149,12 +144,9 @@ class ProjectData extends Component {
       title: "Challenges",
       content: (
         <p className='overview'>
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1 <br />
-            &#x27A5; challenge1
+            &#x27A5; Configuring firebase <br />
+            &#x27A5; Configuring banner ad <br />
+            &#x27A5; Implemention Text To Speech 'TTS' 
         </p>
      
       ),
@@ -169,10 +161,8 @@ class ProjectData extends Component {
         <p className='overview'>
         &#x27A5; Java <br />
         &#x27A5; Android Studio <br />
-        &#x27A5; Room Database <br />
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database
+        &#x27A5; Firebase Database <br />
+        &#x27A5; Glide library 
         </p>
       ),
       backgroundImage:technologyImage,
@@ -349,6 +339,50 @@ class ProjectData extends Component {
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
+            &#x27A5; challenge1
+        </p>
+     
+      ),
+      backgroundImage: challengeImage,
+      backgroundColor:'#008484',
+        color: '#012a3f'
+    },
+    {
+      id: 3,
+      title: "Used Technologies",
+      content: (
+        <p className='overview'>
+        &#x27A5; Java <br />
+        &#x27A5; Spring boot <br />
+        &#x27A5; React js <br />
+        &#x27A5; MYSQL Database
+        </p>
+      ),
+      backgroundImage:technologyImage,
+      backgroundColor:'#00586E',
+        color: '#00C6B2'
+    }
+  ]}
+
+  PMS(){return[
+    {
+      id: 1,
+      title: "Project Overview",
+      content: (
+        <p className='overview'>
+         {pmsOverview}
+     
+        </p>
+      ),
+      backgroundImage: overvewImage,
+      backgroundColor:'#022F46',
+      color: '#23857a'   },
+    {
+      id: 2,
+      title: "Challenges",
+      content: (
+        <p className='overview'>
+            &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1 <br />
             &#x27A5; challenge1
@@ -364,12 +398,11 @@ class ProjectData extends Component {
       title: "Used Technologies",
       content: (
         <p className='overview'>
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database <br />
-        &#x27A5; Java <br />
-        &#x27A5; Android Studio <br />
-        &#x27A5; Room Database
+            &#x27A5; Java <br />
+            &#x27A5; Spring boot <br />
+            &#x27A5; Spring security <br />
+            &#x27A5; React js <br />
+            &#x27A5; MYSQL Database
         </p>
       ),
       backgroundImage:technologyImage,

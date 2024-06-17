@@ -62,8 +62,9 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       <div className="small-circle_1"></div> */}
 
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
-
+      {/* <h1 className="bigText" id="text3d">HI</h1> */}
       <div className="hero-container">
+     
         <div className="hero-content-wrapper">
         <div className="hero-content">
           <div className="typing-effect">

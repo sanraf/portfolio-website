@@ -1,56 +1,35 @@
 import React, { createContext, useState } from "react";
 import "../Styles/Project.css";
-import project1 from "../Assets/brand1-modified.png";
-import project2 from "../Assets/smart book.png";
-import project3 from "../Assets/icons8-open-book-64.png";
-import project4 from "../Assets/ezivote.png";
-import project5 from "../Assets/Sebitja Secondary.png";
 import { Link, useNavigate } from "react-router-dom";
-
-import data from '../components/ProjectData'
 
 // import "../Styles/NewCard.css";
 import noteLogo from "../Assets/brand1-modified.png";
 import scanLogo from "../Assets/smart_scan_launcher-1.png";
 import storyLogo from "../Assets/smart book.png";
 import openbook from "../Assets/icons8-open-book-64.png";
-import book3Icon from "../Assets/story3.png";
-import book4Icon from "../Assets/story4.png";
-import book5Icon from "../Assets/story5.png";
-import book6Icon from "../Assets/story6.png";
 import css from "../Assets/icons8-css.svg";
 import html from "../Assets/icons8-html-5-48.png";
 import java from "../Assets/icons8-java.svg";
 import android from "../Assets/icons8-android-logo.svg";
 import reactIcon from "../Assets/icons8-react-js.svg";
 import sql from "../Assets/icons8-my-sql.svg";
+import pmsImage from "../Assets/pms1.png"
 import roomDB from "../Assets/icons8-database-administrator-100.png";
-import MobileMockup from "../components/MobileMockup";
-import DesktopMockup from "./DesktopMockup";
-import ViewProject from "./ViewProject";
+
 
 export const ProjectNameContext = createContext();
 function Project({projectRef}) {
   const navigate = useNavigate();
-  const [myvalue,setMyvalue] = useState('');
-  const [isViewProject, setisViewProject] = useState(false);
-  const [isMobile, setIsMobleView] = useState(true);
-  const [isViewGone, setIsViewGone] = useState(!false);
-  const [project, setProject] = useState(true);
-  const [projectName, setProjectName] = useState("");
-const msg = 'HELLO'
 
     const handleMobileView = (name,gitRepo) =>{
       window.sessionStorage.setItem('PROJECT_NAME', name);
       window.sessionStorage.setItem('PROJECT_REPO', gitRepo);
-      // localStorage.setItem('',JSON.stringify(name))
       navigate('/view-project')
     }
 
     const handleDeskView = (name,gitRepo) =>{
       window.sessionStorage.setItem('PROJECT_NAME', name);
       window.sessionStorage.setItem('PROJECT_REPO', gitRepo);
-      // localStorage.setItem('',JSON.stringify(name))
       navigate('/view-project-v2')
     }
 
@@ -327,6 +306,38 @@ const msg = 'HELLO'
 
                   <div className="button_card">
                     <span className="view-projects" onClick={()=>handleDeskView('EziVote','https://github.com/sanraf/EziVote.git')}>view work</span>
+                    <Link
+                      className="view-repos"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      to={"https://github.com/sanraf/EziVote.git"}
+                    >
+                      Repo
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="outliner">
+              <div className="card-deskTop-border">
+                <div className="top-deskTop-card-pms"></div>
+
+                <div className="bottom-card">
+                  <div className="info-box">
+                    <h3>Project Management System</h3>
+                    <div className="img-div">
+                      <img src={java} />
+                      <h4>java</h4>
+                      <img src={sql} />
+                      <h4>MYSQL</h4>
+                      <img src={reactIcon} />
+                      <h4>react js</h4>
+                    </div>
+                  </div>
+
+                  <div className="button_card">
+                    <span className="view-projects" onClick={()=>handleDeskView('Project Management System','https://github.com/sanraf/EziVote.git')}>view work</span>
                     <Link
                       className="view-repos"
                       target="_blank"

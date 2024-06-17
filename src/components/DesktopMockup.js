@@ -2,19 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import '../Styles/DesktopMockup.css';
-import githubIcon from "../Assets/icons8-github.svg";
 
-import note1Icon from '../Assets/note1.png'
-import note2Icon from '../Assets/note2.png'
-import note3Icon from '../Assets/note3.png'
-import note4Icon from '../Assets/note4.png'
-import note5Icon from '../Assets/note5.png'
-import note6Icon from '../Assets/note6.png'
-import note7Icon from '../Assets/note7.png'
-import note8Icon from '../Assets/note8.png'
-import note9Icon from '../Assets/note9.png'
-import note10Icon from '../Assets/note10.png'
-import note11Icon from '../Assets/note11.png'
 
 import vote1Icon from '../Assets/home.png'
 import vote2Icon from '../Assets/admin.png'
@@ -28,8 +16,6 @@ import vote9Icon from '../Assets/results.png'
 import vote10Icon from '../Assets/station.png'
 import vote11Icon from '../Assets/voters.png'
 
-import prevIcon from '../Assets/icons8-previous-100.png'
-import nextIcon from '../Assets/icons8-next-100.png'
 import imacIcon from '../Assets/icons8-grey-imac-100.png'
 
 import ProjectData from "../components/ProjectData";
@@ -71,15 +57,6 @@ const project4Images = [
   
     useEffect(() => {
       switch (projectName) {
-          case 'Smart Note':
-              setCards(cardData.SmartNote());
-              break;
-          case 'Smart Book':
-              setCards(cardData.SmartBook());
-              break;
-          case 'Smart Scan':
-              setCards(cardData.SmartScan());
-              break;
           case 'JoystiTech':
               setCards(cardData.joyTech());
               break;
@@ -92,6 +69,9 @@ const project4Images = [
           case 'EziVote':
               setCards(cardData.EziVote());
               break;
+          case 'Project Management System':
+            setCards(cardData.PMS());
+            break;
           default:
               setCards([]);
               break;

@@ -345,6 +345,14 @@ a {
   z-index: 1;
 }
 
+.top-deskTop-card-pms {
+  background-image: url("../Assets/pms1.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .bottom-card {
   width: 100%;
   height: 9rem;

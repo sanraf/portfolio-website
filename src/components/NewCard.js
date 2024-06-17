@@ -1,14 +1,6 @@
 import React from "react";
 import "../Styles/NewCard.css";
-import noteLogo from "../Assets/brand1-modified.png";
-import book1Icon from "../Assets/story1.png";
-import book2Icon from "../Assets/story2.png";
-import book3Icon from "../Assets/story3.png";
-import book4Icon from "../Assets/story4.png";
-import book5Icon from "../Assets/story5.png";
-import book6Icon from "../Assets/story6.png";
-import book7Icon from "../Assets/story7.png";
-import book8Icon from "../Assets/story8.png";
+
 import java from "../Assets/icons8-java.svg";
 import android from "../Assets/icons8-android-logo.svg";
 import reactIcon from '../Assets/icons8-react-js.svg';
@@ -17,16 +9,16 @@ import roomDB from '../Assets/icons8-database-administrator-100.png'
 import { Link } from "react-router-dom";
 
 function NewCard() {
-  const project2Images = [
-    { url: book1Icon },
-    { url: book2Icon },
-    { url: book3Icon },
-    { url: book4Icon },
-    { url: book5Icon },
-    { url: book6Icon },
-    { url: book7Icon },
-    { url: book8Icon },
-  ];
+  // const project2Images = [
+  //   { url: book1Icon },
+  //   { url: book2Icon },
+  //   { url: book3Icon },
+  //   { url: book4Icon },
+  //   { url: book5Icon },
+  //   { url: book6Icon },
+  //   { url: book7Icon },
+  //   { url: book8Icon },
+  // ];
   return (
         // <div className="project-holder">
 
@@ -179,7 +171,7 @@ function NewCard() {
 
     <div class="macbook">
       <div class="screennew">
-        <div class="viewport" style={{ backgroundImage: book1Icon }}></div>
+        {/* <div class="viewport" style={{ backgroundImage: book1Icon }}></div> */}
       </div>
       <div class="base"></div>
       <div class="notch"></div>
