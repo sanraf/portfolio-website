@@ -62,13 +62,13 @@ function Home() {
       <HeroSection isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
       {/* <MobileMockup/> */}
       {/* <DesktopMockup/> */}
-      {/* <About aboutRef={aboutRef} /> */}
-      {/* <Skills/> */}
-      {/* <Project projectRef={projectRef}/> */}
+      <About aboutRef={aboutRef} />
+      <Skills/>
+      <Project projectRef={projectRef}/>
       {/* <ViewProject/> */}
       {/* <Card/> */}
       {/* <NewCard/> */}
-      {/* <Contact/> */}
+      <Contact/>
       {/* <AppFooter/> */}
     </div>
   )
