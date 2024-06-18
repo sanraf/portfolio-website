@@ -11,7 +11,7 @@ const smartScanOverview =
 "Smart Scan is an Android app for scanning image to text using google lens and images fron device, It creates and scan QR Code. It features an intuitive interface, Room Database for data storage,"
 
 const smartBookOverview=
-"Smart Books is a Java-based Android app designed for an engaging reading experience. It features a collection of short stories and PDFs, a user-friendly interface for easy navigation, and uses Room Database for efficient data management, allowing readers to enjoy stories anytime, anywhere.";
+"Smart Books is a Java-based Android app designed for an engaging reading experience. It features a collection of short stories and PDFs, a user-friendly interface for easy navigation, and uses Room Database for efficient data management, allowing readers to enjoy stories anytime, anywhere";
 
 const joyTechOverview =
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
