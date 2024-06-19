@@ -59,13 +59,12 @@
 
 /* The switch - the box around the slider */
 .switch {
-  font-size: 17px;
-  position: relative;
+  position: fixed;
   display: inline-block;
   width: 3.5em;
   height: 2em;
   top: 3.5rem;
-  right: -38%;
+  right: 1.5%;
 }
 
 /* Hide default HTML checkbox */
@@ -77,16 +76,16 @@
 
 /* The slider */
 .slider {
-  --background: #28096b;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--background);
-  transition: .5s;
-  border-radius: 30px;
+  border: 1px solid var(--BaseColor);
+  background: var(--PrimaryColor);
+  transition: 500ms;
+  border-radius: 2rem;
 }
 
 .slider::before {
@@ -97,18 +96,17 @@
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
-  background: var(--background);
-  transition: .5s;
+  box-shadow: inset 8px -4px 0px 0px #004b8d;
+  transition: 500ms;
 }
 
 input:checked + .slider {
-  background-color: #522ba7;
+  background-color: var(--PrimaryColor);
 }
 
 input:checked + .slider::before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #fff000;
+  box-shadow: inset 15px -4px 0px 15px #022f45;
 }
 .small-circle::before,
 .small-circle::after,
@@ -166,7 +164,7 @@ input:checked + .slider::before {
 .bigText {
   position: absolute;
   top: 10%;
-  left: 15%;
+  left: 25%;
 height: fit-content;
   width: auto;
   margin: 0 auto 0 auto;
@@ -230,7 +228,7 @@ bigText::before {
 
 .hero-image {
   transform: translateY(100px);
-  background:linear-gradient(270deg, var(--heroTransparent),#23857a00 ),url("../Assets/hero_screen.png");
+  background:linear-gradient(270deg, var(--heroTransparent),transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
   background-position: center;
   background-size: contain;
   height: 25rem;
@@ -375,8 +373,8 @@ bigText::before {
     width: 50%;
   }
   .hero-image {
-
-    background:linear-gradient(270deg, #23857a5c,#23857a00 ),url("../Assets/hero_screen.png");
+    position: relative;
+    background:linear-gradient(270deg, var(--heroTransparent),transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
     background-position: center;
     background-size: contain;
     height: 20rem;
@@ -385,6 +383,7 @@ bigText::before {
     background-repeat: no-repeat;
     transform: rotateY(-10deg);
     transition: transform 500ms ease-in-out;
+    top: 3rem;
   }
 
   .typing-effect h1 {
@@ -465,6 +464,18 @@ bigText::before {
     padding: 0.5rem 0.6rem;
     font-size: 1.05em;
     border-radius: 5px;
+  }
+
+  .slider::before {
+    content: "";
+    height: 1.2em;
+    width: 1.2em;
+    bottom: 10%;
+  }
+  .switch {
+  
+    width: 3em;
+    height: 1.6em;
   }
 
   .hero-content h6 {
