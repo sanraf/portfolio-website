@@ -119,7 +119,7 @@ const project4Images = [
       const diff = currentX - startX;
   
       if (diff > 50) {
-          handleNext();
+          handleNextc();
         setIsDragging(false);
       } else if (diff < -50) {
           handlePrev();

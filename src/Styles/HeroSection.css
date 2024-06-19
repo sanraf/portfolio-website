@@ -59,7 +59,7 @@
 
 /* The switch - the box around the slider */
 .switch {
-  position: fixed;
+  position: absolute;
   display: inline-block;
   width: 3.5em;
   height: 2em;
@@ -82,8 +82,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid var(--BaseColor);
-  background: var(--PrimaryColor);
+  border: 1px solid var(--PrimaryColor);
   transition: 500ms;
   border-radius: 2rem;
 }
@@ -101,7 +100,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--PrimaryColor);
+  /* background-color: var(--PrimaryColor); */
 }
 
 input:checked + .slider::before {
@@ -159,6 +158,35 @@ input:checked + .slider::before {
   perspective: 50rem;
 
 }
+
+
+.name {
+
+  text-transform: Uppercase;
+  margin-bottom: .5em;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2rem; }
+  
+  .name {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+  background: linear-gradient(to right, #3c6477, #256961, #0edcc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  
+
+  
+  .name::before {
+  z-index: -1;
+  text-shadow: -0.001em -0.001em 1px rgb(247, 0, 0)}
+  
+  .name::after {
+  z-index: -2;
+  text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
+  mix-blend-mode: multiply; }
+  
+
 
 
 [class*='bigText-'] {
@@ -484,7 +512,11 @@ height: fit-content;
     bottom: 10%;
   }
   .switch {
-  
+   
+    width: 3.5em;
+    height: 2em;
+    top: 3rem;
+    right: 5%;
     width: 3em;
     height: 1.6em;
   }

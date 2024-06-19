@@ -84,6 +84,7 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
       {/* <h1 className="bigText-1" id="text3d">   </h1> */}
       {/* <h1 className="bigText-2" id="text3d">HI. I'M SANTOS A </h1> */}
+      <h1 data-text="back in black" className="name">back in black</h1>
       <div className="hero-container">
      
         <div className="hero-content-wrapper">
@@ -96,8 +97,8 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
             great user experience.
           </h6>
           <div className="skill-desc">
-            <p>Explanation and visualization css transition:</p>
-            <p>Explanation and visualization css transition:</p>
+            <p>Using Java and Spring boot for developing the backend </p>
+            <p>And JavaScript and React js for frontend </p>
           </div>
 
           <a href="#myproject" className="explore-work">
