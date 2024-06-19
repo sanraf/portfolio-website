@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.e83c6593.css",
-    "main.js": "/portfolio-website/static/js/main.cd5f22f1.js",
+    "main.css": "/portfolio-website/static/css/main.ea20275e.css",
+    "main.js": "/portfolio-website/static/js/main.41ecf84f.js",
     "static/js/592.a290a448.chunk.js": "/portfolio-website/static/js/592.a290a448.chunk.js",
     "static/media/bookDemo.mp4": "/portfolio-website/static/media/bookDemo.f951b076fd2686b4e7ea.mp4",
     "static/media/noteDemo.mp4": "/portfolio-website/static/media/noteDemo.53b00d1e0abbed3176fd.mp4",
@@ -54,12 +54,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.e83c6593.css.map": "/portfolio-website/static/css/main.e83c6593.css.map",
-    "main.cd5f22f1.js.map": "/portfolio-website/static/js/main.cd5f22f1.js.map",
+    "main.ea20275e.css.map": "/portfolio-website/static/css/main.ea20275e.css.map",
+    "main.41ecf84f.js.map": "/portfolio-website/static/js/main.41ecf84f.js.map",
     "592.a290a448.chunk.js.map": "/portfolio-website/static/js/592.a290a448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e83c6593.css",
-    "static/js/main.cd5f22f1.js"
+    "static/css/main.ea20275e.css",
+    "static/js/main.41ecf84f.js"
   ]
 }
