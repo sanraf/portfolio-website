@@ -61,10 +61,11 @@
 .switch {
   position: absolute;
   display: inline-block;
-  width: 3.5em;
-  height: 2em;
+  width: 3em;
+  height: 1.8em;
   top: 3.5rem;
   right: 1.5%;
+  z-index: 1000;
 }
 
 /* Hide default HTML checkbox */
@@ -90,12 +91,12 @@
 .slider::before {
   position: absolute;
   content: "";
-  height: 1.4em;
-  width: 1.4em;
+  height: 1.2em;
+  width: 1.2em;
   border-radius: 50%;
   left: 10%;
   bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #004b8d;
+  box-shadow: inset 8px -4px 0px 0px var(--PrimaryColor);
   transition: 500ms;
 }
 
@@ -105,7 +106,7 @@ input:checked + .slider {
 
 input:checked + .slider::before {
   transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #022f45;
+  box-shadow: inset 15px -4px 0px 15px var(--PrimaryColor);
 }
 .small-circle::before,
 .small-circle::after,
@@ -402,6 +403,7 @@ height: fit-content;
     font-size: 1.8em;
   }
 
+
   /* .hero-image {
     background: linear-gradient(270deg, #003f8d00, #003f8d00),
     url("../Assets/hero_1.png");
@@ -477,22 +479,19 @@ height: fit-content;
     font-size: 1.05em;
     border-radius: 5px;
   }
+  .switch {
+    width: 2em;
+    height: 1.2rem;
+    top: 3rem;
+    right: 7%;
+  }
 
   .slider::before {
     content: "";
-    height: 1.2em;
-    width: 1.2em;
-    bottom: 10%;
+    height: 0.8em;
+    width: 0.8em;
   }
-  .switch {
-   
-    width: 3.5em;
-    height: 2em;
-    top: 3rem;
-    right: 5%;
-    width: 3em;
-    height: 1.6em;
-  }
+
 
   .hero-content h6 {
     font-weight: 400;
