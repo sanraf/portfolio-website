@@ -1,26 +1,9 @@
 :root{
-
-    /* --PrimaryColor:#1589ff; */
-    --PrimaryHoverColor:#0e5fb2;
-    --SecondaryColor:#000000;
-    --FontColor:#ffffff;
-    --MainColor: #023047;
-    --MainTrans: #023047f3;
-    --MainTrans-2:#023047d7;
-    --AboutBackground:#023047f8;
-    --HeadingBackground:#02293da6;
-    --HeadingText:#1589ff;
-    --TypingColor:#458a9c;
-    --ProgressBackground:#02131c69;
-    /* --SkillImage:url("../icons/scattered-forcefield.svg"); */
-    --CardBackground:#041b33;
-    --ExperienceColor:#0230478a;
-
     --BaseColor:#022f45;
     --PrimaryColor:#23857a;
     --SecondaryColour:#00c7b3;
     --ActionColor:#344B48;
-    /* #23857A */
+    --heroTransparent: #23857a5c;
   }
 
   *{
@@ -28,13 +11,7 @@
     padding: 0;
     box-sizing: border-box;
   }
- /* html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
- } */
+
 
   [class*="-title"] h1{
     text-transform: uppercase;
@@ -45,5 +22,24 @@
     padding-bottom: 3rem;
   } 
 
- 
+  .light-mode {
+    --BaseColor:  #004b8d;
+    --PrimaryColor: #F6F9FF;
+    --SecondaryColour: #F1F1E6;
+    --ActionColor: #7F90BC;
+    --heroTransparent: #f6f9ff29;
+}
   
+  /* --PrimaryHoverColor:#0e5fb2;
+    --SecondaryColor:#000000;
+    --FontColor:#ffffff;
+    --MainColor: #023047;
+    --MainTrans: #023047f3;
+    --MainTrans-2:#023047d7;
+    --AboutBackground:#023047f8;
+    --HeadingBackground:#02293da6;
+    --HeadingText:#1589ff;
+    --TypingColor:#458a9c;
+    --ProgressBackground:#02131c69;
+    --CardBackground:#041b33;
+    --ExperienceColor:#0230478a;*/

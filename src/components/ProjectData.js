@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react';
 import React, { Component } from 'react';
 import overvewImage from '../Assets/overview-illustration.png'
 import challengeImage from '../Assets/challeges-illustration.png'

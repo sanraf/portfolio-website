@@ -22,6 +22,20 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
  
   };
 
+  const [isLightMode, setIsLightMode] = useState(false);
+
+  useEffect(() => {
+      if (isLightMode) {
+          document.documentElement.classList.add('light-mode');
+      } else {
+          document.documentElement.classList.remove('light-mode');
+      }
+  }, [isLightMode]);
+
+  const toggleTheme = () => {
+      setIsLightMode(!isLightMode);
+  };
+
   const handleScroll = () => {
     setShowButton(window.scrollY > 200); // Show button after scrolling down 200px
   };
@@ -53,7 +67,13 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
             <FaArrowUp/>
         </button>
       </div>
-      
+      <label   className="switch">
+        <input onClick={toggleTheme} type="checkbox"/>
+        <span className="slider"></span>
+      </label>
+      {/* <button onClick={toggleTheme}>
+        Switch to {isLightMode ? 'Dark' : 'Light'} Mode
+      </button> */}
 
 
       {/* <div className="big-circle"></div>
