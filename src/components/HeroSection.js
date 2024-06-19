@@ -71,20 +71,9 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
         <input onClick={toggleTheme} type="checkbox"/>
         <span className="slider"></span>
       </label>
-      {/* <button onClick={toggleTheme}>
-        Switch to {isLightMode ? 'Dark' : 'Light'} Mode
-      </button> */}
-
-
-      {/* <div className="big-circle"></div>
-      <div className="small-circle"></div>
-      <div className="big-circle_1"></div>
-      <div className="small-circle_1"></div> */}
 
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
-      {/* <h1 className="bigText-1" id="text3d">   </h1> */}
-      {/* <h1 className="bigText-2" id="text3d">HI. I'M SANTOS A </h1> */}
-      <h1 data-text="back in black" className="name">back in black</h1>
+
       <div className="hero-container">
      
         <div className="hero-content-wrapper">

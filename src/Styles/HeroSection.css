@@ -158,34 +158,7 @@ input:checked + .slider::before {
   perspective: 50rem;
 
 }
-
-
-.name {
-
-  text-transform: Uppercase;
-  margin-bottom: .5em;
-  font-family: 'Rubik', sans-serif;
-  font-size: 2rem; }
-  
-  .name {
-  position: absolute;
-  top: 5%;
-  left: 12%;
-  background: linear-gradient(to right, #3c6477, #256961, #0edcc4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-  
-
-  
-  .name::before {
-  z-index: -1;
-  text-shadow: -0.001em -0.001em 1px rgb(247, 0, 0)}
-  
-  .name::after {
-  z-index: -2;
-  text-shadow: 10px 10px 10px rgba(0,0,0,.5), 20px 20px 20px rgba(0,0,0,.4), 30px 30px 30px rgba(0,0,0,.1);
-  mix-blend-mode: multiply; }
-  
+ 
 
 
 
