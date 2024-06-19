@@ -82,7 +82,8 @@ const HeroSection = ({isAboutVisible,isProjectVisible}) => {
       <div className="small-circle_1"></div> */}
 
       <NavBar isAboutVisible={isAboutVisible} isProjectVisible={isProjectVisible}/>
-      <h1 className="bigText" id="text3d">HI santos a</h1>
+      {/* <h1 className="bigText-1" id="text3d">   </h1> */}
+      {/* <h1 className="bigText-2" id="text3d">HI. I'M SANTOS A </h1> */}
       <div className="hero-container">
      
         <div className="hero-content-wrapper">
