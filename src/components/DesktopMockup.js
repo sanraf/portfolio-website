@@ -21,7 +21,8 @@ import imacIcon from '../Assets/icons8-grey-imac-100.png'
 import ProjectData from "../components/ProjectData";
 import { Link, useNavigate } from 'react-router-dom';
 import { GrGithub, GrNext, GrPrevious } from 'react-icons/gr';
-import { BiArrowBack } from 'react-icons/bi';
+import { BiArrowBack, BiArrowFromTop, BiArrowToLeft, BiUpArrow } from 'react-icons/bi';
+import { BsArrow90DegUp } from 'react-icons/bs';
 const project4Images = [
     { id: 1, url: vote1Icon }, { id: 2, url: vote2Icon }, { id: 3, url: vote3Icon },
     { id: 4, url: vote4Icon }, { id: 5, url: vote5Icon }, { id: 6, url: vote6Icon },
@@ -35,6 +36,8 @@ const project4Images = [
     const [projectName,setProjectName] = useState('');
     const [projectRepo,setProjectRepo] = useState('');
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [deskTop,setDeskTop] = useState(false);
+    const [link,setLink] = useState('')
   
     const handleNext = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % project4Images.length);
@@ -47,10 +50,10 @@ const project4Images = [
     };
 
     useEffect(()=>{
-      let tiltle = window.sessionStorage.getItem('PROJECT_NAME');
+      let title = window.sessionStorage.getItem('PROJECT_NAME');
       let repo = window.sessionStorage.getItem('PROJECT_REPO');
       setProjectRepo(repo)
-      setProjectName(tiltle);
+      setProjectName(title);
   },[])
     const cardData = new ProjectData();
     const [cards, setCards] = useState([]);
@@ -58,12 +61,18 @@ const project4Images = [
     useEffect(() => {
       switch (projectName) {
           case 'JoystiTech':
+              setDeskTop(true)
+              setLink('https://sanraf.github.io/Joystitech/')
               setCards(cardData.joyTech());
               break;
           case 'Novel Nest':
+            setDeskTop(true);
+            setLink('https://sanraf.github.io/Assignment1/')
               setCards(cardData.NovelNest());
               break;
           case 'SchoolWeb':
+              setDeskTop(true);
+              setLink('https://sanraf.github.io/my-school-website/')
               setCards(cardData.SchoolWeb());
               break;
           case 'EziVote':
@@ -204,29 +213,41 @@ const project4Images = [
               
           </div>
 
-           <div className="screen-container">
-              <div className="screen">
-                <img src={project4Images[currentImageIndex].url} alt={`Project ${project4Images[currentImageIndex].id}`} className="screen-image" />
-                <div className="power-button"></div>
-                <div className="power-lump"></div>
+            { deskTop ? 
+            <Link className='project-link'
+                target="_blank"
+                rel="noopener noreferrer"
+                to={link}>
+              <span>
+              click/me.com&#8599;
+              </span>
               
-              </div>
-              <div className="stand">
-                <div className="stand-neck">
-                    <div className='imac'>
-                        <img src={imacIcon}/>
-                    </div>
+           </Link>:
+
+              <div className="screen-container">
+                <div className="screen">
+                  <img src={project4Images[currentImageIndex].url} alt={`Project ${project4Images[currentImageIndex].id}`} className="screen-image" />
+                  <div className="power-button"></div>
+                  <div className="power-lump"></div>
                 
                 </div>
-                <div className="stand-base"><p>santos r</p></div>
+                <div className="stand">
+                  <div className="stand-neck">
+                      <div className='imac'>
+                          <img src={imacIcon}/>
+                      </div>
+                  
+                  </div>
+                  <div className="stand-base"><p>santos r</p></div>
+                </div>
+                <div className="controls">
+                  <GrPrevious onClick={handlePrevious} className="control-button"/>
+                  <GrNext onClick={handleNext} className="control-button"/>
               </div>
-              <div className="controls">
-                <GrPrevious onClick={handlePrevious} className="control-button"/>
-                <GrNext onClick={handleNext} className="control-button"/>
-            </div>
-           </div>
+            </div> 
+            }
+           
         </div>
-
 
       </div>
     );
