@@ -468,9 +468,9 @@ height: fit-content;
     position: relative;
     top: 0;
     left: 0;
+    margin-top: -2rem;
     width: 100%;
     transform: rotateY(0deg);
-    background-color: #12121203;
     /* display: none; */
   }
 
