@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.c4aea16c.css",
+    "main.css": "/portfolio-website/static/css/main.faf36370.css",
     "main.js": "/portfolio-website/static/js/main.25c851eb.js",
     "static/js/592.a290a448.chunk.js": "/portfolio-website/static/js/592.a290a448.chunk.js",
     "static/media/bookDemo.mp4": "/portfolio-website/static/media/bookDemo.f951b076fd2686b4e7ea.mp4",
@@ -54,12 +54,12 @@
     "static/media/Rect Light1.svg": "/portfolio-website/static/media/Rect Light1.99043d7cb7a1cbfdd5a2.svg",
     "static/media/icons8-python.svg": "/portfolio-website/static/media/icons8-python.026a62687ef705a39cfc755d7457859c.svg",
     "static/media/icons8-android-logo.svg": "/portfolio-website/static/media/icons8-android-logo.42977fa10e2f5725dbf4ac477f022fa1.svg",
-    "main.c4aea16c.css.map": "/portfolio-website/static/css/main.c4aea16c.css.map",
+    "main.faf36370.css.map": "/portfolio-website/static/css/main.faf36370.css.map",
     "main.25c851eb.js.map": "/portfolio-website/static/js/main.25c851eb.js.map",
     "592.a290a448.chunk.js.map": "/portfolio-website/static/js/592.a290a448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4aea16c.css",
+    "static/css/main.faf36370.css",
     "static/js/main.25c851eb.js"
   ]
 }
