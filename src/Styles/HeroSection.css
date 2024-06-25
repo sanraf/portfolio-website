@@ -479,7 +479,7 @@ height: fit-content;
   position: absolute;
   bottom: -5% ;
   left: 5%;
-  background-color: #121212;
+  padding-bottom: 2rem;
 }
   .up-wrapper{
     display: none;
