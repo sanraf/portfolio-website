@@ -241,7 +241,7 @@ height: fit-content;
 
 .hero-image {
   transform: translateY(100px);
-  background:linear-gradient(270deg, var(--heroTransparent),transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
+  background:linear-gradient(270deg, transparent,transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
   background-position: center;
   background-size: contain;
   height: 25rem;
@@ -387,7 +387,7 @@ height: fit-content;
   }
   .hero-image {
     position: relative;
-    background:linear-gradient(270deg, var(--heroTransparent),transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
+    background:linear-gradient(270deg, transparent,transparent ),url("../Assets/sentiment-analysis-concept-illustration.png");
     background-position: center;
     background-size: contain;
     height: 20rem;
@@ -457,7 +457,7 @@ height: fit-content;
 
   .hero-content {
     border-radius: 0.5rem;
-    box-shadow: 0px 0px 2px var(--PrimaryColor);
+    /* box-shadow: 0px 0px 2px var(--PrimaryColor); */
 
   
       background-color: transparent;
@@ -465,9 +465,22 @@ height: fit-content;
   }
 
    .hero-image {
-    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(0deg);
+    background-color: #12121203;
+    /* display: none; */
   }
 
+ 
+.hero-media{
+  position: absolute;
+  bottom: -5% ;
+  left: 5%;
+  background-color: #121212;
+}
   .up-wrapper{
     display: none;
   }
